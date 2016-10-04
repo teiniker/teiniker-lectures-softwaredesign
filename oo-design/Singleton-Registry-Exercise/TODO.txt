@@ -1,0 +1,21 @@
+TODO: Singleton Pattern - Registry
+---------------------------------------------------------------------
+
+Schreiben Sie eine Klasse "Registry", welche das Singleton Pattern
+implementiert.
+
+Als Zusätzliche Funktionalität soll diese Klasse (im Konstruktor)
+das "jdbc.properties" File lesen, und die gespeicherten Informationen
+durch die folgenden Methoden bereitstellen:
+
+	public String getJdbcDriver()
+	public String getJdbcUrl()
+	public String getJdbcUsername()
+	public String getJdbcPassword()
+	
+Verwenden Sie die Klasse "RegistryTest" um Ihre Implementierung zu
+überprüfen.
+	
+Tipp: Lesen Sie in der Klasse "PropertiesTest" wie Sie auf ein 
+		Property File zugreifen können.
+			

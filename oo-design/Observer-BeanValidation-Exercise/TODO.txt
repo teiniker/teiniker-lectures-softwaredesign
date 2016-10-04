@@ -1,0 +1,29 @@
+TODO: Observer - Bean Validation
+--------------------------------------------------------------------------
+
+1. Implementieren Sie die Klasse "Subject" die als Basisklasse von
+	"Bean" dient.
+	Dabei sind die Methoden:
+	
+		void add(Observer observer)
+	
+		void notifyObservers() 
+	
+	zu implementieren.
+	
+   
+2. Schreiben Sie die Klasse "BeanValidationObserver", welche
+	das "Observer" Interface implementiert.
+	In der Methode:
+	
+		public void update(Subject subject)
+
+	sollen die Zustände des Bean Objekts überprüft werden:
+     - name =! null
+     - size of name >=4
+     - size of name <=32
+     - id >= 0
+	Wenn eine dieser Bedingungen nicht erfüllt wird, ist eine 
+	"IllegalStateException" zu werfen.
+	
+	Testen Sie Ihre Implementierung mit der Klasse "BeanValidationTest".

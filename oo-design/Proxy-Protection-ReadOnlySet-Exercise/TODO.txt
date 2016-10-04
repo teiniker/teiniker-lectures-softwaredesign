@@ -1,0 +1,10 @@
+Exercise: Protection Proxy - ReadOnlySet
+---------------------------------------------------------------------
+
+Implementieren Sie einen read-only Proxy für das Interface "Set<T>".
+Jede lesende Operation wird an das eigentliche Objekt der 
+Implementierungsklasse delegiert.
+Jeder schreibende (oder modifizierende) Zugriff wird im Proxy mit einer
+"UnsupportedOperationException()" beantwortet. 
+
+Überprüfen Sie Ihre Implementierung mit der Klasse "ReadOnlySetTest".

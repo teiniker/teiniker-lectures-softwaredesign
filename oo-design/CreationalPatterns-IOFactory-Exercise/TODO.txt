@@ -1,0 +1,26 @@
+Exercise: Factory Method + Singleton 
+---------------------------------------------------------------------
+
+Um von Java in Files zu schreiben bzw. aus Files zu lesen, müssen
+"PrintWriter" und "BufferedReader" Objekte erzeugt werden. Dazu
+sind weitere Objekte (vom Typ "File", "FileWriter" und "FileReader") 
+notwendig, d.h. es sind immer mehrere "new" Operatoren-Aufrufe 
+durchzuführen - siehe "IOTest".
+
+1. Factory Method
+---------------------------------------------------------------------
+Erstellen Sie ein Interface "IOFactoryOperations" welches folgende
+Factory Methoden enthällt:
+
+	PrintWriter createPrintWriter(String fileName);
+	BufferedReader createBufferedReader(String fileName);
+
+Anschließend schreiben Sie die Klasse "IOFactory", die das Interface
+"IOFactoryOperations" implementiert.
+
+2. Singleton
+---------------------------------------------------------------------
+Bauen Sie die Klasse "IOFactory" zu einem Singleton um.
+
+Verwenden Sie die Klasse "IOFactoryTest" um Ihre Implementierungen
+zu testen.

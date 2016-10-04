@@ -1,0 +1,8 @@
+Exercise: UML Class Diagram to Java Mapping
+-----------------------------------------------------------
+
+Implementieren Sie das gegebene Class Diagram in Java.
+
+Überprüfen Sie Ihre Implementierung anhand der gegebenen 
+Test-Klassen.
+	

@@ -1,0 +1,18 @@
+Exercise: Singleton Pattern + Factory Method
+---------------------------------------------------------------------
+
+Schreiben Sie ein Interface "TableFactory", welche die folgende 
+Factory Method definiert:
+	 
+	 PersonTable createPersonTable(); 
+	 
+Zusätzlich soll eine Konstante "INSTANCE" definiert werden, welche
+auf eine Instanz der Klasse "TableFactoryImpl" referenziert. 	 
+
+
+Implementierten Sie dieses Interface in der Klasse "TableFactoryImpl".
+
+	
+Verwenden Sie die Klasse "PersonTableTest" um Ihre Implementierung zu
+überprüfen.
+	

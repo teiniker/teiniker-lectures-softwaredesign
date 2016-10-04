@@ -1,0 +1,18 @@
+Exercise: Composite - XML
+---------------------------------------------------------------------
+
+Implementieren Sie die fehlenden Sub-Klassen "Item" und "ItemList"
+die zusammen mit der Klasse "XMLElement" ein Composite Pattern bilden.
+
+Als Operation für die Baumstruktur soll die Methode:
+
+	String toXML(int indent);
+	
+implementiert werden, welche die Daten eines Knotens als XML String
+zurück liefert.
+
+Beachten Sie, dass diese Methode in jeder der beiden Sub-Klassen zu 
+implementieren ist. 
+	 
+
+Überprüfen Sie Ihre Implementierung mit der Test-Klasse "CompositeTest".

@@ -1,0 +1,21 @@
+Exercise: UML Class Diagram 
+---------------------------------------------------------------------
+
+Dieses Beispiel dient zur Wiederholung der Kentnisse zum Thema UML
+Class Diagram und Implementierung von JUnit Testfällen.
+Weiters soll die vorhandene Entwicklungsumgebung überprüft werden. 
+
+
+UML Class Diagram 
+---------------------------------------------------------------------
+Zeichnen Sie auf einem Blatt Papier das Class Diagram der gegebenen
+Implementierungen (siehe Ordner src/).
+
+Tipps:
+o) Lassen Sie die getter/setter Methoden weg.
+o) Achten Sie auf eine vollständige Beschreibung der Beziehungen 
+	zwischen den Klassen.
+
+Überprüfen Sie Ihr Diagramm mit Hilfe des Eclipse Plugins ObjectAid.
+	
+	

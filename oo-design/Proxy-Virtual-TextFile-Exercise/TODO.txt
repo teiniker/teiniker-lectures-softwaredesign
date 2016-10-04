@@ -1,0 +1,33 @@
+TODO: Virtual Proxy - TextFile
+---------------------------------------------------------------------
+
+Sie haben ein Interface "TextFile" und eine Implementierung "TextFileImpl"
+gegeben. Mit dieser Klasse könnnen Sie ein Textfile einlesen und
+verarbeiten - siehe "TextFileTest".
+
+
+1. Virtual Proxy
+---------------------------------------------------------------------
+	Implementieren Sie einen Proxy mit dem Namen "VirtualTextFile" zum
+	gegebenen Interface "TextFile".
+	Dieser Proxy delegiert die Aufrufe an die "TextFileImpl" Klasse
+	weiter.
+	Beachten Sie, dass "TextFileImpl" vom Proxy erst dann instanziert 
+	wird, wenn die erste Methode aufgerufen wird => Virtual Proxy.
+	
+	Testen Sie Ihre Implementierung mit "VirtualTextFileTest".
+
+	
+2. Factory Method & Singleton
+---------------------------------------------------------------------
+	Implementieren Sie ein Interface "FactoryMethods" mit der Methode:
+	
+		TextFile createTextFile(String filename);
+		
+	Schreiben Sie eine Klasse "Factory", welche "FactoryMethods"
+	implementiert und als Singleton ausgeführt ist.
+	Die Methode "createTextFile()" liefert ein "VirtualTextFile"
+	Objekt zurück.
+	
+	Testen Sie Ihre Implementierung mit "FactoryTest". 		 
+	

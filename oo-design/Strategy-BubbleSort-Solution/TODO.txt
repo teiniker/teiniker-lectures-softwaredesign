@@ -1,0 +1,18 @@
+TODO: Strategy Pattern
+---------------------------------------------------------------------
+
+Sie haben die Klasse "BubbleSort" gegeben, mit der Sie Integerzahlen 
+sortieren können. 
+
+Erweitern Sie das Beispiel, damit Sie wahlweise aufsteigend (ascending)
+und abfallend (descenting) sortieren können.
+Die Auswahl soll über den Parameter einer Factory Method erfolgen.
+
+1. Definieren Sie ein Interface mit dem Namen "Sorter".
+
+2. Implementieren Sie die beiden Klassen "BubbleSortAscendingStrategy" 
+	und "BubbleSortDescendingStrategy".
+
+3. Implementieren Sie die Klasse "SorterFactoryStrategyImpl".
+
+Überprüfen Sie ihre Implementierung mit der Klasse "BubbleSortStrategyTest".
