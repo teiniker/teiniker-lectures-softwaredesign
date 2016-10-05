@@ -1,0 +1,9 @@
+Exercise: UML Class Diagram 
+---------------------------------------------------------------------
+
+Implementieren Sie das gegebene Class Diagram bis die gegebenen 
+Testfälle durchlaufen.
+
+Siehe "OrderTest".
+	
+	

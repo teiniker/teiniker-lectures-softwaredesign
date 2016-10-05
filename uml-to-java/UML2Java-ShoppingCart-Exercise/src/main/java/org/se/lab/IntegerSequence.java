@@ -11,7 +11,7 @@ public class IntegerSequence
 	/*
 	 * Attributes
 	 */
-	private static int value = 1; // default value
+	private static int value;
 	
 	
 	/*
