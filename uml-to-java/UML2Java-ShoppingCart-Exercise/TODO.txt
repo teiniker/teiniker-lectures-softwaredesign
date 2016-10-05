@@ -1,8 +1,14 @@
-Exercise: UML Class Diagram to Java Mapping
+Exercise: UML Class Diagram
 -----------------------------------------------------------
 
-Implementieren Sie das gegebene Class Diagram in Java.
+Analysieren Sie die gegebene Implementierung und zeichnen Sie 
+davon das Class Diagram.
 
-Überprüfen Sie Ihre Implementierung anhand der gegebenen 
-Test-Klassen.
+Beachten Sie:
+- Getter/Setter werden nicht eingezeichnet
+- Associations ersetzen die Attribute
+- Zeichnen Sie auch Dependencies ein
+
+Überprüfen Sie Ihren Entwurf mit dem Object Aid Plugin.
+http://www.objectaid.com/
 	
