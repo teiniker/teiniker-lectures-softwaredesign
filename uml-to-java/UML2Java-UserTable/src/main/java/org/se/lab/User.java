@@ -82,7 +82,10 @@ public class User
 		mails.add(mail);		// User --> Mail
 		mail.setOwner(this); 	// Mail ---> User
 	}
-	
+	public void setMails(List<Mail> mails)
+	{
+		this.mails = mails;
+	}
 	
 	/*
 	 * Object methods
