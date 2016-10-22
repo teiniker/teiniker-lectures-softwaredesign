@@ -5,9 +5,13 @@ public class EMail
     /*
      * Constructor
      */
-    public EMail(String address)
+    public EMail(long id, String address, User user)
     {
         setAddress(address);
+        setId(id);
+        setUser(user);
+     // Add this EMail object to the user object.
+        user.getMails().add(this);	
     }
     
     
@@ -26,6 +30,7 @@ public class EMail
         this.id = id;
     }
 
+    
     /*
      * Property: address:String
      */
@@ -44,15 +49,30 @@ public class EMail
     }
 
     
+    /*
+     * Association: --[1]-> User
+     */
+    private User user;
+    public User getUser()
+    {
+    	return user;
+    }    
+    public void setUser(User user)
+    {
+    	if(user == null)
+    		throw new IllegalArgumentException("Invalid parameter user!");
+    	this.user = user;
+    }
     
+        
     /*
      * Object methods
      */
-    
-    @Override
+
+	@Override
     public String toString()
     {
-        return getAddress();
+        return getId() + ", " + getAddress();
     }
     
     @Override
