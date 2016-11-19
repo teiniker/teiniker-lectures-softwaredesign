@@ -1,16 +1,10 @@
-package org.se.lab.test;
+package org.se.lab;
 
 import java.util.Set;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.se.lab.Book;
-import org.se.lab.Service;
-import org.se.lab.ServiceFactory;
-import org.se.lab.ServiceFactoryImpl;
-
-
 
 public class ServiceTest
 {
@@ -19,8 +13,7 @@ public class ServiceTest
 	@Before
 	public void setup()
 	{
-		ServiceFactory factory = new ServiceFactoryImpl();		
-		service = factory.createService();
+		service = new ValidationProxy(new ServiceImpl());
 	}
 
 	

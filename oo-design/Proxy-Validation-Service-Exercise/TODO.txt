@@ -1,0 +1,11 @@
+Exercise: Factory Method
+-------------------------------------------------------------------------------
+
+Definieren Sie ein Interface mit dem Namen "ServiceFactory" welches die folgende
+Factory Methode enthält:
+	Service createService();
+	
+Implementieren Sie dieses Interface in der Klasse "ServiceFactoryImpl".
+Achten Sie darauf, dass die Factory Methode das Proxy Objekt mit erzeugt.
+
+Überprüfen Sie Ihre Implementierung mit der Klasse "ServiceFactoryTest".	 
