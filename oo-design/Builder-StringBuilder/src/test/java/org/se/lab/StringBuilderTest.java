@@ -19,7 +19,7 @@ public class StringBuilderTest
 	{
 		StringBuilder builder = new StringBuilder();
 		
-		String s = builder.append("Hello ").append("world").append("!").toString();
+		String s = builder.append("Hello ").append("world").append('!').toString();
 		
 		Assert.assertEquals("Hello world!", s);
 	}
