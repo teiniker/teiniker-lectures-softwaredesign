@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 
-class PersonTableImpl
+class PersonTableImpl  // package private
     implements PersonTable
 {
 	/*
