@@ -9,9 +9,6 @@ Factory Method definiert:
 Zusätzlich soll eine Konstante "INSTANCE" definiert werden, welche
 auf eine Instanz der Klasse "TableFactoryImpl" referenziert. 	 
 
-
-Implementierten Sie dieses Interface in der Klasse "TableFactoryImpl".
-
 	
 Verwenden Sie die Klasse "PersonTableTest" um Ihre Implementierung zu
 überprüfen.
