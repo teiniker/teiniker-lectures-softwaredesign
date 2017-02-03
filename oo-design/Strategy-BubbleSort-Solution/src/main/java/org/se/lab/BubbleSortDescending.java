@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public class BubbleSort
+public class BubbleSortDescending
 	implements Sorter
 {
 	public int[] sort(int... data)
@@ -11,7 +11,7 @@ public class BubbleSort
 		{
 			for (int j = (len - 1); j >= (i + 1); j--)
 			{
-				if (data[j] < data[j - 1])
+				if (data[j] > data[j - 1])
 				{
 					tmp = data[j];
 					data[j] = data[j - 1];
