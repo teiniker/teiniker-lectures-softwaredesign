@@ -4,32 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class User
-    implements Comparable<User>
+    extends Entity
+
 {
     /*
      * Constrcutor
      */
     public User(long id, String username, String password)
     {
-        setId(id);
+        super(id);
         setUsername(username);
         setPassword(password);
     }
-    
-        
-    /*
-     * Property: id:long
-     */
-    private long id;
-    public long getId()
-    {
-        return id;
-    }
-    public void setId(long id)
-    {
-        this.id = id;
-    }
-
 
     /*
      * Property: username:String
@@ -86,43 +72,7 @@ public class User
     @Override
     public String toString()
     {
-        return getId() + "," + getUsername() + "," + getPassword();
-    }
-    
-    @Override
-    public int hashCode()
-    {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + (int) (id ^ (id >>> 32));
-        return result;
+        return getId() + "," + getUsername();
     }
 
-    @Override
-    public boolean equals(Object obj)
-    {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        User other = (User) obj;
-        if (id != other.id)
-            return false;
-        return true;
-    }
-
-    
-    
-    @Override
-    public int compareTo(User u)
-    {
-        if(id == u.id)            
-            return 0;
-        else if(id < u.id)
-            return -1;
-        else
-            return 1;
-    }
 }
