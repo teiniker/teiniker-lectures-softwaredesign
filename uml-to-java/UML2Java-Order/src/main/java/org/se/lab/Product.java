@@ -1,14 +1,14 @@
 package org.se.lab;
 
 public class Product
-	extends Entity
+	extends Entity // is a Entity
 {
 	/*
 	 * Constructor
 	 */
 	public Product(long id, String description, long price)
 	{
-		setId(id);
+		super(id);
 		setDescription(description);
 		setPrice(price);
 	}
