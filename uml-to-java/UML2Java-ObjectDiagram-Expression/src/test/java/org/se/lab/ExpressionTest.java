@@ -11,7 +11,18 @@ public class ExpressionTest
 	@Before
 	public void setup()
 	{
-		// TODO
+		Operation e1 = new OperationAdd();
+		e1.addExpression(new Number(3));
+		e1.addExpression(new Number(4));
+
+		Operation e2 = new OperationMul();
+		e2.addExpression(new Number(2));
+		e2.addExpression(e1);
+
+		expr = new OperationAdd();
+		expr.addExpression(new Number(1));
+		expr.addExpression(e2);
+		expr.addExpression(new Number(5));
 	}
 
 	
