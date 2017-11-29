@@ -1,0 +1,28 @@
+Exercise: Builder Pattern
+---------------------------------------------------------------------
+
+Es soll ein Builder für URL Strings implementiert werden.
+
+
+1. Builder Klasse
+---------------------------------------------------------------------
+Erweitern Sie die Klasse "UrlBuilder" um die folgenden Methoden, welche
+das konfigurieren von URL Strings ermöglichen:
+
+	http()
+	https()
+	ftp()
+	port(Integer port)
+	host(String host)
+	application(String application)
+	parameter(String paramName, String paramValue)
+
+Jede Methode speichert Konfigurationsdaten in der Builder-Instanz.	
+
+
+2. build() Operation
+---------------------------------------------------------------------
+Implementieren Sie die Methode "build()", welche aus den gespeicherten
+Konfigurationsdaten einen URL String generiert.
+
+Überprüfen Sie Ihre Implementierungen mit der Klasse "UrlBuilderTest" 
