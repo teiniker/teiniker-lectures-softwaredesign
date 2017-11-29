@@ -11,11 +11,11 @@ public class ExpressionTest
 	@Before
 	public void setup()
 	{
-		Operation e1 = new OperationAdd();
+		Expression e1 = new OperationAdd();
 		e1.addExpression(new Number(3));
 		e1.addExpression(new Number(4));
 
-		Operation e2 = new OperationMul();
+		Expression e2 = new OperationMul();
 		e2.addExpression(new Number(2));
 		e2.addExpression(e1);
 
