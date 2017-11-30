@@ -15,6 +15,10 @@ public interface PersonFactory
         return p;
     }
 
+    
+    /*
+     * Minimal implementation of a Singleton
+     */
     PersonFactory INSTANCE  = new PersonFactoryImpl();
 
     /*
