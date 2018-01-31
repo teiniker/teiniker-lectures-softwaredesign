@@ -8,7 +8,7 @@ public class Product
 	 */
 	public Product(long id, String description, long price)
 	{
-		super(id);
+		setId(id);
 		setDescription(description);
 		setPrice(price);
 	}

@@ -8,7 +8,7 @@ public class OrderLine
 	 */
 	public OrderLine(long id, int quantity, Product product)
 	{
-		super(id);
+		setId(id);
 		setQuantity(quantity);
 		setProduct(product);
 	}
