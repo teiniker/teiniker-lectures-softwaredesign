@@ -1,4 +1,4 @@
-TODO: Strategy Pattern - Bubble Sort
+Exercise: Strategy Pattern - Bubble Sort
 ---------------------------------------------------------------------
 
 Sie haben die Klasse "BubbleSort" gegeben, mit der Sie Integerzahlen 
