@@ -17,6 +17,6 @@ public class DirectoryTest
 		teini.addNode(new File("todo.txt", 2048));
 		Node tomcat = new Directory("tomcat");
 		home.addNode(tomcat);
-		tomcat.addNode(new File(".bashrc", 512));		
+		tomcat.addNode(new File(".bashrc", 512));
 	}
 }

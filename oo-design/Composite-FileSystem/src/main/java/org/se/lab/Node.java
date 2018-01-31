@@ -2,14 +2,14 @@ package org.se.lab;
 
 import java.util.List;
 
-public abstract class Node
+public interface Node
 {
-	public void addNode(Node node)
+	default void addNode(Node node)
 	{
 		throw new UnsupportedOperationException();
 	}
 	
-	public List<Node> getNodes()
+	default List<Node> getNodes()
 	{
 		throw new UnsupportedOperationException();
 	}

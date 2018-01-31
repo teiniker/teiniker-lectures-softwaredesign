@@ -1,7 +1,7 @@
 package org.se.lab;
 
 public class File 
-	extends Node
+	implements Node
 {
 	/*
 	 * Constructor

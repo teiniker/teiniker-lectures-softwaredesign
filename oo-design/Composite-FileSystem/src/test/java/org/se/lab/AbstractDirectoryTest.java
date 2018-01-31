@@ -59,6 +59,6 @@ public abstract class AbstractDirectoryTest
 	@Test(expected=UnsupportedOperationException.class)
 	public void testReadOnlyList()
 	{
-		root.getNodes().add(new File("virus", 666));
+		root.getNodes().get(0).getNodes().get(0).getNodes().get(0).getNodes().add(new File("virus", 666));
 	}
 }

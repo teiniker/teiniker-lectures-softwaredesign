@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Directory 
-	extends Node
+	implements Node
 {
 	/*
 	 * Constructor
