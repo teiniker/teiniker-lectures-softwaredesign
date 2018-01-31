@@ -1,4 +1,4 @@
-TODO: Observer - Bean Validation
+Exercise: Observer - Bean Validation
 --------------------------------------------------------------------------
 
 1. Implementieren Sie die Klasse "Subject" die als Basisklasse von
