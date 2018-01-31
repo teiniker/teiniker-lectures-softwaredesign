@@ -8,9 +8,11 @@ package org.se.lab;
 public class StockMarket
     extends Subject
 {
-    public StockMarket()
+    public StockMarket(int dax, int dow)
     {
     	System.out.println("StockMarket().StockMarket()");
+    	this.dax = dax;
+    	this.dow = dow;
     }
     
     

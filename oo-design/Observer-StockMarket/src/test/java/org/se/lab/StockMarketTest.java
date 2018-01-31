@@ -10,11 +10,11 @@ public class StockMarketTest
     public void testObserver()
     {
         // Set up the object structure
-        StockMarket market = new StockMarket();        
+        StockMarket market = new StockMarket(10000, 20000);
         market.attachObserver(new DaxObserver(market));
         market.attachObserver(new DowObserver(market));
         market.attachObserver(new DowObserver(market));
-        
+
         // Change the ConcreteSubject's state
         market.setDax(9166);
         market.setDow(17354);
