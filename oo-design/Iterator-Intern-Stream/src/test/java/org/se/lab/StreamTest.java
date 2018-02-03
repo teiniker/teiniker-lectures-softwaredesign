@@ -42,6 +42,43 @@ public class StreamTest
         Assert.assertEquals("[eins, zwei, drei, vier]", l.toString());
     }
 
+
+    @Test
+    public void testCount()
+    {
+        long count = list.stream().count();
+
+        Assert.assertEquals(4, count);
+    }
+
+
+    @Test
+    public void testSorted()
+    {
+        List<String> l = list.stream().sorted().collect(Collectors.toList());
+
+        Assert.assertEquals("[Drei, Eins, Vier, Zwei]", l.toString());
+    }
+
+
+    @Test
+    public void testLimit()
+    {
+        List<String> l = list.stream().limit(2).collect(Collectors.toList());
+
+        Assert.assertEquals("[Eins, Zwei]", l.toString());
+    }
+
+
+    @Test
+    public void testFilter()
+    {
+        list = Arrays.asList("1", "Zwei", "3", "Vier");
+        long count = list.stream().filter((s) -> s.length() > 1).count();
+
+        Assert.assertEquals(2, count);
+    }
+
     @Test
     public void testMapUsingParallelStream()
     {
