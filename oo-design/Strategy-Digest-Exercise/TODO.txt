@@ -11,7 +11,7 @@ Beispiel:
 Man unterscheidet verschiedene Digest Algorithmen, zB: MD5, SHA-256 
 	 
 	 
-1. HashStrategy [7 Punkte]
+1. HashStrategy
 ---------------------------------------------------------------------
 In der gegebenen Klasse "HashUtils" befinden sich drei statische 
 Methoden zur Berechnung von Hash-Values:
@@ -29,7 +29,7 @@ Tipp: Verwenden Sie die IllegalStateException um die Checked Exceptions
 zu kapseln.  	
 
 
-2. Factory Method [3 Punkte]
+2. Factory Method
 ---------------------------------------------------------------------
 Implementieren Sie die im Interface "Factory" definierte Factory Method
 
@@ -38,30 +38,3 @@ Implementieren Sie die im Interface "Factory" definierte Factory Method
 mit der Sie die jeweilige Hash-Strategy instantiieren können.
 
 Überprüfen Sie Ihre Implementierung mit der Klasse "HashStrategyFactoryTest". 
- 
-
-
-
-Allgemeines
----------------------------------------------------------------------
-
-1. Project Name
-	Nennen Sie das Projekt (und das abgegebene ZIP File) so um, dass 
-	statt "MyName" ihr Name verwendet wird. Beachten Sie, dass Projekten 
-	die nicht der Namenskonvention entsprechen 50% der Punkte abgezogen
-	werden!
-
-2. Manuelles Review
-	Bei der Notenvergabe wird für jede Lösung ein manuelles Code-Review 
-	durchgeführt. Die automatischen Tests sollen den Lösungsweg aufzeigen
-	und in der Umsetzung Feedback geben. Funktionale Tests können aber nicht
-	sicherstellen, dass die Implementierungs- und Design-Strukturen eingehalten
-	wurden. Es ist daher auch möglich, trotz laufender Tests Punkteabzüge zu
-	bekommen. Die Punkteabzüge können in einer Einsichtnahme besprochen werden.
-	
-3. Compiler Errors
-	Implementierungen die nicht kompilieren, werden nicht gewertet. 
-	Ausgenommen sind Code-Teile die bereits im Projekt vorhanden sind 
-	(z.B.: Tests kompilieren nicht, weil die zu testenden Klassen nicht 
-	implementiert wurden). 		
-	 
