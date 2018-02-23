@@ -23,9 +23,7 @@ Methoden zur Berechnung von Hash-Values:
 Implementieren Sie ein Strategy Pattern, basierend auf dem Interface
 "HashStrategy", welches diese drei Hash-Algorithmen bereitstellt.
 
-Testen Sie Ihre Implementierungen mit der Klasse "HashStrategyTest".
-
-Tipp: Verwenden Sie die IllegalStateException um die Checked Exceptions
+Tipp: Verwenden Sie die "IllegalStateException" um die Checked Exceptions
 zu kapseln.  	
 
 
