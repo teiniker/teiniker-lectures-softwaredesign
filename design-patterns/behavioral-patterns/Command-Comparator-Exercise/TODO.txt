@@ -1,0 +1,21 @@
+TODO: Command - Bubble Sort
+---------------------------------------------------------------------
+
+Sie haben die Klasse "BubbleSort" gegeben, welche Integerzahlen 
+sortieren kann. 
+
+Erweitern Sie das Beispiel, damit Sie wahlweise aufsteigend (ascending)
+und abfallend (descending) sortieren können.
+
+Die Auswahl soll über einen java.util.Comparator<T> Parameter der 
+Methode sort() erfolgen.
+
+1. Erweitern Sie die Methode sort(), damit diese ein Comparator<T>
+	Objekt als Parameter akzeptiert und die Sortierung aufgrund
+	dieses Comparator<T> Objekts durchführt.
+
+2. Schreiben Sie zwei Comparator<T> Klassen mit den Namen
+	"AscendingComperator" und "DescendingComperator" welche für eine
+	aufsteigende oder abfallende Sortierreihenfolge sorgen.   
+
+Überprüfen Sie ihre Implementierung mit der Klasse "BubbleSortComparatorTest".
