@@ -28,6 +28,6 @@ public class UserTest
     {        
         String s = bart.toString();
         
-        Assert.assertEquals("3,bart,****", s);
+        Assert.assertEquals("3,bart", s);
     }
 }
