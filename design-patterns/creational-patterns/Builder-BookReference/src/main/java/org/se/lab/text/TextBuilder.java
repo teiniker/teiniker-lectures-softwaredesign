@@ -28,8 +28,8 @@ public class TextBuilder
     }
 
     
-    public String getResult()
+    public TextBookReference getResult()
     {
-        return reference.toText();
+        return reference;
     }
 }

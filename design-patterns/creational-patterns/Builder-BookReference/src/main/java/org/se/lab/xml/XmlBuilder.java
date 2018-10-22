@@ -28,8 +28,8 @@ public class XmlBuilder
     }
 
     
-    public String getResult()
+    public XmlBookReference getResult()
     {
-        return document.toXml();
+        return document;
     }
 }
