@@ -4,7 +4,7 @@ TODO: Singleton Pattern - Registry
 Schreiben Sie eine Klasse "Registry", welche das Singleton Pattern
 implementiert.
 
-Als Zusätzliche Funktionalität soll diese Klasse (im Konstruktor)
+Als zusätzliche Funktionalität soll diese Klasse (im Konstruktor)
 das "jdbc.properties" File lesen, und die gespeicherten Informationen
 durch die folgenden Methoden bereitstellen:
 
