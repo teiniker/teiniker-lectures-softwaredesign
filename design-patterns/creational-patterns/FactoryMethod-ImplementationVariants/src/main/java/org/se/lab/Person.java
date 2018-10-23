@@ -1,8 +1,8 @@
-package org.se.lab.example1;
+package org.se.lab;
 
 public class Person
 {
-    protected Person()
+    public Person()
     {
     }
     
