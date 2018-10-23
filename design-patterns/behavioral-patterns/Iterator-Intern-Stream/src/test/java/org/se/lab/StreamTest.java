@@ -29,17 +29,17 @@ public class StreamTest
     @Test
     public void testMap()
     {
-        List<String> l = list.stream().map((s) -> s.toLowerCase()).collect(Collectors.toList());
+        List<String> result = list.stream().map((s) -> s.toLowerCase()).collect(Collectors.toList());
 
-        Assert.assertEquals("[eins, zwei, drei, vier]", l.toString());
+        Assert.assertEquals("[eins, zwei, drei, vier]", result.toString());
     }
 
     @Test
     public void testMapUsingMethodReference()
     {
-        List<String> l = list.stream().map(String::toLowerCase).collect(Collectors.toList());
+        List<String> result = list.stream().map(String::toLowerCase).collect(Collectors.toList());
 
-        Assert.assertEquals("[eins, zwei, drei, vier]", l.toString());
+        Assert.assertEquals("[eins, zwei, drei, vier]", result.toString());
     }
 
 
@@ -55,18 +55,18 @@ public class StreamTest
     @Test
     public void testSorted()
     {
-        List<String> l = list.stream().sorted().collect(Collectors.toList());
+        List<String> result = list.stream().sorted().collect(Collectors.toList());
 
-        Assert.assertEquals("[Drei, Eins, Vier, Zwei]", l.toString());
+        Assert.assertEquals("[Drei, Eins, Vier, Zwei]", result.toString());
     }
 
 
     @Test
     public void testLimit()
     {
-        List<String> l = list.stream().limit(2).collect(Collectors.toList());
+        List<String> result = list.stream().limit(2).collect(Collectors.toList());
 
-        Assert.assertEquals("[Eins, Zwei]", l.toString());
+        Assert.assertEquals("[Eins, Zwei]", result.toString());
     }
 
 

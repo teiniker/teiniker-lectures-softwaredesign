@@ -1,5 +1,7 @@
 package org.se.lab;
 
+import com.sun.nio.sctp.IllegalReceiveException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -48,7 +50,7 @@ public class Branch extends Node
 	public void addNode(Node node)
 	{
 		if(node == null)
-			throw new NullPointerException();
+			throw new IllegalArgumentException();
 		nodes.add(node);
 	}	
 	@Override

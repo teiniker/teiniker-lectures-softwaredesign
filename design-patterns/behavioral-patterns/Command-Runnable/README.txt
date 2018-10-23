@@ -1,9 +1,6 @@
 How to execute this example?
 -------------------------------------------------------------------------------
 
-$ pwd
-/home/student/workspace-2015ss-swd13-DesignPatterns/Command-Runnable
-
 $ java -cp target/classes org.se.lab.Main
 main() - begin
 run() - begin: 7

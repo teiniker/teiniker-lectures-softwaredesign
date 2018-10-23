@@ -47,5 +47,13 @@ public class ListIteratorTest
         List<String> result = ListIterator.apply(list, (s) -> s.toLowerCase());
         
         Assert.assertEquals("[eins, zwei, drei, vier]", result.toString());
-    }    
+    }
+
+    @Test
+    public void testForEachAndLambda()
+    {
+//        list.forEach((s) -> System.out.println(s));
+        list.forEach(System.out::println);
+    }
+
 }
