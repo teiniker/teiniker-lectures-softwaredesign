@@ -5,38 +5,42 @@ import java.util.List;
 
 public class User
     extends Entity
-
 {
     /*
-     * Constrcutor
+     * Constructor:
      */
     public User(long id, String username, String password)
     {
-        super(id);
+        setId(id);
         setUsername(username);
         setPassword(password);
     }
 
+
     /*
-     * Property: username:String
+     * Property: username : String
      */
     private String username;
+
     public String getUsername()
     {
         return username;
     }
+
     public void setUsername(String username)
     {
         if(username == null)
-            throw new IllegalArgumentException("Invalid username!");
+            throw new IllegalArgumentException("username is null!");
+
         this.username = username;
     }
 
 
-    /*    
-     * Property: password:String
+    /*
+     * Property: password : String
      */
     private String password;
+
     public String getPassword()
     {
         return password;
@@ -45,34 +49,41 @@ public class User
     public void setPassword(String password)
     {
         if(password == null)
-            throw new IllegalArgumentException("Invalid password!");
+            throw new IllegalArgumentException("password is null!");
+
         this.password = password;
     }
 
+
     /*
-     * Association: ---[*]-> EMail
+     * Association: User ---[*]-> EMail
      */
-    private List<EMail> mails = new ArrayList<>();    
+    private List<EMail> mails = new ArrayList<>();
+
     public List<EMail> getMails()
     {
         return mails;
     }
-    public void setMails(List<EMail> mails)
+
+    public void setMail(EMail mail)
     {
-        if(mails == null)
-            throw new IllegalArgumentException("Invalid parameter mails!");
-        this.mails = mails;
+        if(mail == null)
+            throw new IllegalArgumentException("mail is null!");
+
+        mails.add(mail);
     }
-    
-    
+
+
     /*
      * Object methods
      */
-    
+
     @Override
     public String toString()
     {
-        return getId() + "," + getUsername();
+        return "User{" +
+                "id=" + getId() +
+                ", username='" + username + '\'' +
+                '}';
     }
-
 }

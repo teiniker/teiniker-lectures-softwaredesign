@@ -17,6 +17,11 @@ class DigestServiceImpl  // package private
         this.encoder = encoder;
     }
 
+
+    /*
+     * API Operations
+     */
+
     public String toHashString(String data)
     {
         // Input validation

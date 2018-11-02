@@ -1,16 +1,7 @@
 package org.se.lab;
 
 public abstract class Entity
-        implements Comparable<Entity>
 {
-    /*
-     * Constructor
-     */
-    public Entity(long id)
-    {
-        setId(id);
-    }
-
     /*
      * Property: id:long
      */
@@ -21,18 +12,28 @@ public abstract class Entity
     }
     public void setId(long id)
     {
+        // input validation
+        if(id < 0)
+            throw new IllegalArgumentException("Invalid id: " + id);
+
         this.id = id;
     }
 
+
     @Override
-    public int compareTo(Entity u)
+    public boolean equals(Object o)
     {
-        if(id == u.id)
-            return 0;
-        else if(id < u.id)
-            return -1;
-        else
-            return 1;
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Entity entity = (Entity) o;
+
+        return id == entity.id;
     }
 
+    @Override
+    public int hashCode()
+    {
+        return (int) (id ^ (id >>> 32));
+    }
 }

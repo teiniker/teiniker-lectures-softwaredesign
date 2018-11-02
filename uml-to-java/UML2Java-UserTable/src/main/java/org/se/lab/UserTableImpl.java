@@ -16,7 +16,8 @@ public class UserTableImpl
 	/*
 	 * Operations
 	 */
-	
+
+	@Override
 	public void insertUser(User user)
 	{
 		if(user == null)
@@ -26,7 +27,8 @@ public class UserTableImpl
 		users.add(user);
 	}
 
-	
+
+    @Override
 	public User findById(int id)
 	{
 		if(id < 0)
@@ -43,8 +45,8 @@ public class UserTableImpl
 		}
 		return result;
 	}
-	
-	
+
+    @Override
 	public List<User> findAll()
 	{
 		return users;
