@@ -1,13 +1,13 @@
 package org.se.lab;
 
-public class Item 
-	extends XMLElement 
+public class XmlText
+	extends XmlNode
 {
 
 	/* 
 	 * Constructor 
 	 */	
-	public Item(String text) 
+	public XmlText(String text)
 	{
 		setText(text);
 	}
@@ -24,7 +24,7 @@ public class Item
 	public final void setText(final String text) 
 	{
 		if(text == null)
-			throw new NullPointerException("text");
+			throw new IllegalArgumentException("text is null!");
 		this.text = text;
 	}
 	
@@ -33,9 +33,8 @@ public class Item
 	 * Convert the text property into a proper XML element.
 	 * e.g. <item>Some Text</item>
 	 */
-	public String toXML(final int indent)
+	public String toXML()
 	{
-		return getIndentAsString(indent) 
-				+ "<item>" + getText() + "</item>";
+		return getText();
 	}
 }
