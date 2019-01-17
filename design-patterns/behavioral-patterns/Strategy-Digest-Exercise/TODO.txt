@@ -1,0 +1,38 @@
+Exercise: Strategy Pattern
+---------------------------------------------------------------------
+
+Ein Hash-Algorithmus (Message Digest) wandelt Input-Daten in ein Byte
+Array mit fixer Länge um. Dieser Fingerprint ist eindeutig für die 
+Input-Daten, kann aber nicht zurückgewandelt werden.
+
+Beispiel: 
+	 "mypassword" => "91dfd9ddb4198affc5c194cd8ce6d338fde470e2"
+	 
+Man unterscheidet verschiedene Digest Algorithmen, zB: MD5, SHA-256 
+	 
+	 
+1. HashStrategy
+---------------------------------------------------------------------
+In der gegebenen Klasse "HashUtils" befinden sich drei statische 
+Methoden zur Berechnung von Hash-Values:
+
+	public static byte[] toSHA1(String message)
+ 	public static byte[] toSHA256(byte[] bytes)
+ 	public static String toSHA512(String message)
+ 	
+Implementieren Sie ein Strategy Pattern, basierend auf dem Interface
+"HashStrategy", welches diese drei Hash-Algorithmen bereitstellt.
+
+Tipp: Verwenden Sie die "IllegalStateException" um die Checked Exceptions
+zu kapseln.  	
+
+
+2. Factory Method
+---------------------------------------------------------------------
+Implementieren Sie die im Interface "Factory" definierte Factory Method
+
+	HashStrategy createHashAlgorithm(DigestType type);
+
+mit der Sie die jeweilige Hash-Strategy instantiieren können.
+
+Überprüfen Sie Ihre Implementierung mit der Klasse "HashStrategyFactoryTest". 
