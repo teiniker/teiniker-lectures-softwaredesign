@@ -15,6 +15,7 @@ import org.se.lab.PersonTable;
 public class PersonTableTest
 {
 	private TableFactory factory;
+
 	@Before
 	public void setup()
 	{
