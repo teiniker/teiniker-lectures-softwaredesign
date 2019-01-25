@@ -23,7 +23,8 @@ public class StreamTest
     @Test
     public void testForEach()
     {
-        list.stream().forEach((s) -> System.out.println(s));
+        // list.stream().forEach((s) -> System.out.println(s));
+        list.stream().forEach(System.out::println);
     }
 
     @Test
