@@ -52,8 +52,8 @@ public class ListIteratorTest
     @Test
     public void testForEachAndLambda()
     {
-//        list.forEach((s) -> System.out.println(s));
-        list.forEach(System.out::println);
+        list.forEach((s) -> System.out.println(s));
+//        list.forEach(System.out::println);
     }
 
 }
