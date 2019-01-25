@@ -29,7 +29,7 @@ public class DigestServiceTest
     }
 
     @Test
-    public void testBytesToHashString() throws DecoderException
+    public void testBytesToHashString()
     {
         byte[] bytes = Hex.decodeHex("ffeeddccbbaa99887766554433221100".toCharArray());
 
