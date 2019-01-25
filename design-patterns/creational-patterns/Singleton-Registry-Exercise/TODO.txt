@@ -1,4 +1,4 @@
-TODO: Singleton Pattern - Registry
+Exercise: Singleton Pattern - Registry
 ---------------------------------------------------------------------
 
 Schreiben Sie eine Klasse "Registry", welche das Singleton Pattern
