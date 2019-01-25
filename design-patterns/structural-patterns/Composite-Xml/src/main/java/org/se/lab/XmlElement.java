@@ -38,7 +38,7 @@ public class XmlElement
     private List<XmlNode> nestedElements = new ArrayList<XmlNode>();
     public List<XmlNode> getNestedElements()
     {
-        return Collections.unmodifiableList(nestedElements);
+        return nestedElements;
     }
 	public void addNestedElement(final XmlNode element)
 	{

@@ -29,10 +29,6 @@ public class XmlText
 	}
 	
 	
-	/**
-	 * Convert the text property into a proper XML element.
-	 * e.g. <item>Some Text</item>
-	 */
 	public String toXML()
 	{
 		return getText();
