@@ -1,0 +1,25 @@
+Exercise: Adapter Pattern - ArticleDAO
+---------------------------------------------------------------------
+
+Implementieren Sie einen Object-Adapter.
+
+1. Target Interface
+---------------------------------------------------------------------
+Schreiben Sie ein Interface mit dem Namen "ArticleDAO", welches folgende
+Methoden definiert:
+
+	void insert(Article article);
+
+	Article findById(int id);
+						
+Beachten Sie, dass auch die Klasse Article zu implementieren ist.						
+
+
+2. Object Adapter
+---------------------------------------------------------------------
+Implementieren Sie einen Adapter mit dem Namen "ArticleDAOAdapter",
+mit dem die Aufrufe auf das Target-Interfaces in Aufrufe auf die 
+bestehenden Methoden der Klasse "ArticleTable" umgewandelt werden.
+
+Testen Sie Ihre Implementierung mit der Klasse "ArticleDAOTest".
+

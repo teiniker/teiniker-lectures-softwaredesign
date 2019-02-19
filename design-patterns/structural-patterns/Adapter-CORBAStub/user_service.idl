@@ -1,0 +1,21 @@
+#ifndef __USER_SERVICE_IDL__
+#define __USER_SERVICE_IDL__
+
+module org
+{
+	module se
+	{
+		module lab
+		{
+			interface user_service
+			{
+				void add_user(in long id, in string username, in string password);
+				
+				void login_user(in string username, in string password, out boolean success);		
+			};
+		};
+	
+	};
+}; 
+
+#endif

@@ -1,0 +1,29 @@
+Exercise: Adapter Pattern 
+---------------------------------------------------------------------
+
+Sie haben eine Legacy Klasse gegeben und sollen diese über einen 
+Adapter verwenden. 
+In einem zweiten Schritt soll diese Legacy Klasse durch eine neue 
+Implementierung ersetzt werden.
+	 
+	 
+1. Adapter 
+---------------------------------------------------------------------
+Schreiben Sie für das gegebene Interface "DigestService" einen Object-
+Adapter mit dem Namen "DigestServiceAdapter", der an die Legacy Klasse
+"DigestHelper" anpasst.
+Achten Sie auch auf das Exception Handling!
+
+Testen Sie Ihre Implementierung mit der Klasse "DigestServiceAdapterTest".
+
+
+2. Neue Implementierung 
+---------------------------------------------------------------------
+Implementieren Sie das Interface "DigestService" in einer Klasse mit dem
+Namen "DigestServiceImpl" und verwenden Sie dabei statt MD5 den SHA-256
+Hash-Algorithmus.
+
+Überprüfen Sie Ihre Implementierungen mit der Klasse "DigestServiceTest".
+
+Tipp: Schauen Sie sich die Klasse "Sha256Test" an.
+

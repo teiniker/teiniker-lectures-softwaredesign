@@ -1,0 +1,7 @@
+/target/
+/.settings/
+/.classpath
+/.project
+/ClassDiagram.ucls
+
+/bin/

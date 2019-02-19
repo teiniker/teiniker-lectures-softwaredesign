@@ -1,0 +1,18 @@
+TODO: Adapter - CORBA Stub
+---------------------------------------------------------------------
+
+Viele C/C++ Legacy Systeme verwenden CORBA Middleware für die Inter-
+Process-Communication. Die remote Schnittstelle wird in einem IDL
+File definiert und von einem IDL Compiler in die jeweilige Programmier-
+Sprache übersetzt.
+
+Anhand des generierten Java Interfaces "user_service" sieht man, dass
+sowohl die Namenskonventionen als auch der Umgang mit "out" Parametern
+in Java sehr sperrig sind - siehe "user_service_test"
+
+Implementieren Sie einen Object-Adapter mit dem Namen "UserServiceAdapter"
+der das Target-Interface "UserService" implementiert und zum generierten
+"user_service" Interface (bzw. dessen Test-Double "user_service_impl")
+delegiert. Implementieren Sie auch den fehlenden Parametertyp "User".
+
+Testen Sie Ihre Implementierung mit der Klasse "UserServiceAdapterTest".

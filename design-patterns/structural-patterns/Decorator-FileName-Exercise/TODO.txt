@@ -1,0 +1,40 @@
+Exercise: Decorator Pattern 
+---------------------------------------------------------------------
+
+Sie haben ein Interface ("FileService") mit Implementierung ("FileServiceImpl")
+gegeben. Die Funktionalität dieses Services soll mit Hilfe des Decorator 
+Patterns erweitert werden, ohne die bestehende Implementierung zu ändern.
+	 
+	 
+1. Abstract Decorator
+---------------------------------------------------------------------
+Implementieren Sie die abstrakte Decorator Klasse für das Interface 
+"FileService" mit dem Namen "FileServiceDecorator".
+
+
+2. Concrete Decorator 
+---------------------------------------------------------------------
+Implementieren Sie einen konkreten Decorator "FileNameDecorator", der 
+im Konstruktor den Namen eines Directory übergeben bekommt, und dafür 
+sorgt, dass alle Files aus diesem Verzeichnis gelesen werden.
+
+Beispiel:
+	FileService service = new FileNameDecorator(new FileServiceImpl(), "src/test/resources");
+
+2016-03-17 21:51:22,944 [main] DEBUG org.se.lab.FileServiceImpl - asString(src/test/resources/Sympathy.txt)
+2016-03-17 21:51:22,951 [main] DEBUG org.se.lab.FileServiceImpl - asList(src/test/resources/Sympathy.txt)
+
+Anmerkung: Bei diesem einfachen Beispiel können sie den Pfad "src/test/resources"
+direkt in der Factory Methode hard-coded einsetzen.
+
+
+3. Factory Method
+---------------------------------------------------------------------
+Implementieren Sie das gegebene Interface "ServiceFactory" damit eine
+Kette von Objekten (FileNameDecorator->FileServiceImpl) instanziiert 
+wird.
+
+Achten Sie darauf, dass die Implementierungsklassen nur innerhalb der 
+Packages sichtbar sind.
+
+Überprüfen Sie Ihre Implementierungen mit der Klasse "FileNameDecoratorTest".
