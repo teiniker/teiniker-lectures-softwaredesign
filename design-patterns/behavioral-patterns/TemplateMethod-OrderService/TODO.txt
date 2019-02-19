@@ -1,0 +1,5 @@
+Refactorings:
+
+o) Localization '.' vs. ','
+
+o) Move Builder into a separate project. 

@@ -1,0 +1,28 @@
+Exercise: State - Elevator Control-System
+---------------------------------------------------------------------
+
+Es soll ein einfaches Steuersystem für einen Lift implementiert werden.
+
+State Diagram: ElevatorControlSystemSM.jpg
+
+Als Eingabe-Elemente (Trigger) der Steuerung werden folgende Methoden verwendet:
+	pushUpButton()
+	endSwitchTop()
+	pushDownButton()
+	endSwitchBottom()
+
+Als Actions sind folgende Methoden am Objekt "Motor" möglich:
+    stop()
+    runClockwise()
+    runCounterclockwise()
+
+Implementieren Sie die notwendigen Klassen und Interfaces, damit das gegebene
+State Diagram als State Pattern realisiert werden kann.
+    ControllerState
+    Controller
+    ControllerBottom
+    ControllerUpward
+    ControllerDownward
+    ControllerTop
+
+Testen Sie Ihre Implementierungen mit der Klasse "ElevatorControlSystemTest".

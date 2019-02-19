@@ -1,0 +1,37 @@
+Exercise: State Pattern - Parking Gate
+---------------------------------------------------------------------
+
+Gegeben ist ein State-Diagram für ein Parking Gate.
+
+State Pattern 
+---------------------------------------------------------------------
+Implementieren Sie das Sate-Diagram mit Hilfe das State Patterns.
+
+a) Implementieren Sie die Action-Methoden in der Klasse "ParkingGate"
+	protected void stop();
+	protected void raise();
+	protected void lower();
+	Verwenden Sie eine List<String> mit dem Namen "logs" um die Namen
+	der Action-Methoden zu speichern.
+	Eine zusätzliche Funktionalität ist nicht zu implementieren.
+	
+b) Implementieren Sie die Trigger-Methoden in der Klasse "ParkingGate"
+	public void carAtGate();
+	public void topSwitch();
+	public void carJustExited();
+	public void bottomSwitch();
+	Die Methoden delegieren an die entsprechenden handle*() Methoden
+	des Interfaces "ParkingGateState" weiter.
+	
+c) Implementieren Sie für jeden Zustand des State Diagrams eine Klasse
+	ParkingGateWaiting
+	ParkingGageRaising
+	ParkingGateOpen
+	ParkingGateLowering
+	In jeder Klasse werden die handle() Methoden implementiert.
+	
+	Beachten Sie, dass nur die im State-Diagram eingezeichneten Transitionen
+	implementiert werden müssen. Alle nicht eingezeichneten Transitionen 
+	führen keine Actions aus.	
+
+Überprüfen Sie Ihre Implementierung mit der Klasse "ParkingGateTest"

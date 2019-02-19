@@ -1,0 +1,13 @@
+Exercise: Visitor - AppleTree
+---------------------------------------------------------------------
+
+Schreibe Sie für die gegebene Baustruktur (Node, Branch, GreenApple,
+RedApple, Leaf) eine Klasse "VisitorAppleTreeNumberOf" welche das 
+Interface "VisitorAppleTree" implementiert.
+
+Der Visitor soll die Anzahl von Leafs, GreenApples und RedApples zählen.
+
+
+Überprüfen Sie Ihre Implementierung mit der Klasse "VisitorNumberOfTest".
+
+ 

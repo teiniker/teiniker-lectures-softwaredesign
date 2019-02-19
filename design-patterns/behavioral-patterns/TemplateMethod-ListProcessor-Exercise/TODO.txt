@@ -1,0 +1,27 @@
+Exercise: Template Method - ListProcessor
+---------------------------------------------------------------------
+
+Die Klasse "ListProcessor" soll umgebaut werden, damit es einfach
+möglich ist, neue Modifikationen für Liste-Elemente hinzuzufügen.
+
+Dazu sind die folgenden Schritte nötig:
+
+a) Machen Sie "ListProcessor" abstract.
+
+b) Bauen Sie die Methode void process(List<String> list) zu einer
+	Template Methode um:
+	- Definieren sie eine abstract Method
+		String modifyElement(String element)
+	- Definieren Sie eine hook Method
+		void printElement(String element)	
+
+c) Implementieren Sie eine Sub-Klasse "ListToUpper" welche alle List-
+	Elemente auf Großbuchstaben umwandelt.
+	Siehe "ListProcessorToUpperTest"
+	Den "ListProcessorTest" können Sie löschen.
+
+d) Implementieren Sie eine Sub-Klasse "ListToLower" welche alle List-
+	Elemente auf Kleinbuchstaben umwandelt.
+	Es soll auch die hook Method "printElement()" überschrieben werten:
+		System.out.println("> " + element);
+	Siehe "ListProcessorToLowerTest"

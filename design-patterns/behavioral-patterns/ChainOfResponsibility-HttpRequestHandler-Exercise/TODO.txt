@@ -1,0 +1,22 @@
+TODO: Chain of Responsibility - Http Request Handler
+---------------------------------------------------------------------
+
+Implementieren Sie die folgenden Klassen um eine Chain of Responsibility
+für HTTP Requests aufbauen zu können:
+
+a) AddRequestHandler
+	Dieser Handler gibt einen SQL String zurück, mit dem neue Daten in 
+	die Tabelle user eingetragen werden.
+
+b) DeleteRequestHandler
+	Dieser Handler gibt einen SQL String zurück, mit dem ein Datensatz mit 
+	einer bestimmten ID aus der Tabelle user gelöscht wird.
+
+c) UnknownActionRequestHandler
+	In diesem Fall soll lediglich eine Exception geworfen werden.
+	
+
+Tipp: Vergessen Sie nicht auf die abstrakte Basisklasse "HttpRequestHandler"!
+
+
+Überprüfen Sie ihre Implementierung mit der Klasse "HttpRequestHandlerTest".

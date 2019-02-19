@@ -1,0 +1,20 @@
+TODO: Template Method - Bubble Sort
+---------------------------------------------------------------------
+
+Sie haben die Klasse "BubbleSort" gegeben, welche Integerzahlen 
+sortieren kann. 
+
+Erweitern Sie das Beispiel, damit Sie wahlweise aufsteigend (ascending)
+und abfallend (descending) sortieren können.
+
+Die Auswahl soll über den Parameter einer Factory Method erfolgen.
+
+1. Machen Sie die Klasse "BubbleSort" abstrakt und definieren Sie
+	eine Template Method sowie eine abstrakte primitive operation
+	um die Sortierreihenfolge zu bestimmen.
+
+2. Schreiben Sie die beiden Klassen "BubbleSortAscendingStrategy" 
+	und "BubbleSortDescendingStrategy", in denen die abstrakte primitive
+	Methode implementiert werden soll.
+
+Überprüfen Sie ihre Implementierung mit der Klasse "BubbleSortStrategyTest".

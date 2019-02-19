@@ -1,0 +1,18 @@
+Exercise: Observer Pattern
+---------------------------------------------------------------------
+
+Sie sollen ein Observer Pattern (Push-Model) implementieren. 
+
+Publisher + Subscriber + Singleton
+---------------------------------------------------------------------
+a) Implementieren Sie die abstrakte Basisklasse "Publisher", welche eine
+	Liste von "Subscriber" Objekten verwalten kann.
+
+b) Implementieren Sie zwei konkrete Observer Klassen:
+	"EMailSubscriber" und "SmsSubscriber", welche die LatestNews des
+	"NewsPublisher" mit einem Prefix ("EMail: " bzw. "SMS: ") in den
+	gegebenen Logger schreiben.
+ 
+c) Erweitern Sie die gegebene Klasse "Logger" zu einem Singleton.
+
+Testen Sie Ihre Implementierungen mit der Klasse "NewsPublisherTest".

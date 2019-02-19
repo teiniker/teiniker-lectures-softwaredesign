@@ -1,0 +1,23 @@
+TODO: Template Method - Order Service
+---------------------------------------------------------------------
+
+Implementieren Sie das Interface "OrderService", indem Sie von der 
+Klasse "AbstractOrderService" ableiten.
+
+Analysieren Sie die gegebene Template Method und implementieren Sie 
+folgende Regeln für die Berechnung der Gesamtkosten:
+
+a) Der MwSt Satz beträgt 20%, außer es handelt sich um ein Buch, dann
+	werden nur 10% berechnet.
+	
+b) Ab einer Bestellmenge (quantity) von 5 werden 5% Rabatt gegeben.
+
+Testen Sie Ihre Implementierung mit der Klasse "OrderServiceImplTest".
+
+Anmerkung zur Berechnung:
+	Rabatt = Listenpreis * RabattSatzIn% / 100
+	Netto-Preis = Listenpreis - Rabatt
+	MwSt = Netto-Preis * MwSt-%Satz / 100
+	Brutto = Netto + MwSt
+
+	
