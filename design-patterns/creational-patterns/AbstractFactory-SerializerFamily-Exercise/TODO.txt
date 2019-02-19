@@ -1,0 +1,38 @@
+Exercise: Abstract Factory Pattern 
+---------------------------------------------------------------------
+
+Sie haben ein Produkt ("ArticleSerializer") mit zwei Implementierungen 
+("ArticleXmlSerializer" und "ArticleJsonSerializer") gegeben.
+
+Implementieren Sie eine Abstract Factory um diese beiden Produkt-Varianten
+zu instanziieren. 
+	 
+	 
+1. Abstract Factory 
+---------------------------------------------------------------------
+Implementieren Sie eine abstrakte Klasse "SerializerFactory" welche
+die folgende Factory Method definiert:
+
+	ArticleSerializer createArticleSerializer();
+
+Zusätzlich soll eine statische "SerializerFactory newFactory()" Methode
+geschrieben werden, die eine der beiden konkreten Factories instanziiert.
+
+Die Auswahl wird über die staische Methode "void setFormat(Format f)"
+durchgeführt, welche das gewünschte Format festlegt.
+
+Beispiel:
+        SerializerFactory.setFormat(Format.XML);
+        SerializerFactory factory = SerializerFactory.newFactory();        
+
+
+2. Concrete Factories 
+---------------------------------------------------------------------
+Implementieren Sie die beiden konkreten Factories "XmlSerializerFactory"
+und "JsonSerializerFactory" als Subklassen von "SerializerFactory".
+
+Achten Sie darauf, dass die Sichtbarkeit der Implementierungsklassen auf
+das jeweilige Package beschränkt bleibt.
+
+Überprüfen Sie Ihre Implementierungen mit der Klasse "SerializationFactoryTest".
+
