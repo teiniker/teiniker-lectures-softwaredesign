@@ -1,0 +1,16 @@
+Exercise: Refactor to Builder Pattern
+---------------------------------------------------------------------
+
+Es soll eine Klasse "XmlBuilder" geschrieben werden, die das Interface
+"DocumentBuilder" implementiert.
+
+Mit Hilfe dieses Builders soll es möglich sein die Baumstruktur 
+(Composite Pattern) eines XML Files einfach aufzubauen - siehe
+"XmlBuilderTest".
+
+Tipp: Um die XmlElement Objekte während des Aufbaus zu speichern,
+		verwenden Sie einen Stack:
+
+	private Stack<XmlElement> stack = new Stack<XmlElement>();
+	
+	

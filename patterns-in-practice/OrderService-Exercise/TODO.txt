@@ -1,0 +1,43 @@
+Exercise: Combination of Patterns - OrderService
+---------------------------------------------------------------------
+
+Sie sollen eine gegebene (legacy) Klasse durech die Verwendung von 
+Design Patterns erweitern, ohne sie jedoch zu modifizieren.
+ 
+1) Adapter Pattern
+	Implementieren Sie einen Object-Adapter, der das gegebene Interface
+	"OrderService" and die gegebene Klasse "OrderProcessor" anpasst.
+	Dabei sind sowohl die Parameter als auch das Error-Handling anzupassen.
+	Ersetzen Sie die Checked Exceptions durch eine RuntimeException mit
+	dem Namen "ServiceException". 
+	
+2) Decorator + Singleton Pattern
+	Fügen Sie eine abstrakte Decorator Klasse "OrderServiceDecorator"
+	und eine konkrete Decorator Klasse "OrderServiceLoggingDecorator"
+	hinzu. 
+	Der "OrderServiceLoggingDecorator" schreibt die Order ID und die
+	Gesamtsumme der Bestellung in einen "Logger" der als Singleton
+	implementiert ist und eine Liste von Log-Messages speichern kann.
+
+3) Visitor Pattern
+	Implementieren Sie das Visitor-Interface "OrderVisitor" durch
+ 	die Klasse "DiscountOrderVisitor".
+ 	Der "DiscountOrderVisitor" bekommt im Konstruktor den Prozent-Wert
+ 	übergeben, um den jeder Preis der Bestellung reduziert werden soll.
+
+4)	Builder Pattern
+	Um eine Bestellung leichter zusammen zu bauen, sollen zwei Builder 
+	implementiert werden - "OrderLineBuilder" und "OrderBuilder".
+
+5) Factory Method Pattern
+	Schließlich soll noch eine Factory Methode im Interface "ServiceFactory"
+ 	definiert und in der Klasse "ServiceFactoryImpl" implementiert werden.
+ 	Das Interface definiert eine Konstante "INSTANCE" über die auf eine 
+ 	Instanz der Factory zugegriffen werden kann.
+
+Kapseln Sie alle Implementierungsklassen innerhalb des Package "org.se.lab".
+
+Testen Sie Ihre Implementierungen mit der Klasse "OrderServiceImplTest".
+
+Tipp: Sie können selber Testfälle erstellen, um Zwischenschritte Ihrer 
+Implementierung zu überprüfen.

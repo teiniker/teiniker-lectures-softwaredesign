@@ -1,0 +1,46 @@
+Exercise: Behavioral Patterns Mixture (Visitor + Command + CoR)
+-------------------------------------------------------------------------------
+
+1. Visitor Pattern
+-------------------------------------------------------------------------------
+Implementieren Sie das "OrderVisitor" Interface in einer Klasse mit dem Namen
+"TotalPriceVisitor". Diese Visitor-Implementierung soll den Gesamtpreis einer
+Bestellung (Order-Object) berechnen.
+
+Überprüfen Sie Ihre Implementierung mit der Klasse "OrderVisitorTest".
+
+
+2. Command Pattern
+-------------------------------------------------------------------------------
+Ausgehend vom gegebenen "DiscountCommand" Interface, implementieren Sie die 
+folgenden konkreten Command Klassen:
+
+a) "ValueDiscount": Für einen Gesamtpreis größer als EUR 100,- bekommen Sie 10%,
+	für einen Gesamtpreis größer als EUR 500,-- bekommen Sie 15% Rabatt.
+
+b) "ShippingDiscount": Für REGULAR Shipping bekommen Sie 5% Rabatt.
+
+Beachten Sie, dass die Beträge in Cent angegeben sind.
+
+Überprüfen Sie Ihre Implementierung mit der Klasse "DiscountCommandTest".	
+
+
+3. Chain of Responsibility
+-------------------------------------------------------------------------------
+Leiten Sie vom gegebenen "ShippingHandler", die folgenden Handler Klassen ab:
+
+a) "ExpressShippingHandler" für eine EXPRESS Order wird folgende Meldung
+	in den Logger geschrieben:
+		"ExpressShippingHandler: price=" + price
+	ansonsten:
+		"forward"
+		
+b) "RegularShippingHandler" für eine REGULAR Order wird folgende Meldung
+	in den Logger geschrieben:
+		"RegularShippingHandler: price=" + price
+		
+Verwenden Sie den gegebenen "Logger" Singleton.
+
+Überprüfen Sie Ihre Implementierung mit der Klasse "ShippingHandlerTest".
+		
+					

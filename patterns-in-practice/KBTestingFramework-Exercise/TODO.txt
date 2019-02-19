@@ -1,0 +1,50 @@
+Exercise: KB Testing Framework
+---------------------------------------------------------------------
+
+Analysieren Sie das vorliegende Class Diagram - es zeigt die Struktur
+eines einfachen Testing Frameworks (vgl. JUnit 3.8.x)
+
+Implementieren Sie die fehlenden Klassen, damit die Tests durch die 
+Starten der Klasse "TestRunner" ausgeführt werden können.
+
+i) KBTestCase (Template Methode)
+	Diese Klasse implementiert die Methode "run()" welche die einzelnen
+	Phasen eines Tests ausführt: setUp(), test(), addResult(), tearDown() 
+	Achten Sie darauf, dass "tearDown()" auch im Fehlerfall ausgeführt
+	werden soll.
+	
+ii) KBTestSuite (Composite Pattern)
+	Diese Klasse hällt eine Liste von "KBTest" Objekten und implementiert
+	ebenfalls die Methode "run()".
+	In diesem Fall soll "run()"	die selbe Methode seiner Kinder aufrufen.
+
+
+
+Beispiel:
+
+KBTestSuite: MainTestSuite
+KBTestSuite: IntegerTestSuite
+KBTestCase: IntegerAddTest
+setUp()
+test()
+tearDown()
+KBTestCase: IntegerMulTest
+setUp()
+test()
+tearDown()
+KBTestSuite: StringTestSuite
+KBTestCase: StringLengthTest
+setUp()
+test()
+tearDown()
+KBTestCase: StringToUpperTest
+setUp()
+test()
+tearDown()
+---------------------------------------------
+ test IntegerAddTest passed.
+ test IntegerMulTest passed.
+ test StringLengthTest failed: Expected 5 but was 12!
+ test StringToUpperTest passed.
+---------------------------------------------
+

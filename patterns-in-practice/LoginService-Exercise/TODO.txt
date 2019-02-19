@@ -1,0 +1,55 @@
+Exercise: Login Service (Decorator + Builder)
+---------------------------------------------------------------------
+
+1. Decorator Pattern
+---------------------------------------------------------------------
+Für das Interface "LoginService" soll eine Klasse 
+"LoginServiceDecorator" implementiert werden. Weiters sind konkrete
+Decorator Klassen für folgende Zusatzfunktionalitäten zu 
+implementieren:
+
+1.1 LoggingDecorator
+---------------------------------------------------------------------
+Es sollen alle Methoden, deren Parameterwerte und Rückgabewerte
+auf der Console ausgegeben werden.
+
+1.2 EncodingDecorator
+---------------------------------------------------------------------
+Es soll der Wert des Parameters "password" in einen SHA-256 Hashvalue
+umgerechnet werden - siehe "EncodingDecorator".
+
+1.3 ValidationDecorator
+---------------------------------------------------------------------
+Es sollen die Parameter der Interface-Methoden auf gültige Werte
+überprüft werden:
+	id >= 0
+	username != null
+	password != null
+	mail != null
+	
+Siehe "ValidationDecoratorTest"
+
+
+2. Builder Pattern
+---------------------------------------------------------------------
+Implementieren Sie eine Builder Klasse "LoginServiceBuilder" mit dem
+eine Instanz eines "LoginService" erstellt werden kann. 
+Zusätzlich sollte es möglich sein, die "LoginService" Instanz um 
+diverse Decorator Klassen zu erweitern (in beliebiger Reihenfolge).
+
+Beispiel: 
+	LoginService service = new LoginServiceBuilder()
+							.withValidation()
+							.withEncoding()
+							.withLogging()
+							.toService();
+							
+Siehe "LoginServiceBuilderTest".
+
+Beachten Sie, dass hier eine vereinfachte Variante des Builder Pattens
+zu implementieren ist:
+o) Builder Interface und Concrete Builder werden zu einer Klasse 
+	"LoginServiceBuilder" zusammengelegt.
+o) Es gibt somit auch nur einen ConcreteBuilder, d.h. nur eine
+	Repräsentation des gebildeten Produkts.
+									
