@@ -7,7 +7,7 @@ design patterns:
   * Class and Package Diagram
   * Object Diagram
 
-2. [Design Patterns](https://github.com/teiniker/teiniker-lectures-softwaredesign/tree/master/oo-design)
+2. [Design Patterns](https://github.com/teiniker/teiniker-lectures-softwaredesign/tree/master/design-patterns)
   * **Creational Patterns**
     - Singleton
     - Builder
