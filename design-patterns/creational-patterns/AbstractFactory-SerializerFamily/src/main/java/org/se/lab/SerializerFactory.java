@@ -7,6 +7,7 @@ public abstract class SerializerFactory
     {
         format = f;
     }
+
     public static SerializerFactory newFactory()
     {
         switch(format)
