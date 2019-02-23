@@ -1,4 +1,4 @@
-package org.se.lab.test;
+package org.se.lab;
 
 import org.junit.Assert;
 import org.junit.Test;
