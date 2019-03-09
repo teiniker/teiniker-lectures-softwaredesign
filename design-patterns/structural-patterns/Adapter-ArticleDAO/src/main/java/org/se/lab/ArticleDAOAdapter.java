@@ -19,10 +19,8 @@ public class ArticleDAOAdapter
 			throw new IllegalArgumentException();
 		this.table = table;
 	}
-	
-	/*
-	 * 3 Punkte
-	 */	
+
+
 	@Override
 	public void insert(Article article)
 	{	
@@ -36,9 +34,6 @@ public class ArticleDAOAdapter
 		}
 	}
 
-	/*
-	 * 3 Punkte
-	 */
 	@Override
 	public Article findById(int id)
 	{

@@ -1,9 +1,5 @@
 package org.se.lab;
 
-/*
- * 3 Punkte
- */
-
 public class Article
 {
 	/*
