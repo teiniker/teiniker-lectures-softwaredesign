@@ -7,7 +7,6 @@ public abstract class ListProcessor
     /*
      * Template Method
      */
-    
     public final void process(List<String> list)
     {
         System.out.println("ListProcessor.process()");
