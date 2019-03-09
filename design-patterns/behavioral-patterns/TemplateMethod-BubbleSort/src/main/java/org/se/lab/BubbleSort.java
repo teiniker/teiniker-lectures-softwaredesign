@@ -5,7 +5,6 @@ public abstract class BubbleSort
 	/*
      * Template Method
      */
-	
 	public final int[] sort(int... data)
 	{
 		int len = data.length;
@@ -29,6 +28,5 @@ public abstract class BubbleSort
 	/*
      * Primitive Operation
      */
-	
 	protected abstract boolean compare(int a, int b);
 }
