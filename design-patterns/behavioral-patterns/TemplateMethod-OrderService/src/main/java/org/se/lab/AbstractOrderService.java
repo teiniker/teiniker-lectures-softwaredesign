@@ -1,10 +1,10 @@
 package org.se.lab;
 
 
-public abstract class AbstractOrderService
+abstract class AbstractOrderService
 	implements OrderService
 {
-	
+	// Template Method
 	@Override
 	public final long caluclateTotalCosts(Order order)
 	{

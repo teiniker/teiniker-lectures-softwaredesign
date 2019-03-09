@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public class OrderServiceImpl
+class OrderServiceImpl
 	extends AbstractOrderService
 {
 
