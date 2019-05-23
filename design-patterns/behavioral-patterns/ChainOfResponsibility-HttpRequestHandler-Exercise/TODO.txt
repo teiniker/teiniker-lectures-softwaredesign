@@ -1,4 +1,4 @@
-TODO: Chain of Responsibility - Http Request Handler
+Exercise: Chain of Responsibility - Http Request Handler
 ---------------------------------------------------------------------
 
 Implementieren Sie die folgenden Klassen um eine Chain of Responsibility
