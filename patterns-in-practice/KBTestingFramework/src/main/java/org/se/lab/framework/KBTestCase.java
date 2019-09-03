@@ -12,7 +12,7 @@ public class KBTestCase
 	}
 	
 	@Override
-	public final void run()
+	public final void run()  // Template Method
 	{
 		System.out.println("KBTestCase: " + getName());
 		setUp();
