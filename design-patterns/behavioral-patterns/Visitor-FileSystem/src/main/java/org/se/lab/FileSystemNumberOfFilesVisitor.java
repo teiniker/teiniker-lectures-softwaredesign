@@ -16,7 +16,7 @@ public class FileSystemNumberOfFilesVisitor
 	public void visit(File file)
 	{
 		// Operation
-		numberOfFiles += 1;
+		numberOfFiles++;
 
 		// Navigation
 	}
