@@ -1,0 +1,23 @@
+Exercise: UML Class Diagram (User + EMail)
+---------------------------------------------------------------------
+
+Implementieren Sie die gegebenen Class Diagramme bis die gegebenen
+Testfälle durchlaufen.
+
+a) Single Directed Assocation
+    Implementieren Sie die Klassen User und EMail, sowie eine gerichtete
+    Association von User auf EMail.
+
+b) Bidirectional Association
+    Erweitern Sie die Klassen User und EMail zu einer bidirektionalen
+    Association.
+    Tipp: Implementieren nSie zwei gerichtete Associations.
+
+c) Inheritance
+    Reduzieren Sie die Redundanz in den Klassen User und EMail, indem
+    Sie eine gemeinsame Basisklasse Entity implementieren.
+
+Testen Sie Ihre Implementierungen mit den Klassen UserTest und EMailTest.
+
+	
+	
