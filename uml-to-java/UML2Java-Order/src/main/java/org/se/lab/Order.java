@@ -11,7 +11,8 @@ public class Order
 	 */
 	public Order(long id, String name)
 	{
-		setId(id);
+		super(id);
+		//setId(id);
 		setName(name);
 	}
 	

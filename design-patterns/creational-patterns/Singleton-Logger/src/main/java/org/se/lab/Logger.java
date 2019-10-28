@@ -7,8 +7,8 @@ public class Logger
 	 * Singleton Pattern
 	 */
 	protected Logger() {}	
-	private final static Logger INSTANCE = new Logger();
-//	private final static Logger INSTANCE = new AnotherLogger();
+//	private final static Logger INSTANCE = new Logger();
+	private final static Logger INSTANCE = new AnotherLogger();
 	public static Logger getInstance()
 	{
 		return INSTANCE;

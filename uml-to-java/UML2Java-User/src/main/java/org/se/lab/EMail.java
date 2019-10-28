@@ -45,6 +45,7 @@ public class EMail
 
         this.user = user;
     }
+
     /*
      * Object methods
      */

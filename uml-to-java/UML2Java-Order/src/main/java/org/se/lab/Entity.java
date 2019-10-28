@@ -2,6 +2,11 @@ package org.se.lab;
 
 public abstract class Entity
 {
+	public Entity(long id)
+	{
+		setId(id);
+	}
+
 	/*
 	 * Property: id:long
 	 */

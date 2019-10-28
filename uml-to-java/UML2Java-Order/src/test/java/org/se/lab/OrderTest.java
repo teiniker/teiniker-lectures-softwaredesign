@@ -3,9 +3,6 @@ package org.se.lab;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.se.lab.Order;
-import org.se.lab.OrderLine;
-import org.se.lab.Product;
 
 public class OrderTest
 {

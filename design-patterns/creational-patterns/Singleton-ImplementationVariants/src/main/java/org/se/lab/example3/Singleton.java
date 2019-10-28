@@ -10,8 +10,7 @@ public class Singleton
     /*
      * Singleton pattern
      */
-    private static Map<String, Singleton> registry = 
-    			new HashMap<String, Singleton>();
+    private static Map<String, Singleton> registry = new HashMap<String, Singleton>();
     private static Singleton instance;
 
     static 

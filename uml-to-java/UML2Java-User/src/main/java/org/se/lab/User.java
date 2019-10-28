@@ -56,15 +56,30 @@ public class User
 
 
     /*
+     * Association: User ---[1]-> EMail
+     */
+/*
+    private EMail mail;
+    public EMail getMail()
+    {
+        return mail;
+    }
+    public void setMail(EMail mail)
+    {
+        if(mail == null)
+            throw new IllegalArgumentException("Invalid EMail object (null)!");
+        this.mail = mail;
+    }
+*/
+    /*
      * Association: User ---[*]-> EMail
      */
-    private List<EMail> mails = new ArrayList<>();
 
+    private List<EMail> mails = new ArrayList<>();
     public List<EMail> getMails()
     {
         return mails;
     }
-
     public void setMail(EMail mail)
     {
         if(mail == null)
