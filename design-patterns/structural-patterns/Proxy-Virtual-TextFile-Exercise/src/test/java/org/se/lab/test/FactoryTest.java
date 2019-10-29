@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.se.lab.AbstractTextFileTest;
 import org.se.lab.Factory;
 
-public class FactoryTest
+class FactoryTest // package-private
 	extends AbstractTextFileTest
 {
 	@Before
@@ -13,6 +13,6 @@ public class FactoryTest
 		// new TextFileimpl(); // not visible
 		// new VirtualTextFile(); // not visible
 		
-		file = Factory.getInstance().createTextFile("SympathyForTheDevil.txt");
+		file = Factory.INSTANCE.createTextFile("SympathyForTheDevil.txt");
 	}
 }
