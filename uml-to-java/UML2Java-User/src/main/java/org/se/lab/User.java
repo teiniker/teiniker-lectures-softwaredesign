@@ -21,12 +21,10 @@ public class User
      * Property: username : String
      */
     private String username;
-
     public String getUsername()
     {
         return username;
     }
-
     public void setUsername(String username)
     {
         if(username == null)
@@ -40,12 +38,10 @@ public class User
      * Property: password : String
      */
     private String password;
-
     public String getPassword()
     {
         return password;
     }
-
     public void setPassword(String password)
     {
         if(password == null)
@@ -56,31 +52,14 @@ public class User
 
 
     /*
-     * Association: User ---[1]-> EMail
-     */
-/*
-    private EMail mail;
-    public EMail getMail()
-    {
-        return mail;
-    }
-    public void setMail(EMail mail)
-    {
-        if(mail == null)
-            throw new IllegalArgumentException("Invalid EMail object (null)!");
-        this.mail = mail;
-    }
-*/
-    /*
      * Association: User ---[*]-> EMail
      */
-
     private List<EMail> mails = new ArrayList<>();
     public List<EMail> getMails()
     {
         return mails;
     }
-    public void setMail(EMail mail)
+    public void addMail(EMail mail)
     {
         if(mail == null)
             throw new IllegalArgumentException("mail is null!");
@@ -96,9 +75,15 @@ public class User
     @Override
     public String toString()
     {
-        return "User{" +
-                "id=" + getId() +
-                ", username='" + username + '\'' +
-                '}';
+        StringBuilder b = new StringBuilder();
+        b.append("User{")
+                .append("id=").append(getId())
+                .append(", username='").append(username).append("\'");
+        for(EMail mail : getMails())
+        {
+            b.append(mail.toString()).append(' ');
+        }
+        b.append('}');
+        return  b.toString();
     }
 }

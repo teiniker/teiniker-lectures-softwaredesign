@@ -5,19 +5,24 @@ Implementieren Sie die gegebenen Class Diagramme bis die gegebenen
 Testfälle durchlaufen.
 
 a) Single Directed Assocation
-    Implementieren Sie die Klassen User und EMail, sowie eine gerichtete
-    Association von User auf EMail.
+    Implementieren Sie die Klassen "User" und "EMail", sowie eine gerichtete
+    Association mit der Multiplizität * (0 bis viele) von User auf EMail.
+    Verwenden Sie zur Implementierung eine Liste.
+    Siehe: ClassDiagram-SingleDirectedAssociation.png
 
 b) Bidirectional Association
-    Erweitern Sie die Klassen User und EMail zu einer bidirektionalen
-    Association.
-    Tipp: Implementieren nSie zwei gerichtete Associations.
+    Erweitern Sie die Klass "EMail" um eine gerichtete Association von
+    "EMail" zu "User" mit der Multiplizität 1.
+    Es entsteht somit eine bidirektionale Association.
+    Siehe: ClassDiagram-TwoDirectedAssociations.png
+           ClassDiagram-BidirectionalAssociation.png
 
 c) Inheritance
-    Reduzieren Sie die Redundanz in den Klassen User und EMail, indem
-    Sie eine gemeinsame Basisklasse Entity implementieren.
+    Reduzieren Sie die Redundanz in den Klassen "User" und "EMail", indem
+    Sie eine gemeinsame Basisklasse "Entity" implementieren.
+    Siehe ClassDiagram-Inheritance.png
 
-Testen Sie Ihre Implementierungen mit den Klassen UserTest und EMailTest.
+Testen Sie Ihre Implementierungen mit den Klassen "UserTest" und "EMailTest".
 
 	
 	

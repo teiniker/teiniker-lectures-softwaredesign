@@ -24,8 +24,8 @@ public class UserTest
         EMail m1 = new EMail(7, "egon.teiniker@fhj.at");
         EMail m2 = new EMail(11, "egon.teiniker@gmx.at");
         User user = new User(3, "homer", "Hjg65hfFGDGF#75");
-        user.setMail(m1);
-        user.setMail(m2);
+        user.addMail(m1);
+        user.addMail(m2);
 
         // exercise
         Assert.assertEquals(7, user.getMails().get(0).getId());
@@ -44,9 +44,9 @@ public class UserTest
         EMail m1 = new EMail(7, "egon.teiniker@fhj.at");
         EMail m2 = new EMail(11, "egon.teiniker@gmx.at");
         User user = new User(3, "homer", "Hjg65hfFGDGF#75");
-        user.setMail(m1);
+        user.addMail(m1);
         m1.setUser(user);
-        user.setMail(m2);
+        user.addMail(m2);
         m2.setUser(user);
 
         // exercise
@@ -64,4 +64,21 @@ public class UserTest
         }
     }
 
+
+    @Test
+    public void testToString()
+    {
+        // setup
+        EMail m1 = new EMail(7, "egon.teiniker@fhj.at");
+        EMail m2 = new EMail(11, "egon.teiniker@gmx.at");
+        User user = new User(3, "homer", "Hjg65hfFGDGF#75");
+        user.addMail(m1);
+        m1.setUser(user);
+        user.addMail(m2);
+        m2.setUser(user);
+
+        // exercise
+        String s = user.toString();
+        System.out.println(s);
+    }
 }
