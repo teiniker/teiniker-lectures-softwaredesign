@@ -22,7 +22,7 @@ class ValidationProxy // package private
 		this.service = service;
 	}
 	
-		
+	@Override
 	public void addBook(Book book)
 	{
 		// Pre-procesing
@@ -33,7 +33,7 @@ class ValidationProxy // package private
 		service.addBook(book);
 	}
 
-	
+	@Override
 	public Set<Book> getBooks()
 	{
 		// Delegate to the implementation
