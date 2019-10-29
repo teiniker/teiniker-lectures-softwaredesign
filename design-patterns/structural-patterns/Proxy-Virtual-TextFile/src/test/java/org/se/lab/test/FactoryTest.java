@@ -13,6 +13,6 @@ public class FactoryTest
 		// new TextFileimpl(); // not visible
 		// new VirtualTextFile(); // not visible
 		
-		file = Factory.getInstance().createTextFile("SympathyForTheDevil.txt");
+		file = Factory.INSTANCE.createTextFile("SympathyForTheDevil.txt");
 	}
 }
