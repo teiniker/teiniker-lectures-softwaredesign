@@ -1,4 +1,4 @@
-TODO: Virtual Proxy - TextFile
+Exercise: Virtual Proxy - TextFile
 ---------------------------------------------------------------------
 
 Sie haben ein Interface "TextFile" und eine Implementierung "TextFileImpl"
@@ -8,26 +8,29 @@ verarbeiten - siehe "TextFileTest".
 
 1. Virtual Proxy
 ---------------------------------------------------------------------
-	Implementieren Sie einen Proxy mit dem Namen "VirtualTextFile" zum
-	gegebenen Interface "TextFile".
-	Dieser Proxy delegiert die Aufrufe an die "TextFileImpl" Klasse
-	weiter.
-	Beachten Sie, dass "TextFileImpl" vom Proxy erst dann instanziert 
-	wird, wenn die erste Methode aufgerufen wird => Virtual Proxy.
+Implementieren Sie einen Proxy mit dem Namen "VirtualTextFile" zum
+gegebenen Interface "TextFile".
+Dieser Proxy delegiert die Aufrufe an die "TextFileImpl" Klasse weiter.
+Beachten Sie, dass "TextFileImpl" vom Proxy erst dann instanziert
+wird, wenn die erste Methode aufgerufen wird => Virtual Proxy.
 	
-	Testen Sie Ihre Implementierung mit "VirtualTextFileTest".
+Testen Sie Ihre Implementierung mit "VirtualTextFileTest".
 
-	
+Wichtig: Damit der Test richtig funktioniert, nennen sie die Objekt-
+Referenz zum Implementierungs-Objekt "impl".
+
+
 2. Factory Method & Singleton
 ---------------------------------------------------------------------
-	Implementieren Sie ein Interface "FactoryMethods" mit der Methode:
+Implementieren Sie ein Interface "Factory" mit der Methode:
 	
 		TextFile createTextFile(String filename);
 		
-	Schreiben Sie eine Klasse "Factory", welche "FactoryMethods"
-	implementiert und als Singleton ausgeführt ist.
-	Die Methode "createTextFile()" liefert ein "VirtualTextFile"
-	Objekt zurück.
-	
-	Testen Sie Ihre Implementierung mit "FactoryTest". 		 
+Schreiben Sie eine Klasse "FactoryImpl", welche "Factory" implementiert.
+Die Methode "createTextFile()" liefert ein "VirtualTextFile" Objekt zurück.
+
+Fügen Sie im Interface "Factory" noch eine Konstante INSTANCE hinzu,
+die auf eine Instanz der Klasse "FactoryImpl" zeigt.
+
+Testen Sie Ihre Implementierung mit "FactoryTest".
 	
