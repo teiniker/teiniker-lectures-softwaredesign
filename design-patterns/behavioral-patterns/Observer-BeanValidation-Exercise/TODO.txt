@@ -5,8 +5,7 @@ Exercise: Observer - Bean Validation
 	"Bean" dient.
 	Dabei sind die Methoden:
 	
-		void add(Observer observer)
-	
+		void addObserver(Observer observer)
 		void notifyObservers() 
 	
 	zu implementieren.
