@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Subject
 {
-	
 	/*
 	 * Association: ---[*]-> observers:Observer
 	 */
@@ -13,7 +12,7 @@ public class Subject
 	public final void addObserver(Observer observer)
 	{
 		if(observer == null)
-			throw new NullPointerException();
+			throw new IllegalArgumentException("Invalid Observer!");
 		observers.add(observer);
 	}
 	
