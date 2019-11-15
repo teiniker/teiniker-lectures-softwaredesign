@@ -1,6 +1,21 @@
-Exercise: Factory Method
+Exercise: Proxy + Factory Method
 -------------------------------------------------------------------------------
 
+1. Proxy Pattern
+----------------
+Implementieren Sie eine Klasse "ValidationProxy", welche die folgenden Validierungen
+durchführt:
+    Book.is >= 0
+    Book.title != null
+    Book.author != null
+
+    getBooks() soll ein unmodifiable Set zurück liefern.
+
+Überprüfen Sie Ihre Implementierung mit der Klasse "ServiceTest".
+
+
+2. Factory Method
+-----------------
 Definieren Sie ein Interface mit dem Namen "ServiceFactory" welches die folgende
 Factory Methode enthält:
 	Service createService();
