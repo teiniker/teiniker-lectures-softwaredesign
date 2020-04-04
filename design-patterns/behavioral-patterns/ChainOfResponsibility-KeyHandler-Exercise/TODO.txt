@@ -1,0 +1,64 @@
+Exercise: Chain of Responsibility - KeyHandler
+---------------------------------------------------------------------
+
+Sie sollen das Chain of Responsibility Pattern anwenden, um die 
+Verarbeitungskette von Tastatureingaben zu realisieren.
+Die Verarbeitung kann auf folgenden Ebenen erfolgen:
+
+	WindowKeyHandler ---> InputKeyHandler --> DefaultKeyHandler
+	
+Ein über die Tatstatur eingegebens Zeichen wird zuerst vom 
+"WindowKeyHandler" verarbeitet (der sucht nach Kontrollzeichen,
+zB: Ctrl+C), dann wird vom "InputKeyHandler" überprüft ob das
+Zeichen dem Wertebereich des Input-Feldes entspricht (zB: [0-9]),
+ansonsten wird das Zeichen vom "DefaultKeyHandler" verarbeitet.	 
+
+Die Verarbeitung besteht in diesem einfachen Beispiel jeweils nur in 
+der Erzeugung eines Log-Eintrages:
+
+	Logger.getInstance().debug()
+	
+Der Test wertet die Liste dieser Log-Einträge aus.
+
+	
+1. KeyHandler
+---------------------------------------------------------------------
+Schreiben die die abstrakte Basisklasse "KeyHandler" die im ChoR Pattern
+die Verwaltung des jeweiligen Nachfolgers übernimmt.
+	public void handleKey(KeyEvent event)
+	
+
+2. WindowKeyHandler
+---------------------------------------------------------------------
+Leiten Sie von der abstrakten "KeyHandler" Klasse ab und schreiben Sie 
+die Klasse "WindowKeyHandler", welche nach "ControlKey" Events sucht.
+
+Wenn ein solcher Event auftritt wird der folgende Log-Eintrag erzeugt:
+	"WindowKeyHandler: " + event.toString()
+
+Ansonsten wird der Event weitergereicht und folgender Log-Eintrag 
+geschrieben:	 
+	"WindowKeyHandler: forward"
+
+
+3. InputKeyHandler
+---------------------------------------------------------------------
+Leiten Sie abermals von der abstrakten "KeyHandler" Klasse ab und 
+schreiben Sie die Klasse "InputKeyHandler", welche nach "AsciiKey"
+Events sucht. Zusätzlich muss der Value des AsciiKey zwischen '0'
+und '9' liegen (inkl. des Zeichens '0' und '9').
+
+Wenn ein solcher Event auftritt wird der folgende Log-Eintrag erzeugt:
+	"InputKeyHandler: " + event.toString()
+
+Ansonsten wird der Event weitergereicht und folgender Log-Eintrag 
+geschrieben:	 
+	"InputKeyHandler: forward"
+
+
+Überprüfen Sie Ihre Implementierug mit der Klasse "KeyHandlerTest".
+
+
+Tipp: Sie können vorübergehend das Test-Setup() verändern, um einzelne
+	Handler aus der Verarbeitungskette heraus zu nehmen, und so einen
+	Stufenweisen Test zu realisieren.
