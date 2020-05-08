@@ -23,8 +23,7 @@ public abstract class BubbleSort
 		}
 		return data;
 	}
-	
-	
+
 	/*
      * Primitive Operation
      */
