@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public class ServiceFactoryImpl // public because a client has to instantiate this class
+class ServiceFactoryImpl // public because a client has to instantiate this class
 	implements ServiceFactory
 {
 

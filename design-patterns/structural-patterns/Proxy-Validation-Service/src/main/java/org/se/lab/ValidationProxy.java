@@ -18,7 +18,7 @@ class ValidationProxy // package private
 	public ValidationProxy(Service service)
 	{
 		if(service == null)
-			throw new NullPointerException();
+			throw new IllegalArgumentException();
 		this.service = service;
 	}
 	
