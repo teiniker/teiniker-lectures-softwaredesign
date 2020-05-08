@@ -5,13 +5,15 @@ Sie sollen das Chain of Responsibility Pattern anwenden, um die
 Verarbeitungskette von Tastatureingaben zu realisieren.
 Die Verarbeitung kann auf folgenden Ebenen erfolgen:
 
-	WindowKeyHandler ---> InputKeyHandler --> DefaultKeyHandler
+	KeyEvent -> WindowKeyHandler ---> InputKeyHandler --> DefaultKeyHandler
 	
 Ein über die Tatstatur eingegebens Zeichen wird zuerst vom 
-"WindowKeyHandler" verarbeitet (der sucht nach Kontrollzeichen,
-zB: Ctrl+C), dann wird vom "InputKeyHandler" überprüft ob das
-Zeichen dem Wertebereich des Input-Feldes entspricht (zB: [0-9]),
-ansonsten wird das Zeichen vom "DefaultKeyHandler" verarbeitet.	 
+
+i) "WindowKeyHandler" der sucht nach Kontrollzeichen,
+    zB: Ctrl+C)
+ii) "InputKeyHandler" überprüft ob das Zeichen dem Wertebereich des
+    Input-Feldes entspricht (zB: [0-9])
+iii) ansonsten wird das Zeichen vom "DefaultKeyHandler" verarbeitet.
 
 Die Verarbeitung besteht in diesem einfachen Beispiel jeweils nur in 
 der Erzeugung eines Log-Eintrages:
