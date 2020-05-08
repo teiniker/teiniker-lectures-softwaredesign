@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public class BeanValidationObserver
+class BeanValidationObserver	// package private
 	implements Observer
 {
 
