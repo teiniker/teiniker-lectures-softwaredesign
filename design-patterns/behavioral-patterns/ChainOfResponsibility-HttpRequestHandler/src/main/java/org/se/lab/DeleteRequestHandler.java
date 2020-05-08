@@ -7,11 +7,11 @@ class DeleteRequestHandler  // package private
 	@Override
 	public String handleRequest(HttpRequest request)
 	{
-		String action = request.getParameters().get("action");		
-		String id = request.getParameters().get("id");
+		String action = request.getParameters().get("action");
 
 		if(action.equals("Delete"))
 		{
+			String id = request.getParameters().get("id");
 			// TODO: Validate request parameter
 
 			String sql = new StringBuilder()

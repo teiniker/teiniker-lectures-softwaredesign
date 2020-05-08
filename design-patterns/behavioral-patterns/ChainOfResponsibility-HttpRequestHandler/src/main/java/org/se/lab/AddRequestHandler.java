@@ -8,16 +8,16 @@ class AddRequestHandler // package private
 	public String handleRequest(HttpRequest request)
 	{
 		String action = request.getParameters().get("action");
-		String firstName = request.getParameters().get("firstName");
-		String lastName = request.getParameters().get("lastName");
-		String username = request.getParameters().get("username");
-		String password = request.getParameters().get("password");
-		
-		// TODO: Validate request parameters
-		// TODO: salt + hash password
-		
+
 		if(action.equals("Add"))
 		{
+			String firstName = request.getParameters().get("firstName");
+			String lastName = request.getParameters().get("lastName");
+			String username = request.getParameters().get("username");
+			String password = request.getParameters().get("password");
+			// TODO: Validate request parameters
+			// TODO: salt + hash password
+
 			String sql = new StringBuilder()
 				.append("INSERT INTO user VALUES (NULL,'")
 				.append(firstName).append("','")
@@ -25,7 +25,7 @@ class AddRequestHandler // package private
 				.append(username).append("','")
 				.append(password).append("')")
 				.toString();
-		
+
 			// TODO: Use a prepared statement to prevent SQL injection attacks
 			return sql;
 		}
