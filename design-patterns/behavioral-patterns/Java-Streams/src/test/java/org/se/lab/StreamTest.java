@@ -23,14 +23,16 @@ public class StreamTest
     @Test
     public void testForEach()
     {
-        // list.stream().forEach((s) -> System.out.println(s));
-        list.stream().forEach(System.out::println);
+        list.stream().forEach((s) -> System.out.println(s));
+        //list.stream().forEach(System.out::println);
     }
 
     @Test
     public void testMap()
     {
-        List<String> result = list.stream().map((s) -> s.toLowerCase()).collect(Collectors.toList());
+        List<String> result = list.stream()
+                                .map((s) -> s.toLowerCase())
+                                .collect(Collectors.toList());
 
         Assert.assertEquals("[eins, zwei, drei, vier]", result.toString());
     }
