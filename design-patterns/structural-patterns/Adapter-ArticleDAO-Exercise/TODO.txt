@@ -1,7 +1,7 @@
 Exercise: Adapter Pattern - ArticleDAO
 ---------------------------------------------------------------------
 
-Implementieren Sie einen Object-Adapter.
+Implementieren Sie einen Class-Adapter.
 
 1. Target Interface
 ---------------------------------------------------------------------
