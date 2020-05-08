@@ -40,6 +40,7 @@ public class ArticleDAOTest
 		try
 		{
 			dao.findById(1);
+			Assert.fail();
 		}
 		catch(DAOException e)
 		{
