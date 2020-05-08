@@ -25,7 +25,7 @@ b) Implementieren Sie die Trigger-Methoden in der Klasse "ParkingGate"
 	
 c) Implementieren Sie für jeden Zustand des State Diagrams eine Klasse
 	ParkingGateWaiting
-	ParkingGageRaising
+	ParkingGateRaising
 	ParkingGateOpen
 	ParkingGateLowering
 	In jeder Klasse werden die handle() Methoden implementiert.
