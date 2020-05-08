@@ -22,7 +22,8 @@ public class LightBulb
     	return state;
     }
     
-    
+    // Trigger Methods
+
     public void turnOn()
     {
         state.handleTurnOn(this);        
