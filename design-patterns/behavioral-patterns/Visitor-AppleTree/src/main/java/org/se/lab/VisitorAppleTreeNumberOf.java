@@ -27,30 +27,6 @@ public class VisitorAppleTreeNumberOf
 	 * Visit methods
 	 */
 	
-	public void visit(Node node)
-	{
-		if(node instanceof Branch)
-		{
-			visit((Branch)node);
-		}
-		else if(node instanceof GreenApple)
-		{
-			visit((GreenApple)node);
-		}
-		else if(node instanceof RedApple)
-		{
-			visit((RedApple)node);
-		}
-		else if(node instanceof Leaf)
-		{
-			visit((Leaf)node);
-		}
-		else
-		{
-			throw new IllegalArgumentException("Unknown node type!");
-		}
-	}
-	
 	public void visit(Branch branch)
 	{
 		// operation
@@ -72,11 +48,17 @@ public class VisitorAppleTreeNumberOf
 	
 	public void visit(GreenApple apple)
 	{
+		// operation
 		numberOfGreenApples++;
+
+		// navigation
 	}
 	
 	public void visit(RedApple apple)
 	{
+		// operation
 		numberOfRedApples++;
+
+		// navigation
 	}
 }
