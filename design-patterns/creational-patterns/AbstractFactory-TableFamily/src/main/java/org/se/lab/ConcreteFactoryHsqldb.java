@@ -1,6 +1,6 @@
 package org.se.lab;
 
-class ConcreteFactoryHsqldb
+class ConcreteFactoryHsqldb  // package private
     implements AbstractFactory
 {
     public PersonTable createPersonTable()
