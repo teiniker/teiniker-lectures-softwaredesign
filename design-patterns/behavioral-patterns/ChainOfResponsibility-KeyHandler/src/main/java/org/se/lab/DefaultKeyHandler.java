@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public class DefaultKeyHandler extends KeyHandler 
+class DefaultKeyHandler extends KeyHandler 	// package private
 {
 	private final Logger logger = Logger.getInstance();
 	

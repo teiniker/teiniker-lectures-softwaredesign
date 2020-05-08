@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public abstract class KeyHandler 
+public abstract class KeyHandler
 {
 	/*
 	 * Reference to next CharacterHandler
@@ -29,5 +29,4 @@ public abstract class KeyHandler
 			throw new IllegalArgumentException("ERROR: No valid handler found!");
 		}
 	}
-	
 }

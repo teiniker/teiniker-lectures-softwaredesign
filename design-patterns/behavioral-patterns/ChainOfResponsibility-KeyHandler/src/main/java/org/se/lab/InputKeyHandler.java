@@ -1,8 +1,7 @@
 package org.se.lab;
 
-public class InputKeyHandler extends KeyHandler
+class InputKeyHandler extends KeyHandler   // package private
 {
-	
 	private Logger logger = Logger.getInstance();
 	
 	public void handleKey(KeyEvent event)
@@ -26,7 +25,5 @@ public class InputKeyHandler extends KeyHandler
 		    logger.debug("InputKeyHandler: forward");
 			super.handleKey(event);
 		}
-		
 	}
-
 }

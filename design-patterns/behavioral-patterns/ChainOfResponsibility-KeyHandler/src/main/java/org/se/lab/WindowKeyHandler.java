@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public class WindowKeyHandler extends KeyHandler 
+class WindowKeyHandler extends KeyHandler // package private
 {
 	private Logger logger = Logger.getInstance();
 	
