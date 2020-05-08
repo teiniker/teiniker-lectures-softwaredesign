@@ -13,10 +13,10 @@ public class Director
     // TODO: pass a BookReference object
     public void construct()
     {
-        builder.addTitle("Design Patterns");
-        builder.addAuthor("Erich Gamma");
-        builder.addAuthor("Richard Helm");
-        builder.addAuthor("Ralph Johnson");
-        builder.addAuthor("John Vlissides");
+        builder.title("Design Patterns")
+                .author("Erich Gamma")
+                .author("Richard Helm")
+                .author("Ralph Johnson")
+                .author("John Vlissides");
     }
 }

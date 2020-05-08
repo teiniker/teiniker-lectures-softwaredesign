@@ -3,9 +3,9 @@ package org.se.lab;
 
 public interface Builder
 {
-    void addTitle(String Title);
+    Builder title(String Title);
     
-    void addAuthor(String Line);
+    Builder author(String Line);
     
     //...
 }
