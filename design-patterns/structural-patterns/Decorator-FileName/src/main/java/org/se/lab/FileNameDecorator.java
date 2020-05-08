@@ -29,12 +29,20 @@ class FileNameDecorator // package private
     @Override
     public List<String> asList(String filename)
     {
-        return super.asList(getBaseDir() + File.separatorChar + filename);
+        // Pre-processing
+        String path = getBaseDir() + File.separatorChar + filename;
+
+        // Delegate
+        return super.asList(path);
     }
     
     @Override
     public String asString(String filename)
     {
-        return super.asString(getBaseDir() + File.separatorChar + filename);
+        // Pre-processing
+        String path = getBaseDir() + File.separatorChar + filename;
+
+        // Delegate
+        return super.asString(path);
     }    
 }
