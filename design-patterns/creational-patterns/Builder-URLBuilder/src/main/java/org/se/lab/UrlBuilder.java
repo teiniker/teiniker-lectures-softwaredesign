@@ -5,11 +5,23 @@ import java.util.List;
 
 public class UrlBuilder
 {
-    private String protocol;
+    private String protocol = "http"; // default
     private Integer port;
     private String host;
     private String application;
     private List<String> parameters = new ArrayList<>();
+
+    public UrlBuilder(String protocol, String host )
+    {
+        if(protocol == null)
+            throw new IllegalArgumentException("Invalid protocol");
+
+        if(host == null)
+            throw new IllegalArgumentException("Invalid host");
+
+        this.protocol = protocol;
+        this.host = host;
+    }
 
     public UrlBuilder http()
     {
