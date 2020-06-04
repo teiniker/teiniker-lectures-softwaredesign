@@ -16,6 +16,7 @@ public class LoginServiceBuilderTest
 						.withEncoding()
 						.withLogging()
 						.toService();
+		// --->[:ValidationDecorytor]-->[:EncodingDecorator]-->[:LoggingDecorytor]-->[:LoginServiceImpl]
 		
 		service.addUser(1, "lisa", "superlisa", "lisa.simpson@springfield.com");
 		service.addUser(1, "bart", "karramba", "bart.simpson@springfield.com");

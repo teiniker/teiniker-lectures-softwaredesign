@@ -9,9 +9,9 @@ Design Patterns erweitern, ohne sie jedoch zu modifizieren.
 	"OrderService" and die gegebene Klasse "OrderProcessor" anpasst.
 	Dabei sind sowohl die Parameter als auch das Error-Handling anzupassen.
 	Ersetzen Sie die Checked Exceptions durch eine RuntimeException mit
-	dem Namen "ServiceException". 
+	dem Namen "ServiceException".
 	
-2) Decorator + Singleton Pattern
+2) Decorator
 	Fügen Sie eine abstrakte Decorator Klasse "OrderServiceDecorator"
 	und eine konkrete Decorator Klasse "OrderServiceLoggingDecorator"
 	hinzu. 
@@ -19,17 +19,7 @@ Design Patterns erweitern, ohne sie jedoch zu modifizieren.
 	Gesamtsumme der Bestellung in einen "Logger" der als Singleton
 	implementiert ist und eine Liste von Log-Messages speichern kann.
 
-3) Visitor Pattern
-	Implementieren Sie das Visitor-Interface "OrderVisitor" durch
- 	die Klasse "DiscountOrderVisitor".
- 	Der "DiscountOrderVisitor" bekommt im Konstruktor den Prozent-Wert
- 	übergeben, um den jeder Preis der Bestellung reduziert werden soll.
-
-4)	Builder Pattern
-	Um eine Bestellung leichter zusammen zu bauen, sollen zwei Builder 
-	implementiert werden - "OrderLineBuilder" und "OrderBuilder".
-
-5) Factory Method Pattern
+3) Factory Method Pattern
 	Schließlich soll noch eine Factory Methode im Interface "ServiceFactory"
  	definiert und in der Klasse "ServiceFactoryImpl" implementiert werden.
  	Das Interface definiert eine Konstante "INSTANCE" über die auf eine 

@@ -32,16 +32,4 @@ public class OrderServiceImplTest
 		// You can change the value to "Order: 7 => EUR 300,80"
 		Assert.assertTrue("", LOG.getLogList().get(0).contains("Order: 7 => EUR 300.80"));
 	}
-	
-	
-	@Test
-	public void testCaluclateOrderDiscount()
-	{
-		DiscountOrderVisitor visitor = new DiscountOrderVisitor(10); // 10% discount for every product
-		visitor.visit(order);
-
-		long totalCosts = service.placeOrder(order);
-		
-		Assert.assertEquals((5*3990 + 2*4190 + 7*250)*(100-10)/100, totalCosts);		
-	}
 }
