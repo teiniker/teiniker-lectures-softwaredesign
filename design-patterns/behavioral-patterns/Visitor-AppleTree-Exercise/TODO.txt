@@ -1,7 +1,7 @@
 Exercise: Visitor - AppleTree
 ---------------------------------------------------------------------
 
-Schreibe Sie für die gegebene Baustruktur (Node, Branch, GreenApple,
+Schreiben Sie für die gegebene Baustruktur (Node, Branch, GreenApple,
 RedApple, Leaf) eine Klasse "VisitorAppleTreeNumberOf" welche das 
 Interface "VisitorAppleTree" implementiert.
 
