@@ -12,6 +12,7 @@ public class ComplexNumberTest
     @Test
     public void testCartesian()
     {
+        // ComplexNumber z = new ComplexNumber(1.0, 1.0);
         ComplexNumber z = ComplexNumber.createFromCartesian(1.0, 1.0);
         assertEquals(1.0, z.getRe(), DELTA);
         assertEquals(1.0, z.getIm(), DELTA);
