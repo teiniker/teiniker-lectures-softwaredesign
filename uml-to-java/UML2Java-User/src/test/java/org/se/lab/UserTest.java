@@ -1,10 +1,23 @@
 package org.se.lab;
 
+import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class UserTest
 {
+    @Before
+    public void setup()
+    {
+        System.out.println("setup()");
+    }
+
+    @After
+    public void teardown()
+    {
+        System.out.println("teardown()");
+    }
 
     @Test
     public void testConstructor()
