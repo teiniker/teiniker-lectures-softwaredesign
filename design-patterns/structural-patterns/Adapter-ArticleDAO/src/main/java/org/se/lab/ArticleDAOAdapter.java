@@ -6,7 +6,7 @@ import org.se.lab.legacy.ArticleTable;
 import org.se.lab.legacy.LongHolder;
 import org.se.lab.legacy.StringHolder;
 
-public class ArticleDAOAdapter
+class ArticleDAOAdapter // package private
 	implements ArticleDAO
 {
 	/*
@@ -37,10 +37,10 @@ public class ArticleDAOAdapter
 	@Override
 	public Article findById(int id)
 	{
-		StringHolder description = new StringHolder();
-		LongHolder price = new LongHolder();
 		try
 		{
+			StringHolder description = new StringHolder();
+			LongHolder price = new LongHolder();
 			table.load(id, description, price);			
 			return new Article(id, description.value, price.value);
 		}
