@@ -14,7 +14,8 @@ public abstract class AbstractSetTest
     @Test
     public void testSize()
     {
-        Assert.assertEquals(2, set.size());
+        int size =  set.size();
+        Assert.assertEquals(2, size);
     }
     
     @Test
