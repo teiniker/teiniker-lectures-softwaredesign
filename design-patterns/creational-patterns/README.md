@@ -4,8 +4,8 @@ Creational design patterns **abstract the instantiation process**.
 They help make a system independent of how its objects are created, composed, 
 and represented.
 
-Creational patterns also help to **separate business logic and creational logic**.
-Which reduces the number of dependencies between classes.
+Here's an example showing the limitations of the class constructor:
+* [ReplaceConstructorWithCreationMethod](ReplaceConstructorWithCreationMethod)
 
 * **Singleton**
     * _Demo_: [Logger](singleton/Singleton-Logger)
@@ -27,6 +27,9 @@ Which reduces the number of dependencies between classes.
 * **Abstract Factory**
     * _Demo_: [TableFamily](abstract-factory/AbstractFactory-TableFamily)
     * _Exercise_: [SerializerFamily](abstract-factory/AbstractFactory-SerializerFamily-Exercise) - ([Model solution](AbstractFactory-SerializerFamily))
+
+Creational patterns also help to **separate business logic and creational logic**
+which **reduces the number of dependencies between classes**.
 
 ## References
 * E. Gamma, R. Helm, R. Johnson, J. Vlissides. **Design Patterns, Elements of Reusable Object-Oriented Software**. Addison-Wesley, 1995
