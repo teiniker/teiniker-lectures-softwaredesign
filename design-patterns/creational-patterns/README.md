@@ -22,14 +22,18 @@ Here's an example showing the limitations of the class constructor:
     * _Demo_: [FactoryMethod-ListFactory](factory-method/FactoryMethod-ListFactory)
     * _Demo_: [FactoryMethod-ImplementationVariants](factory-method/FactoryMethod-ImplementationVariants)
     * _Exercise_: [TableFactory](factory-method/FactoryMethod-TableFactory-Exercise) - ([Model solution](factory-method/FactoryMethod-TableFactory)) 
-    * _Exercise_: [IOFactory](factory-method/CreationalPatterns-IOFactory-Exercise) - ([Model solution](factory-method/CreationalPatterns-IOFactory))
     
 * **Abstract Factory**
     * _Demo_: [TableFamily](abstract-factory/AbstractFactory-TableFamily)
     * _Exercise_: [SerializerFamily](abstract-factory/AbstractFactory-SerializerFamily-Exercise) - ([Model solution](AbstractFactory-SerializerFamily))
 
-Creational patterns also help to **separate business logic and creational logic**
-which **reduces the number of dependencies between classes**.
+The following examples combine the usage of **several creational patterns**:
+
+* _Exercise_: [IOFactory](CreationalPatterns-IOFactory-Exercise) - ([Model solution](CreationalPatterns-IOFactory))
+
+
+Creational patterns help to **separate business logic from creational logic**,
+therefore, they **reduce the number of dependencies between classes**.
 
 ## References
 * E. Gamma, R. Helm, R. Johnson, J. Vlissides. **Design Patterns, Elements of Reusable Object-Oriented Software**. Addison-Wesley, 1995
