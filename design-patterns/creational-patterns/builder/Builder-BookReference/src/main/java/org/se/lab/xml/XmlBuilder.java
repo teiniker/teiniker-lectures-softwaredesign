@@ -17,14 +17,16 @@ public class XmlBuilder
         document = new XmlBookReference();
     }
     
-    public void addAuthor(String line)
+    public XmlBuilder author(String line)
     {
         document.addElement(new XmlAuthor(line));
+        return this;
     }
 
-    public void addTitle(String title)
+    public XmlBuilder title(String title)
     {
         document.addElement(new XmlTitle(title));
+        return this;
     }
 
     

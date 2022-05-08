@@ -17,14 +17,16 @@ public class TextBuilder
         reference = new TextBookReference();
     }
     
-    public void addAuthor(String line)
+    public TextBuilder author(String line)
     {
         reference.addElement(new TextAuthor(line));
+        return this;
     }
 
-    public void addTitle(String title)
+    public TextBuilder title(String title)
     {
         reference.addElement(new TextTitle(title));
+        return this;
     }
 
     

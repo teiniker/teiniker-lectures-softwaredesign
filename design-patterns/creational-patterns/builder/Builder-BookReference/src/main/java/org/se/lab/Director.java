@@ -9,8 +9,6 @@ public class Director
         this.builder = builder;
     }
     
-    
-    // TODO: pass a BookReference object
     public void construct()
     {
         builder.title("Design Patterns")
