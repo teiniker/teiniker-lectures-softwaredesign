@@ -7,12 +7,8 @@ design patterns:
   * Class and Package Diagram
   * Object Diagram
 
-2. [Design Patterns](https://github.com/teiniker/teiniker-lectures-softwaredesign/tree/master/design-patterns)
-  * **Creational Patterns**
-    - Singleton
-    - Builder
-    - Factory Method
-    - Abstract Factory
+2. **Design Patterns**
+  * [Creational Patterns](design-patterns)
     
   * **Structural Patterns**
     - Proxy
