@@ -8,7 +8,7 @@ design patterns:
   * Object Diagram
 
 * **Design Patterns**
-   * [Creational Patterns](design-patterns)
+   * [Creational Patterns](design-patterns/creational-patterns)
     
   * **Structural Patterns**
     - Proxy
