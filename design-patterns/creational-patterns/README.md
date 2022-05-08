@@ -25,7 +25,7 @@ Which reduces the number of dependencies between classes.
     * _Exercise_: [IOFactory](factory-method/CreationalPatterns-IOFactory-Exercise) - ([Model solution](factory-method/CreationalPatterns-IOFactory))
     
 * **Abstract Factory**
-    * _Demo_: [TableFamily](abstract-factory/AbstractFactory-TableFamily))
+    * _Demo_: [TableFamily](abstract-factory/AbstractFactory-TableFamily)
     * _Exercise_: [SerializerFamily](abstract-factory/AbstractFactory-SerializerFamily-Exercise) - ([Model solution](AbstractFactory-SerializerFamily))
 
 ## References
