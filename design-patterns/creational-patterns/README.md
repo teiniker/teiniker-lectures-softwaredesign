@@ -37,6 +37,7 @@ therefore, they **reduce the number of dependencies between classes**.
 
 ## References
 * E. Gamma, R. Helm, R. Johnson, J. Vlissides. **Design Patterns, Elements of Reusable Object-Oriented Software**. Addison-Wesley, 1995
+  * Chapter 3: Creational Patterns 
 * Joshua Kerievsky. **Refactoring to Patterns**. Addison-Wesley, 2005
 
 
