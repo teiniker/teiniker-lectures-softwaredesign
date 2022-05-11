@@ -1,10 +1,10 @@
-package org.se.lab.example3;
+package org.se.lab.example2;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.se.lab.Person;
-import org.se.lab.example1.PersonFactory;
-import org.se.lab.example1.PersonFactoryImpl;
+import org.se.lab.example2.PersonFactory;
+import org.se.lab.example2.PersonFactoryImpl;
 
 public class InterfaceDefaultMethodTest
 {

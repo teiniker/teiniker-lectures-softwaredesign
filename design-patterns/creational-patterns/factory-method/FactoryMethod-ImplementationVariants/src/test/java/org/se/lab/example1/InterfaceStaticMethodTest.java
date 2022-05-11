@@ -1,8 +1,9 @@
-package org.se.lab.example2;
+package org.se.lab.example1;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.se.lab.Person;
+import org.se.lab.example1.PersonFactory;
 
 public class InterfaceStaticMethodTest
 {

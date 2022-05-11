@@ -1,4 +1,4 @@
-package org.se.lab.example2;
+package org.se.lab.example1;
 
 import org.se.lab.Person;
 
