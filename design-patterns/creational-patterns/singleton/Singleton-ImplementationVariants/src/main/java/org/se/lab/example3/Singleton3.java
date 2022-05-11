@@ -5,7 +5,7 @@ import static java.lang.System.out;
 public class Singleton3
     extends Singleton
 {    
-    public Singleton3()
+    protected Singleton3()
     {
         out.println("Singleton3()");
     }

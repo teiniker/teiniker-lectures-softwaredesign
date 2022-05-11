@@ -1,4 +1,4 @@
-package org.se.lab;
+package org.se.lab.example3;
 
 import static java.lang.System.out;
 import static org.junit.Assert.assertEquals;

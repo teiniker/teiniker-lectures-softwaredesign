@@ -1,14 +1,20 @@
-package org.se.lab.example1;
+package org.se.lab.example2;
 
 import org.se.lab.Person;
 
 public interface PersonFactory
 {
     /*
-     * Minimal implementation of a Singleton
+     * Java 8 allows static methods inside interfaces which can be used as creational methods.
      */
-    PersonFactory INSTANCE  = new PersonFactoryImpl();
-
-    Person createPerson(int id, String firstName, String lastName, String mail);
+    static Person createPerson(int id, String firstName, String lastName, String mail)
+    {
+        Person p = new Person();
+        p.setId(id);
+        p.setFirstName(firstName);
+        p.setLastName(lastName);
+        p.setMail(mail);
+        return p;
+    }
 }
 

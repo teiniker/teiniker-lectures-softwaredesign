@@ -1,13 +1,14 @@
-package org.se.lab.example2;
+package org.se.lab.example3;
 
 import org.se.lab.Person;
 
 public interface PersonFactory
 {
     /*
-     * Java 8 allows static methods inside interfaces which can be used as creational methods.
+     * Java 8 introduces a new feature called default methods that allows us to
+	 * provide a default implementation for methods in an interface.
      */
-    static Person createPerson(int id, String firstName, String lastName, String mail)
+    default Person createPerson(int id, String firstName, String lastName, String mail)
     {
         Person p = new Person();
         p.setId(id);
