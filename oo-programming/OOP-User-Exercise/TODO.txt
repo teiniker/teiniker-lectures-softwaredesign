@@ -1,0 +1,11 @@
+Exercise: User -[1]---[*]- EMail
+---------------------------------------------------------------------
+
+Implementieren Sie das gegebene Class Diagramm und stellen Sie sicher,
+dass die vorhandenen Testfälle durchlaufen.
+
+Testen Sie Ihre Implementierungen mit den Klassen "UserTest" und "EMailTest".
+
+Beachte:
+- Die Struktur der Implementierung geht aus dem Class Diagram hervor.
+- Das Verhalten der zu implementierenden Klassen sehen Sie anhand der Testfälle.
