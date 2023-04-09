@@ -11,7 +11,6 @@ import java.util.Map;
 
 public class ForEachTest
 {
-
     @Test
     public void testForEachList()
     {
@@ -19,7 +18,6 @@ public class ForEachTest
         List<String> list = Arrays.asList("Eins", "Zwei", "Drei", "Vier");
 
         list.forEach(s -> System.out.println(s));
-        //list.stream().forEach(System.out::println);
     }
 
     @Test
@@ -29,10 +27,7 @@ public class ForEachTest
         map.put(1, "1234567");
         map.put(2, "qwerty");
 
-        map.forEach((key,value)->{
-            System.out.println(key);
-            System.out.println(value);
-        });
+        map.forEach((key,value)-> System.out.printf("key: %d, value: %s\n", key, value));
     }
 
     @Test
