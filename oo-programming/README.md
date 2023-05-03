@@ -23,13 +23,13 @@ in Java.
 
 * **Class Diagram**
     * _Exercise_: [User](OOP-User-Exercise) - ([Model solution](OOP-User))
-    * _Exercise_: [UserManagement](UML2Java-UserManagement-Exercise) - ([Model solution](UML2Java-UserManagement))
-    * _Exercise_: [UserTable](UML2Java-UserTable-Exercise) - ([Model solution](UML2Java-UserTable))
-    * _Exercise_: [Order](UML2Java-Order-Exercise) - ([Model solution](UML2Java-Order))
-    * _Exercise_: [ShoppingCart](UML2Java-ShoppingCart-Exercise) - ([Model solution](UML2Java-ShoppingCart))
+    * _Exercise_: [UserManagement](OOP-UserManagement-Exercise) - ([Model solution](OOP-UserManagement))
+    * _Exercise_: [UserTable](OOP-UserTable-Exercise) - ([Model solution](OOP-UserTable))
+    * _Exercise_: [Order](OOP-Order-Exercise) - ([Model solution](OOP-Order))
+    * _Exercise_: [ShoppingCart](OOP-ShoppingCart-Exercise) - ([Model solution](OOP-ShoppingCart))
 
 * **Object Diagram** 
-    * _Exercise_: [Expression](UML2Java-ObjectDiagram-Expression-Exercise) - ([Model solution](UML2Java-ObjectDiagram-Expression))
+    * _Exercise_: [Expression](OOP-ObjectDiagram-Expression-Exercise) - ([Model solution](OOP-ObjectDiagram-Expression))
 
 ## References
 * Martin Fowler. **UML Distilled**. Addison-Wesley, 3rd Edition 2004
