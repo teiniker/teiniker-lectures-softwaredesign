@@ -13,13 +13,6 @@ have without having to describe every one of those objects.
 Given that there are so many options, choosing the most appropriate classification 
 scheme is one of the most important aspects of object-oriented analysis and design.
 
-The **Unified Modeling Language (UML)** is a family of graphical notations, backed 
-by a single meta-model, that help in describing and designing software systems.
-
-While UML diagrams are independent of any programming language, we can 
-**define a mapping between UML and Java**.
-The following examples show the connection between UML diagrams and their implementation
-in Java.
 
 * **Class Diagram**
     * _Exercise_: [User](OOP-User-Exercise) - ([Model solution](OOP-User))
