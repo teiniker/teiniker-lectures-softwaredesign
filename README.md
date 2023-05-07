@@ -10,7 +10,7 @@ design patterns:
     
    * [Structural Patterns](design-patterns/structural-patterns)
      
-  * [Behavioral Patterns](design-patterns/behavioral-patterns)
+   * [Behavioral Patterns](design-patterns/behavioral-patterns)
     
 
 See also: 
