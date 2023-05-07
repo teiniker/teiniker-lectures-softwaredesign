@@ -17,6 +17,7 @@ scheme is one of the most important aspects of object-oriented analysis and desi
     * _Exercise_: [User](OOP-User-Exercise) - ([Model solution](OOP-User))
     * _Exercise_: [UserManagement](OOP-UserManagement-Exercise) - ([Model solution](OOP-UserManagement))
     * _Exercise_: [UserTable](OOP-UserTable-Exercise) - ([Model solution](OOP-UserTable))
+  
     * _Exercise_: [Order](OOP-Order-Exercise) - ([Model solution](OOP-Order))
     * _Exercise_: [ShoppingCart](OOP-ShoppingCart-Exercise) - ([Model solution](OOP-ShoppingCart))
 

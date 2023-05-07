@@ -1,8 +1,12 @@
-Exercise: UML2Java Mapping / Object Diagram
-----------------------------------------------------------------------
+Exercise: Implementing an Object Diagram
+-------------------------------------------------------------------------------
 
-Implementieren Sie die Methode "ExpressionTest.setup()" so, dass die 
-angegebene Objektstruktur (siehe Expression.pdf) entsteht.
-	
-Sie können ihre Implementierung mit der Klasse "ExpressionTest" überprüfen.
+Given the implementation of the Expression class diagram.
+
+A) ExpressionTest.setup()
+    Add the implementation of the "ExpressionTest.setup()" to make the
+    test cases run.
+    Note that the object tree, which should be created, is specified by
+    the Expression object diagram.
+
 

@@ -1,4 +1,4 @@
-Exercise: Implement Class Diagram (User -[1]---[*]- EMail)
+Exercise: Implementing a Class Diagram
 -------------------------------------------------------------------------------
 
 Given the class diagram, implement the following classes in Java:
@@ -8,7 +8,7 @@ A) User
     password:string.
     Implement the constructor, the getter and setter methods, hashCode()
     and equals() as well as toString().
-    "User" also has an association of multiplicity * to the class "Mail".
+    "User" also has an association of multiplicity * to the class "EMail".
 
 B) EMail
     The class "EMail" has the attributes: id:int, and address:String.
