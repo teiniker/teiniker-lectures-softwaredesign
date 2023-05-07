@@ -3,7 +3,10 @@ This project collects examples, exercises and model solutions needed as an intro
 The repository contains examples of UML to Java mappings as well as examples about some of the most common
 design patterns:
 
-* [Object-Oriented Programming](oo-programming)
+* Introduction 
+  * [Unified Modeling Language](introduction/uml/README.md)
+  * [Object-Oriented Programming](introduction/oo-programming)
+  * [Working with ChatGPT](introduction/chatGPT)
 
 * Design Patterns
    * [Creational Patterns](design-patterns/creational-patterns)
