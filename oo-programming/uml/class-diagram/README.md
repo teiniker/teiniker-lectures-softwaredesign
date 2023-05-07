@@ -151,24 +151,89 @@ Implementing a bidirectional association in a programming language is often a li
 because we have to be sure that both properties are kept synchronized.
 
 
+### Aggregation
+An aggregation is a part-of relationship, we call it an **"is a"** relation.
+
+![Class](figures/ClassDiagram-Aggregation.png)
+
+UML includes aggregation but with hardly any semantics.
+Therefore, we can say that aggregation is a **modeling placebo**.
 
 
+### Composition
+A composition is a good way of showing properties that own by value,
+or properties that have a strong and somewhat **exclusive ownership** of
+particular other components.
+
+![Class](figures/ClassDiagram-Composition.png)
+
+The no sharing rule is the key to composition!
+If we delete circle, it should automatically ensure that the owned point is also deleted.
 
 
+### Generalization
+We call generalization (of inheritance - in the opposite direction) a **"is a"** relation.
+
+![Class](figures/ClassDiagram-Generalization.png)
+
+The subclass inherits all the features of the superclass and may override any superclass methods.
 
 
+### Abstract Class
+An abstract class is a class that **cannot be directly instantiated**.
+Instead, we instantiate an instance of a subclass.
+
+![Class](figures/ClassDiagram-AbstractClass.png)
+
+Typically, an abstract class has **one or more operations that are abstract**.
+An abstract operation has no implementation, it is pure declaration.
 
 
+### Interface
+An interface is a class that has no implementation, **all its operations are abstract**.
+An interface is marked with the keyword `<<interface>>` or a circle to the right of the interface name.
+
+![Class](figures/ClassDiagram-Interface.png)
+
+When a **class implements an interface**, we draw a **realization relationship**. 
+In principle, this is also an **"ia a"** relationship.
+
+A class **requires an interface** if it needs an instance of that interface in order to work.
+A class **provides an interface** if it is suitable for the interface.
+
+![Class](figures/ClassDiagram-Interface-ProvideandRequire.png)
+
+In the class diagram there is a special representation for provided and required interfaces - 
+the **lollipop representation**.
+
+Note the **differences between an abstract class and an interface**:
+* An **abstract class** has one or more operations that are abstract.
+  An abstract class cannot be directly instantiated, we have to instantiate an instance of a subclass.
+
+* An **interface** has no implementation, all its features are abstract.
+  A class can provide an interface by implementing it.
+
+Also note the **differences between class inheritance and interface inheritance**:
+* **Class inheritance** defines an object’s implementation in terms of another object’s implementation.
+
+* **Interface inheritance** (or subtyping) describes when an object can be used in place of another.
 
 
+## Parameterized Types
+Another technique for **reusing functionality** is through parameterized types, also known as **Generics** in Java
+and Templates in C++.
 
+This technique lets us define a type without specifying all the other types it uses.
+The unspecified types are supplied as **type parameters** at the point of use.
 
+```Java
+public interface List<E> extends Collection<E>
+{
+boolean add(E e);
+};
+```
 
-
-
-
-
-
+Neither inheritance nor parameterized types can change at run-time!
 
 
 ## Notes
