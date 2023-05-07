@@ -1,21 +1,5 @@
 package org.se.lab;
 
-/**
- * Replace Constructors with CreationMethods
- * 
- * Replace the constructors with intension-revealing creation methods
- * that return object instances.
- * 
- * One advantage of static creation methods is that, unlike constructors, 
- * they have names.
- * 
- * A second advantage of static creation methods is that, unlike constructors,
- * they are not required to create a new object each time they are invoked.
- * 
- * A third advantage of static creation methods is that, unlike constructors, 
- * they can return an object of any sub-type of their return type.
- */
-
 public class ComplexNumber
 {
     /* 
@@ -26,8 +10,7 @@ public class ComplexNumber
         setRe(re);
         setIm(im);
     }
-    
-    
+
     /*
      * Creation methods
      */
@@ -42,11 +25,6 @@ public class ComplexNumber
         		abs*Math.sin(angle));
     }
 
-    
-    
-    /** Getters and Setters */
-    
-    
     /*
      * Property: im:double
      */
@@ -60,7 +38,6 @@ public class ComplexNumber
         this.im = im;
     }
 
-    
     /*
      * Property: re:double
      */
@@ -73,9 +50,7 @@ public class ComplexNumber
     {
         this.re = re;
     }
-    
 
-    
     /*
      * Calculation methods 
      */
