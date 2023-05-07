@@ -52,7 +52,7 @@ UML 2 describes 13 diagram types which can be classified in the following way:
     * Use Case Diagram
     * State Diagram
     * Interaction Diagrams
-        * Sequence Diagram
+        * [Sequence Diagram](sequence-diagram/README.md)
         * Communication Diagram
         * Interaction Overview Diagram
         * Timing Diagram
