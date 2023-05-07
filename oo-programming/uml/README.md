@@ -40,11 +40,12 @@ When should we use UML:
 UML 2 describes 13 diagram types which can be classified in the following way:
 * **Structure Diagrams**
     * [Class Diagram](class-diagram/README.md)
-    * Object Diagram
+    * [Object Diagram](object-diagram/README.md)
+    * [Package Diagram](package-diagram/README.md)
     * Component Diagram
     * Composite Structure Diagram
     * Deployment Diagram
-    * Package Diagram
+    
 
 * **Behavior Diagrams**
     * [Activity Diagram](activity-diagram/README.md)

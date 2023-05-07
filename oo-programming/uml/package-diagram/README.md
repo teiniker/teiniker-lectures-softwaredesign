@@ -1,4 +1,4 @@
-# Package Diagram
+# UML Package Diagram
 
 The UML Package Diagram helps in **visualizing the organization and structure** of the software system 
 by showing how the packages are arranged hierarchically and how they depend on each other. 
