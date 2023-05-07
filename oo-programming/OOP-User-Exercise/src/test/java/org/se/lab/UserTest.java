@@ -15,7 +15,6 @@ public class UserTest
         Assert.assertEquals("Hjg65hfFGDGF#75", user.getPassword());
     }
 
-
     @Test
     public void testAssociation()
     {

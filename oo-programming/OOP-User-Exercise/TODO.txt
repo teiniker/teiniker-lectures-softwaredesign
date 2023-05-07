@@ -1,11 +1,26 @@
-Exercise: User -[1]---[*]- EMail
----------------------------------------------------------------------
+Exercise: Implement Class Diagram (User -[1]---[*]- EMail)
+-------------------------------------------------------------------------------
 
-Implementieren Sie das gegebene Class Diagramm und stellen Sie sicher,
-dass die vorhandenen Testfälle durchlaufen.
+Given the class diagram, implement the following classes in Java:
 
-Testen Sie Ihre Implementierungen mit den Klassen "UserTest" und "EMailTest".
+A) User
+    The class "User" has the attributes: id:int, username:String, and
+    password:string.
+    Implement the constructor, the getter and setter methods, hashCode()
+    and equals() as well as toString().
+    "User" also has an association of multiplicity * to the class "Mail".
 
-Beachte:
-- Die Struktur der Implementierung geht aus dem Class Diagram hervor.
-- Das Verhalten der zu implementierenden Klassen sehen Sie anhand der Testfälle.
+B) EMail
+    The class "EMail" has the attributes: id:int, and address:String.
+    Implement the constructor, the getter and setter methods, hashCode()
+    and equals() as well as toString().
+    "EMail" also has an association of multiplicity 1 to the class "User".
+
+C) Refactoring
+    To reduce the code redundancy, implement a base class called "Entity"
+    which implements the common id:int attribute together with the getter
+    and setter methods, hashCode and equals.
+
+Tip: Use the "EMailTest" and "UserTest" classes to verify your implementations.
+
+Tip: Inspect the pom.xml file to find out about the used compiler version and dependencies.
