@@ -3,7 +3,7 @@
 A **class diagram** describes the **types of objects** in the system and the various kinds of **static relationships** 
 that exist among them.
 
-![Class](figures/Classdiagram-Example.jpg)
+![Class Daigram Example](figures/Classdiagram-Example.jpg)
 
 ## What are Objects?
 
@@ -49,7 +49,7 @@ Classes represent “things”, so they should have a name that is a noun or a n
 Stereotypes allow us to **define a new UML modeling element based on an existing one**.
 We define the semantics of the stereotype ourselves.
 
-![Class](figures/ClassDiagram-Stereotype.png)
+![Stereotype](figures/ClassDiagram-Stereotype.png)
 
 Each model element can have **zero to many stereotypes**.
 Notice that we can stereotype relationships as well as classes.
@@ -62,11 +62,11 @@ We can think of properties as corresponding to **fields in a class**.
 Properties appear in two quite distinct notations:
 * **Attributes** The attribute notation describes a property as a line of text within the class box itself.
 
-![Class](figures/ClassDiagram-Properties-Attribute.png)
+![Attributes](figures/ClassDiagram-Properties-Attribute.png)
 
 * **Associations** An association is a solid line between two classes, directed from the source class to the target class.
 
-![Class](figures/ClassDiagram-Properties-Association.png)
+![Associations](figures/ClassDiagram-Properties-Association.png)
 
 We use attributes for small things (e.g. Booleans), and associations for more significant classes (e.g. Customer).
 
@@ -100,7 +100,7 @@ The most common visibility tags are:
 Operations are the **actions that a class knows to carry out**.
 Operations most obviously correspond to the **methods on a class**.
 
-![Class](figures/ClassDiagram-Operation.png)
+![Operations](figures/ClassDiagram-Operation.png)
 
 The full UML syntax for operations is:
 * **Visibility marker**: public `+`, private `-`
@@ -114,7 +114,7 @@ The full UML syntax for operations is:
 UML refers to an **operation or an attribute that applies to a class** rather than to an instance as static.
 This is equivalent to **static members** in object-oriented programming languages.
 
-![Class](figures/ClassDiagram-Operation-Static.png)
+![Static Operation](figures/ClassDiagram-Operation-Static.png)
 
 Static features are **underlined on a class diagram**.
 
@@ -122,7 +122,7 @@ Static features are **underlined on a class diagram**.
 ### Constructors
 Constructors are special operations that initialize new instances of classes – these operations must be **class scoped**.
 
-![Class](figures/ClassDiagram-Operation-Constructor.png)
+![Constructor](figures/ClassDiagram-Operation-Constructor.png)
 
 There are different standards for naming constructors:
 * A completely generic approach is just to call the constructor `__init__()`, used for example in Python.
@@ -137,7 +137,7 @@ The nature of the relationship affects the implementation of classes.
 ### Dependency
 A dependency exists between two elements **if changes to the definition of one element may cause changes to the other**.
 
-![Class](figures/ClassDiagram-Dependency.png)
+![Dependency](figures/ClassDiagram-Dependency.png)
 
 The UML has many varieties of dependency, each with particular semantics and keywords (`<<create>>`, `<<use>>`, etc.).
 
@@ -145,7 +145,7 @@ The UML has many varieties of dependency, each with particular semantics and key
 ### Bidirectional Associations
 A bidirectional association is a **pair of properties that are linked together as inverses**.
 
-![Class](figures/ClassDiagram-Association-Bidirectional.png)
+![Bidirectional Association](figures/ClassDiagram-Association-Bidirectional.png)
 
 Implementing a bidirectional association in a programming language is often a little tricky
 because we have to be sure that both properties are kept synchronized.
@@ -154,7 +154,7 @@ because we have to be sure that both properties are kept synchronized.
 ### Aggregation
 An aggregation is a part-of relationship, we call it an **"is a"** relation.
 
-![Class](figures/ClassDiagram-Aggregation.png)
+![Aggregation](figures/ClassDiagram-Aggregation.png)
 
 UML includes aggregation but with hardly any semantics.
 Therefore, we can say that aggregation is a **modeling placebo**.
@@ -165,7 +165,7 @@ A composition is a good way of showing properties that own by value,
 or properties that have a strong and somewhat **exclusive ownership** of
 particular other components.
 
-![Class](figures/ClassDiagram-Composition.png)
+![Composition](figures/ClassDiagram-Composition.png)
 
 The no sharing rule is the key to composition!
 If we delete circle, it should automatically ensure that the owned point is also deleted.
@@ -174,7 +174,7 @@ If we delete circle, it should automatically ensure that the owned point is also
 ### Generalization
 We call generalization (of inheritance - in the opposite direction) a **"is a"** relation.
 
-![Class](figures/ClassDiagram-Generalization.png)
+![Generalization](figures/ClassDiagram-Generalization.png)
 
 The subclass inherits all the features of the superclass and may override any superclass methods.
 
@@ -183,7 +183,7 @@ The subclass inherits all the features of the superclass and may override any su
 An abstract class is a class that **cannot be directly instantiated**.
 Instead, we instantiate an instance of a subclass.
 
-![Class](figures/ClassDiagram-AbstractClass.png)
+![Abstract Class](figures/ClassDiagram-AbstractClass.png)
 
 Typically, an abstract class has **one or more operations that are abstract**.
 An abstract operation has no implementation, it is pure declaration.
@@ -193,7 +193,7 @@ An abstract operation has no implementation, it is pure declaration.
 An interface is a class that has no implementation, **all its operations are abstract**.
 An interface is marked with the keyword `<<interface>>` or a circle to the right of the interface name.
 
-![Class](figures/ClassDiagram-Interface.png)
+![Interface](figures/ClassDiagram-Interface.png)
 
 When a **class implements an interface**, we draw a **realization relationship**. 
 In principle, this is also an **"ia a"** relationship.
@@ -201,7 +201,7 @@ In principle, this is also an **"ia a"** relationship.
 A class **requires an interface** if it needs an instance of that interface in order to work.
 A class **provides an interface** if it is suitable for the interface.
 
-![Class](figures/ClassDiagram-Interface-ProvideandRequire.png)
+![Provided and Required Interface](figures/ClassDiagram-Interface-ProvideandRequire.png)
 
 In the class diagram there is a special representation for provided and required interfaces - 
 the **lollipop representation**.
@@ -229,7 +229,8 @@ The unspecified types are supplied as **type parameters** at the point of use.
 ```Java
 public interface List<E> extends Collection<E>
 {
-boolean add(E e);
+    boolean add(E e);
+    // ...
 };
 ```
 
@@ -239,12 +240,17 @@ Neither inheritance nor parameterized types can change at run-time!
 ## Notes
 Notes are **comments in the diagrams**.
 
-![Class](figures/ClassDiagram-Note.png)
+![Notes](figures/ClassDiagram-Note.png)
 
 Notes can stand on their own, or they can be linked with a dashed line to the elements they are commenting.
 
 
 ## References
 
+* [YouTube: UML Class Diagram Tutorial](https://youtu.be/UI6lqHOVHic)
+
+* Martin Fowler. **UML Distilled**. Addison-Wesley, 3rd Edition, 2004
+  * Chapter 3: Class Diagrams: The Essentials
+  * Chapter 5: Class Diagrams: Advanced Concepts
 
 *Egon Teiniker, 2016-2023, GPL v3.0*
