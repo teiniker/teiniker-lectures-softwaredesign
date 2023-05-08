@@ -1,6 +1,12 @@
 Singleton Implementation Variants
 -------------------------------------------------------------------------------
 
+Example 0: INSTANCE Constant within an Interface
+------------------------------------------------
+The interface PersonFactory includes a constant which holds the reference
+to a single instance of PersonFactoryImpl.
+
+
 Example 1: Classic Implementation
 ---------------------------------
 The example uses the classic implementation described in the GoF book.
