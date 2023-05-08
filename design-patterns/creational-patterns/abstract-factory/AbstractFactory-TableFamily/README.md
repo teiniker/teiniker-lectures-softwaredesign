@@ -50,4 +50,4 @@ In order to add a new product family in this example, a new variant must be crea
 product and these new product variants must be instantiated via a new concrete factory.
 
 
-*Egon Teiniker, 2019, GPL v3.0*
+*Egon Teiniker, 2016-2023, GPL v3.0*
