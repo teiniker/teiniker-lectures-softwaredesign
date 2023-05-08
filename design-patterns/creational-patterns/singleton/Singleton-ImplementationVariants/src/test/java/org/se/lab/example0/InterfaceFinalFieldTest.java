@@ -1,8 +1,7 @@
-package org.se.lab.example1;
+package org.se.lab.example0;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.se.lab.Person;
 
 public class InterfaceFinalFieldTest
 {

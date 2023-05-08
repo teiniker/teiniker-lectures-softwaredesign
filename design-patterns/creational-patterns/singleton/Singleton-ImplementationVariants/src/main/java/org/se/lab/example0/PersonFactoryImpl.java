@@ -1,6 +1,4 @@
-package org.se.lab.example1;
-
-import org.se.lab.Person;
+package org.se.lab.example0;
 
 public class PersonFactoryImpl
     implements PersonFactory
