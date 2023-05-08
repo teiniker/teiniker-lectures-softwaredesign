@@ -152,7 +152,7 @@ because we have to be sure that both properties are kept synchronized.
 
 
 ### Aggregation
-An aggregation is a part-of relationship, we call it an **"is a"** relation.
+An aggregation is a part-of relationship, we call it an **"has a"** relation.
 
 ![Aggregation](figures/ClassDiagram-Aggregation.png)
 
