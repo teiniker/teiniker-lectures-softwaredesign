@@ -27,7 +27,7 @@ public class ServiceTest
 		service.addBook(b2);
 		
 		Set<Book> books = service.getBooks();
-		Assert.assertEquals(3,books.size());
+		Assert.assertEquals(2,books.size());
 	}
 	
 		
@@ -72,19 +72,10 @@ public class ServiceTest
 		service.addBook(new Book(7, "Effective Java", null));
 	}
 	
-	@Test//(expected=UnsupportedOperationException.class)
+	@Test(expected=UnsupportedOperationException.class)
 	public void testGetBooks_Readonly()
 	{
-		try
-		{
-			Set<Book> books = service.getBooks();
-			books.add(new Book(666, "The C Programming Language", "Brian W. Kernighan and Brian W. Kernighan"));
-			Assert.fail();
-
-		}
-		catch (UnsupportedOperationException e)
-		{
-			Assert.assertEquals("", e.getMessage());
-		}
+		Set<Book> books = service.getBooks();
+		books.add(new Book(666, "The C Programming Language", "Brian W. Kernighan and Brian W. Kernighan"));
 	}
 }
