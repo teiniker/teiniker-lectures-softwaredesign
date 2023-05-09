@@ -14,16 +14,11 @@ public abstract class Publisher
     
     public void attachSubscriber(Subscriber subscriber)
     {
-        if(subscriber == null)
-            throw new IllegalArgumentException("Invalid subscriber!");        
         subscribers.add(subscriber);
     }
     
     public void notifySubscribers()
     {
-        for(Subscriber s : subscribers)
-        {
-            s.update(this);
-        }
+        subscribers.forEach(subscriber -> subscriber.update(this));
     }
 }

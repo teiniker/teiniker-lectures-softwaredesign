@@ -11,8 +11,6 @@ public class Subject
 	private List<Observer> observers = new ArrayList<Observer>();
 	public final void addObserver(Observer observer)
 	{
-		if(observer == null)
-			throw new IllegalArgumentException("Invalid Observer!");
 		observers.add(observer);
 	}
 	
@@ -21,9 +19,6 @@ public class Subject
 	 */
 	public final void notifyObservers()
 	{
-		for(Observer o : observers)
-		{
-			o.update(this); // push model
-		}
+		observers.forEach(observer -> observer.update(this));
 	}
 }
