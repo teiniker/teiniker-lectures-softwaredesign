@@ -20,7 +20,7 @@ public class TransformingListTest
 
 
     @Test
-    public void testForLoop()
+    public void testForEachLoop()
     {
         List<String> result = new ArrayList<>();
 
@@ -35,7 +35,7 @@ public class TransformingListTest
     }
 
     @Test
-    public void testForEach()
+    public void testForEachMethod()
     {
         List<String> result = new ArrayList<>();
 
