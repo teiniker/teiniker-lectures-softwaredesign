@@ -1,4 +1,4 @@
-# Introduction to Functional Programming in Java
+# Introduction to Functional Programming
 
 Functional programming in Java is a programming style that emphasizes the use of
 pure functions and immutable data structures to transform data.
