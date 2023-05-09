@@ -16,31 +16,24 @@ public class Subject
     public List<Observer> getObservers()
     {
         System.out.println("Subject.getObservers()");
-        return Collections.unmodifiableList(observers);
+        return observers;
     }
     
     public void attachObserver(Observer o)
     {
         System.out.println("Subject.attachObserver()");
-        if(o == null)
-            throw new IllegalArgumentException("Invalid observer object!");        
         observers.add(o);
     }
     
     public void detachObserver(Observer o)
     {
         System.out.println("Subject.detachObserver()");
-        if(o == null)
-            throw new IllegalArgumentException("Invalid observer object!");        
         observers.remove(o);
     }
     
     public void notifyObservers()
     {
         System.out.println("Subject.notifyObservers()");
-        for(Observer o : observers)
-        {
-            o.update();
-        }
+        observers.forEach(Observer::update);
     }
 }
