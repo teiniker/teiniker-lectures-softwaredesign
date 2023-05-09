@@ -71,11 +71,4 @@ public class ServiceTest
 	{
 		service.addBook(new Book(7, "Effective Java", null));
 	}
-	
-	@Test(expected=UnsupportedOperationException.class)
-	public void testGetBooks_Readonly()
-	{
-		Set<Book> books = service.getBooks();
-		books.add(new Book(666, "The C Programming Language", "Brian W. Kernighan and Brian W. Kernighan"));
-	}
 }

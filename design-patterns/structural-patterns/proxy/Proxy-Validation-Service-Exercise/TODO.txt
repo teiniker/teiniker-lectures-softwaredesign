@@ -9,8 +9,6 @@ durchführt:
     Book.title != null
     Book.author != null
 
-    getBooks() soll ein unmodifiable Set zurück liefern.
-
 Überprüfen Sie Ihre Implementierung mit der Klasse "ServiceTest".
 
 

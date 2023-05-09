@@ -40,7 +40,7 @@ class ValidationProxy // package private
 		Set<Book> result = service.getBooks(); 
 		
 		// Post-processing
-		return Collections.unmodifiableSet(result);
+		return result;
 	}
 	
 	
