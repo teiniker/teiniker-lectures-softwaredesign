@@ -48,5 +48,4 @@ public class ListProcessorTest
         
         Assert.assertEquals("[eins, zwei, drei, vier]", result.toString());
     }
-    
 }

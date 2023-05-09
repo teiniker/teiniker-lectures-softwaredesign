@@ -21,7 +21,7 @@ public class BubbleSortComperatorLambdaTest
 	@Test
 	public void testAscendingSorting()
 	{
-		Comparator<Integer> c = (a,b) -> {
+		Comparator<Integer> comp = (a,b) -> {
 			if(a < b)
 				return 1;
 			else if(a > b)
@@ -30,7 +30,7 @@ public class BubbleSortComperatorLambdaTest
 				return 0;
 		};
 		
-		int[] result = sorter.sort(c, 7, 3, 19, 123, 2, 13);
+		int[] result = sorter.sort(comp, 7, 3, 19, 123, 2, 13);
 
 		Assert.assertEquals("[2, 3, 7, 13, 19, 123]", Arrays.toString(result));
 	}
@@ -39,9 +39,6 @@ public class BubbleSortComperatorLambdaTest
 	@Test
 	public void testDescendingSorting()
 	{
-		//  int compare(T o1, T o2);
-		//Comparator<Integer> c = (a,b) -> a-b;
-
 		int[] result = sorter.sort((a,b) -> a-b, 7, 3, 19, 123, 2, 13);
 
 		Assert.assertEquals("[123, 19, 13, 7, 3, 2]", Arrays.toString(result));

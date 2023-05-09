@@ -17,8 +17,7 @@ public class IteratorTest
     {
         list = Arrays.asList("eins","zwei","drei","vier","fünf","sechs","sieben","acht","neun");
     }
-    
-    
+
     @Test
     public void testForEach()
     {
@@ -27,7 +26,6 @@ public class IteratorTest
             System.out.println(s);
         }
     }
-    
     
     @Test
     public void testIterator()

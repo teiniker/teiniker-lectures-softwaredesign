@@ -21,8 +21,8 @@ public class BubbleSortComperatorTest
 	@Test
 	public void testAscending()
 	{
-		Comparator<Integer> c = new AscendingComparator();
-		int[] result = sorter.sort(c, 7, 3, 19, 123, 2, 13);
+		Comparator<Integer> comp = new AscendingComparator();
+		int[] result = sorter.sort(comp, 7, 3, 19, 123, 2, 13);
 
 		Assert.assertEquals("[2, 3, 7, 13, 19, 123]", Arrays.toString(result));
 	}

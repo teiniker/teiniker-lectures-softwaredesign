@@ -21,7 +21,7 @@ public class BubbleSortComperatorAnonymousClassTest
 	@Test
 	public void testAscendingSorting()
 	{
-		Comparator<Integer> c = new Comparator<Integer>() 
+		Comparator<Integer> comp = new Comparator<Integer>()
 		{
 		    public int compare(Integer a, Integer b)
 		    {
@@ -34,7 +34,7 @@ public class BubbleSortComperatorAnonymousClassTest
 		    }
 		};
 		
-		int[] result = sorter.sort(c, 7, 3, 19, 123, 2, 13);
+		int[] result = sorter.sort(comp, 7, 3, 19, 123, 2, 13);
 
 		Assert.assertEquals("[2, 3, 7, 13, 19, 123]", Arrays.toString(result));
 	}
@@ -43,7 +43,7 @@ public class BubbleSortComperatorAnonymousClassTest
 	@Test
 	public void testDescendingSorting()
 	{
-		Comparator<Integer> c = new Comparator<Integer>()
+		Comparator<Integer> comp = new Comparator<Integer>()
         {
 		    public int compare(Integer a, Integer b)
 		    {
@@ -51,7 +51,7 @@ public class BubbleSortComperatorAnonymousClassTest
 		    }
         };
 
-		int[] result = sorter.sort(c, 7, 3, 19, 123, 2, 13);
+		int[] result = sorter.sort(comp, 7, 3, 19, 123, 2, 13);
 
 		Assert.assertEquals("[123, 19, 13, 7, 3, 2]", Arrays.toString(result));
 	}

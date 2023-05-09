@@ -36,7 +36,6 @@ public class ForEachTest
         List<Password> passwords = Arrays.asList(new Password("1234567"), new Password("qwerty"));
 
         passwords.forEach(p -> p.setPassword(DigestUtil.toHashString(p.getPassword())));
-
         System.out.println(passwords);
     }
 }
