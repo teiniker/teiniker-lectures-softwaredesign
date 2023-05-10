@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public class ServiceFactoryImpl
+class ServiceFactoryImpl    // package private
     implements ServiceFactory
 {
     @Override
