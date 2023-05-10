@@ -5,8 +5,8 @@ public class Logger
 	/*
 	 * Singleton Pattern
 	 */
-	private Logger() {}
-	private final static Logger INSTANCE = new Logger();
+	protected Logger() {}
+	private final static Logger INSTANCE = new AnotherLogger();
 	public static Logger getInstance()
 	{
 		return INSTANCE;
@@ -38,7 +38,7 @@ public class Logger
 	/*
 	 * Utility Methods
 	 */
-	private void print(String s)
+	protected void print(String s)
 	{
 		System.out.println(s);
 	}
