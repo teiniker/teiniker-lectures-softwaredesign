@@ -23,7 +23,7 @@ public class VirtualTextFileTest
 	{		
 		try
 		{
-			Field impl = obj.getClass().getDeclaredField("impl");
+			Field impl = obj.getClass().getDeclaredField(fieldname);
 			impl.setAccessible(true);		
 			Assert.assertNull(impl.get(file));
 		} 
