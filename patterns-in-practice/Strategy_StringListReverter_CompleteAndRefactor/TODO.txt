@@ -1,0 +1,94 @@
+Exercise: Strategy Pattern - String List Revert - complete & refactor
+---------------------------------------------------------------------
+
+1. Funktionalität VERVOLLSTÄNDIGEN:
+---------------------------------------------------------------------
+Im package "at.fhj.swd.fatclass" exisitert eine "RevertStringList"-Klasse
+die, je nach "RevertFlavor"-Parameter, unterschiedliche Algorithmen zum
+"Verkehren" (Umdrehen) von Listen, auf den übergebenen Listen-Parameter
+anwendet.
+
+Das Ergebnis sollte hier zwar, bei allen Algorithmen immer das gleiche
+sein, aber auf unterschiedlichem Wege (daher die unterschiedlichen Algorithmen)
+erreicht werden.
+
+VERVOLLSTÄNDIGEN Sie die Funktionalität für die folgenden Arten
+(RevertFlavors):
+
+* ShallowCopy:
+Ergebnisliste in umgekehrter Reihenfolge, aber die Referenzen
+in der resultierenden Liste sind die gleichen wie in der
+originalen Liste, d.h. die Objekte werden NICHT kopiert.
+
+* DeepCopy:
+Ergebnisliste in umgekehrter Reihenfolge, aber die Referenzen
+sind nicht in der Original-Liste enthalten, d.h. die darin
+enthaltenen Objekte wurden tatsächlich kopiert - also neu erzeugt.
+
+* Inplace:
+Ergebnisliste IST (die Referenz auf) die originale Liste. Die
+originale Liste wird in umgekehrte Reihenfolge gebracht und retourniert.
+D.h. die originale Liste wird in-place, also ohne zusätzlicher Liste,
+durch Vertauschung der Elemente innerhalb der Liste umsortiert.
+Es wird nichts kopiert, daher bleiben alle Referenzen gleich.
+
+* Immutable:
+Ergebnisliste ist in umgekehrter Reihenfolge, kann aber NICHT
+VERÄNDERT werden - d.h. Listen-Elemente können NICHT gelöscht
+oder hinzugefügt werden. Die Objekte in dieser Liste sind aber
+aus der original-Liste und haben daher die gleichen Referenzen.
+
+==> TEST:
+Überprüfen Sei ihre vervollständigte Funktionalität mithilfe der Testklasse
+"at.fhj.swd.test.fatclass.RevertStringListTest".
+
+TIPP:
+Das Klassendiagramm der fatclass finden Sie in
+"StringListRevert_class_diagram.plantuml" bzw.
+"StringListRevert_class_diagram.png" bzw.
+
+TIPP2:
+Schauen Sie sich im package "at.fhj.swd.utils" die "MethArgs"-Utility-
+Klasse an. Diese kann ihnen ähnlich "Objects.requireNonNull()" bei
+Checks zu Methoden-Argumenten gute Dienste erweisen.
+
+2. STRATEGIE entwicklen
+---------------------------------------------------------------------
+Im Package "at.fhj.swd.fatclass" befindet sich die Klasse "RevertStringList"
+mit den unterschiedlichen Arten wie Listen umgekehrt werden. Diesen Monolithen
+gilt es aufzuteilen in unterschiedliche Strategy-Klassen, wo jede Klasse EINE
+Art enthält wie die Liste umgekehrt wird.
+
+Im Package "at.fhj.swd.strategy" entwickeln Sie Strategy-Klassen
+(sind als Klassen bereits vorhanden), die das "RevertStrategy"-Interface
+implementieren und die den jeweiligen Algorithmus kapseln.
+Die Funktionalität übernehmen Sie einfach aus der fatclass "RevertStringList"
+im Package "at.fhj.swd.fatclass": "ShallowCopyRevert", "DeepCopyRevert",
+"InplaceRevert", und "ImmutableRevert"
+
+Das Klassendiagramm des Strategy-Patterns finden Sie in
+"StringListRevert_Strategy_class_diagram.plantuml" bzw.
+"StringListRevert_Strategy_class_diagram.png"
+
+Machen Sie diese implementierende Klassen default (package-private) damit
+diese ins Konzept der im nächsten Punkt zu entwickelnden Factory passen.
+
+
+3. Factory Method
+---------------------------------------------------------------------
+Im Package "at.fhj.swd.strategy" befinden sich nun die Strategy-Klassen.
+Damit diese auch außerhalb des Packages verwendet werden können müssen Sie
+das bestehende "RevertFactory"-Interface in der Klasse "RevertFactoryImpl"
+implementieren und mit der Methode "createRevertAlgorithm(RevertFlavor revertFlavor)"
+eine Instanziierung ermöglichen.
+
+Das Interface "RevertFactory" soll in der Konstante "INSTANCE" eine Singleton-
+Referenz der "RevertFactoryImpl" halten. Das bedeutet, dass auch die Klasse
+"RevertFactoryImpl" default (package private) sein muss.
+
+==> TEST:
+Überprüfen Sie die Funktionalität ihrer Implementierungen mithilfe der
+Tests in der "FactoryTest"-, und "StrategyTest"-Klassen.
+
+GUTES GELINGEN!
+

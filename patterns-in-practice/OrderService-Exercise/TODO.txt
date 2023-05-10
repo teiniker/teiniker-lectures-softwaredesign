@@ -1,7 +1,7 @@
 Exercise: Combination of Patterns - OrderService
 ---------------------------------------------------------------------
 
-Sie sollen eine gegebene (legacy) Klasse durech die Verwendung von 
+Sie sollen eine gegebene (legacy) Klasse durch die Verwendung von
 Design Patterns erweitern, ohne sie jedoch zu modifizieren.
  
 1) Adapter Pattern
