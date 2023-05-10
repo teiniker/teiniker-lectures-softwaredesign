@@ -1,4 +1,4 @@
-# Functional Programming in Java
+# Functional Programming
 
 * Introduction 
   * [Programming Paradigms](introduction/ProgrammingParadigms.md)
