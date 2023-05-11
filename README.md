@@ -15,7 +15,7 @@ design patterns:
      
    * [Behavioral Patterns](design-patterns/behavioral-patterns)
     
-* Functional Programming 
+* [Functional Programming](functional-programming/) 
 
 See also: 
 [Software Architectures by Example](https://github.com/teiniker/teiniker-lectures-softwarearchitectures) 
