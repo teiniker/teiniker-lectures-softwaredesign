@@ -1,0 +1,30 @@
+Exercise: Streams - ArticleTable
+---------------------------------------------------------------------
+
+Die "ArticleTable" Klasse verwaltet "Article" Objekte in einer Liste.
+Implementieren Sie die folgenden Funktionen durch die Verwendung
+von Streams:
+
+1. void insert(Article article)
+    Fügt ein "Article" Objekt in die Liste ein.
+
+2. void update(Article newArticle)
+    Ersetzt ein "Article" Objekt mit "newArticle" wenn die "id"
+    überein stimmt.
+
+3. void delete(long id)
+    Löscht ein "Article" Objekt mit der angegebenen "id" aus der Liste.
+
+4. Article findById(long id)
+    Sucht nach einem "Article" Objekt mit gegebener "id" in der Liste
+    und gibt das gefundene Objekt zurück - oder null.
+
+5. List<Article> findByDescription(String start)
+    Sucht nach "Article" Objekten deren "description" mit dem
+    angegebenen String beginnt.
+    Als Ergebnis wird eine Liste der gefunden Objekte zurück gegeben.
+
+6. List<Article> findAll()
+    Gibt eine read-only Version der Liste zurück.
+
+Überprüfen Sie ihre Implementierung mit der Klasse "ArticleTableTest".
