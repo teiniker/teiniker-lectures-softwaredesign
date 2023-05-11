@@ -7,7 +7,7 @@ Composite Pattern bilden.
 
 Als Operation für die Baumstruktur sollen die Methoden:
 
-	int numberOfLeafs();
+	int numberOfLeaves();
 	int numberOfRedApples();
 	int numberOfGreenApples();
 	

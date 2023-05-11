@@ -5,7 +5,7 @@ public class GreenApple extends Node
 	/*
 	 * Composite operations
 	 */
-	public int numberOfLeafs()
+	public int numberOfLeaves()
 	{
 		return 0;
 	}

@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public interface ParkingGateState
+interface ParkingGateState 	// package-private
 {
 	void handleCarAtGate(ParkingGate gate);
 	void handleTopSwitch(ParkingGate gate);

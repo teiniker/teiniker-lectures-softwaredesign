@@ -28,7 +28,7 @@ public class DigestServiceAdapter
         }
         catch(UnsupportedEncodingException | NoSuchAlgorithmException e)
         {
-            throw new ServiceException("Can't convert into SHA1 hex string!", e);
+            throw new ServiceException("Can't convert into MD5 hex string!", e);
         }
     }
 
@@ -43,7 +43,7 @@ public class DigestServiceAdapter
         }
         catch(UnsupportedEncodingException | NoSuchAlgorithmException e)
         {
-            throw new ServiceException("Can't convert into SHA1 hex string!", e);
+            throw new ServiceException("Can't convert into MD5 hex string!", e);
         }
     }
 
@@ -51,14 +51,17 @@ public class DigestServiceAdapter
     {
         try
         {
+            // convert parameter
             byte[] bytes = message.getBytes("UTF-8");
-            byte[] hashValue = helper.toMD5(bytes); // delegate
+            // delegate
+            byte[] hashValue = helper.toMD5(bytes);
+            // convert result
             String base64String = Base64.encodeBase64String(hashValue);
             return base64String;
         }
         catch(UnsupportedEncodingException | NoSuchAlgorithmException e)
         {
-            throw new ServiceException("Can't convert into SHA1 hex string!", e);
+            throw new ServiceException("Can't convert into MD5 hex string!", e);
         }
     }
 }

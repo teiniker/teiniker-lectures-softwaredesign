@@ -1,7 +1,5 @@
 package org.se.lab;
 
-import com.sun.nio.sctp.IllegalReceiveException;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,12 +9,12 @@ public class Branch extends Node
 	 * Composite operations
 	 */
 	
-	public int numberOfLeafs()
+	public int numberOfLeaves()
 	{
 		int number = 0;
 		for(Node n : getNodes())
 		{
-			number += n.numberOfLeafs();
+			number += n.numberOfLeaves();
 		}
 		return number;
 	}

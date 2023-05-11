@@ -40,7 +40,7 @@ public class VisitorNumberOfTest
 		VisitorAppleTreeNumberOf visitor = new VisitorAppleTreeNumberOf();
 		visitor.visit(tree);
 		
-		Assert.assertEquals(4, visitor.getNumberOfLeafs());
+		Assert.assertEquals(4, visitor.getNumberOfLeaves());
 		Assert.assertEquals(2, visitor.getNumberOfGreenApples());
 		Assert.assertEquals(2, visitor.getNumberOfRedApples());
 	}

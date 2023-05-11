@@ -33,7 +33,7 @@ repeatable as solutions.
   
 The following examples combine the usage of **several creational and structural patterns**:
 
-* _Demo_: [TestFramework](StructuralPatterns-TestFramework)
+* _Demo_: [TestFramework](../../patterns-in-practice/StructuralPatterns-TestFramework)
 
 ## References
 * [Structural Patterns in Core Java](https://www.baeldung.com/java-core-structural-patterns)

@@ -37,7 +37,7 @@ public class CompositeTest
 	@Test
 	public void testComposite()
 	{
-		Assert.assertEquals(4, tree.numberOfLeafs());
+		Assert.assertEquals(4, tree.numberOfLeaves());
 		Assert.assertEquals(2, tree.numberOfGreenApples());
 		Assert.assertEquals(2, tree.numberOfRedApples());
 	}

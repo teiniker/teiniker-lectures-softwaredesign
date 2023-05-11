@@ -3,13 +3,13 @@ package org.se.lab;
 public class VisitorAppleTreeNumberOf
 	implements VisitorAppleTree
 {
-	private int numberOfLeafs = 0;
+	private int numberOfLeaves = 0;
 	private int numberOfRedApples = 0;
 	private int numberOfGreenApples = 0;
 	
-	public int getNumberOfLeafs()
+	public int getNumberOfLeaves()
 	{
-		return numberOfLeafs;
+		return numberOfLeaves;
 	}
 
 	public int getNumberOfRedApples()
@@ -32,16 +32,14 @@ public class VisitorAppleTreeNumberOf
 		// operation
 		
 		// navigation
-		for(Node n : branch.getNodes())
-		{
-			visit(n);
-		}
+//		branch.getNodes().forEach(n -> visit(n));
+		branch.getNodes().forEach(this::visit);
 	}
 	
 	public void visit(Leaf leaf)
 	{
 		// operation
-		numberOfLeafs++;
+		numberOfLeaves++;
 		
 		// navigation
 	}

@@ -3,7 +3,7 @@ package org.se.lab;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class DigestAlgorithm
+class DigestAlgorithm // package-private
 {
     public byte[] hashBytes(byte[] bytes)
     {

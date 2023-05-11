@@ -1,10 +1,9 @@
 package org.se.lab;
 
 import org.apache.commons.codec.binary.Hex;
-
 import java.io.UnsupportedEncodingException;
 
-public class HexEncoder
+class HexEncoder // package-private
 {
     public String toHexString(byte[] bytes)
     {

@@ -32,7 +32,7 @@ therefore, they **reduce the number of dependencies between classes**.
 
 The following examples combine the usage of **several creational patterns**:
 
-* _Exercise_: [IOFactory](CreationalPatterns-IOFactory-Exercise) - ([Model solution](CreationalPatterns-IOFactory))
+* _Exercise_: [IOFactory](../../patterns-in-practice/CreationalPatterns-IOFactory-Exercise) - ([Model solution](../../patterns-in-practice/CreationalPatterns-IOFactory))
 
 
 
