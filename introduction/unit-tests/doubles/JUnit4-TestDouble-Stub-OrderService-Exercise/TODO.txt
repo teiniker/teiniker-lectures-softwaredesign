@@ -1,0 +1,16 @@
+Exercise: Test Stub
+---------------------------------------------------------------------
+
+To be able to test the class "OrderService", you should implement a
+Test Stub which can be used.
+
+1. Test Stub
+---------------------------------------------------------------------
+Implement a test stub named "OrderTableStub" for the "OrderTable"
+interface.
+
+You only need to implement the functionality which is necessary to
+make the given tests run.
+
+Note that the test stub can also be used for testing the error handling
+code.

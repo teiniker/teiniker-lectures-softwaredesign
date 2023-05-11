@@ -1,0 +1,31 @@
+Exercise: Refactoring to Custom Asserts
+-------------------------------------------------------------------------------
+
+1. Custom Asserts
+-----------------
+a) Implement custom assert methods to compare Product, OrderLine and Order objects
+    in a class called "CustomAssert".
+
+	public static void assertEquals(Order expected, Order actual)
+	public static void assertEquals(OrderLine expected, OrderLine actual)
+	public static void assertEquals(Product expected, Product actual)
+
+b) Implement a new test class called "CustomAssertOrderTest" which creates an
+    expected Order object and uses the custom assert methods to verify it
+    against the actual Order object structure.
+
+
+2. Builder for Expected Objects
+-------------------------------
+a) Implement a group of Builder classes (ProductBuilder, OrderLineBuilder, OrderBuilder)
+    which can be used to create an expected Order.
+
+b) Implement a new test class called "CustomAssertWithBuilderObjectTest" which uses the
+    following code to create an expected Order so that the custom assert method can be
+    used:
+
+    Order expected = new OrderBuilder().id(1).name("Special order")
+            .line().id(2).quantity(1).product().id(3).description("Pizza Frutti di Mare").price(880)
+            .line().id(4).quantity(2).product().id(5).description("Pizza Quattro Formaggi").price(820)
+            .build();
+

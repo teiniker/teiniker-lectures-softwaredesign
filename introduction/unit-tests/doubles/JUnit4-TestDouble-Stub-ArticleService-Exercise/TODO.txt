@@ -1,0 +1,29 @@
+Exercise: Test Stub
+---------------------------------------------------------------------
+
+To test the class "ArticleService" in isolation, a test Stub should
+be used.
+
+
+1. Test Stub 
+---------------------------------------------------------------------
+Implement a test stub for the "ArticleTable" interface, name the class
+"ArticleTableStub" and store it in the test folder.
+
+You only need to implement the functionality that is necessary for the
+given tests.
+
+Test your implementation with the "ArticleServiceStubTest" class.
+
+
+
+2. Testing Error Handling Code 
+---------------------------------------------------------------------
+The error-handling code in the class "ArticleService" should be tested.
+
+To do this, extend the "ArticleTableStub" AND the "ArticleServiceStubTest"
+class:
+
+    public void testAddArticleTableException()
+    public void testNumberOfArticlesNullPointerException()
+    public void testNumberOfArticlesTableException()

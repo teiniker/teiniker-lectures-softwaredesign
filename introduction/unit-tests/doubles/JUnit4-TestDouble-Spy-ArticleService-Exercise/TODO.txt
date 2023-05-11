@@ -1,0 +1,27 @@
+Exercise: Test Spy
+---------------------------------------------------------------------
+
+In order to be able to test the class "ArticleService" in, a test Spy
+should be used.
+
+Note that an existing test stub is used to simulate database access.
+
+
+1. Test Spy 
+---------------------------------------------------------------------
+Implement a test spy for the "ArticleTable" interface name the class
+"ArticleTableSpy" and store it in the test folder.
+
+You only need to implement the functionality that is necessary for
+the given tests.
+
+Test your implementation with the class "ArticleServiceSpyTest".
+
+
+2. Validating Parameter and Result Data 
+---------------------------------------------------------------------
+In addition to the methods called, the test spy should also log the
+data of the parameters and return values.
+
+Expand the "ArticleTableSpy" AND the "ArticleServiceTestSpy" class to
+validate the parameters and return values.

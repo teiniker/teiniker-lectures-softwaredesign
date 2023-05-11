@@ -1,0 +1,15 @@
+Exercise: Code Coverage
+---------------------------------------------------------------------
+
+For the given classes "Blog", "Post" and "IntegerSequence", the 
+following test classes have to be implemented:
+
+	IntegerSequenceTest
+	PostTest
+	BlogTest
+	
+Note that you will need a test stub named "PostTableStub" for the 
+given "PostTable" interface.
+
+Build the test cases so that a 100% code coverage (line coverage) is 
+reached.
