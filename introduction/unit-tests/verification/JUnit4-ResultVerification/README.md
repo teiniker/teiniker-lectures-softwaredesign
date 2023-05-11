@@ -1,4 +1,4 @@
-## Example: JUnit4-ResultVerification
+## JUnit4 Result Verification
 
 In this example, different variants are shown how to verify result objects:
 

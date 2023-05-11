@@ -23,8 +23,8 @@ expected results.
 *  Unit Testing Basics
   * [Introduction](basics/README.md)
   * [JUnit Tutorial](basics/JUnit4-Tutorial)
-  * [Roadmap to Test Automation](basics/RoadmapToTest.md)
   * [Test Automation Difficulty](basics/TestDifficulties.md)
+  * [Roadmap to Test Automation](basics/RoadmapToTest.md)
   
 * Fixtures 
   * [Introduction](fixtures/)
@@ -38,7 +38,7 @@ expected results.
   * [Introduction](doubles/)
   * [Test Stub](doubles/JUnit4-TestDouble-Stub/)
   * [Test Spy](doubles/JUnit4-TestDouble-Spy/)
-
+ 
 * Test Case Design
   * Introduction
   * [Code Coverage Analysis](testcase-design/JUnit4-CodeCoverage-Blog)
