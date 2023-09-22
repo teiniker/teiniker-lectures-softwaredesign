@@ -20,7 +20,7 @@ These frameworks provide tools and utilities for setting up test scenarios,
 executing the code being tested, and comparing the actual results against the 
 expected results.
 
-*  Unit Testing Basics
+* Unit Testing Basics
   * [Introduction](basics/README.md)
   * [JUnit Tutorial](basics/JUnit4-Tutorial)
   * [Test Automation Difficulty](basics/TestDifficulties.md)
