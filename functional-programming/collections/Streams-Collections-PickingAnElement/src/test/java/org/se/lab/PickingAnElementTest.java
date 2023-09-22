@@ -48,6 +48,8 @@ public class PickingAnElementTest
                 .findFirst();
 
         String finalResult = result.orElse("");
+        result.ifPresent(s -> System.out.println(s));
+
         Assert.assertEquals("Zwei", finalResult);
     }
 

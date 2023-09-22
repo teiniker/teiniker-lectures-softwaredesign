@@ -10,9 +10,9 @@ mit der Hilfe von Streams zu implementieren.
 
 2. void testMinMaxLimit()
     Begrenzen Sie die Werte aus der Liste so, dass zu kleine und zu
-    große Werte dur die jeweiligen Limits ("minValue" und "maxValue")
+    große Werte durch die jeweiligen Limits ("minValue" und "maxValue")
     ersetzt werden.
-    Tipp: Verwenden Sie "Math.min()" und "Math.max"
+    Tipp: Verwenden Sie "Math.min()" und "Math.max()"
 
 3. void testLowest3()
     Ermitteln Sie die drei kleinsten Werte der Liste.
