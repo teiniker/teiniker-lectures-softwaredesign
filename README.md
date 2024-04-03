@@ -18,10 +18,11 @@ design patterns:
 * [Functional Programming](functional-programming/) 
 
 See also: 
+[Java Programming by Example](https://github.com/teiniker/teiniker-lectures-java), 
 [Software Architectures by Example](https://github.com/teiniker/teiniker-lectures-softwarearchitectures) 
 
 As a development environment, you can use a pre-configured Linux VM image:
 [Virtual Lab](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l)
 
 
-*Egon Teiniker, 2016-2023, GPL v3.0*
+*Egon Teiniker, 2016-2024, GPL v3.0*
