@@ -5,6 +5,7 @@
   * [Functional Programming](introduction/FunctionalProgramming.md)
 
 * Functional Programming in Java
+  * [Lambda Expressions](basics/LambdaExpressions)
   * [Collections and Streams](collections/)
   * Strings, Comparators, and Filters
 
