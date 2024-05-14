@@ -42,4 +42,4 @@ The following examples combine the usage of **several creational patterns**:
   * Chapter 3: Creational Patterns 
 * Joshua Kerievsky. **Refactoring to Patterns**. Addison-Wesley, 2005
 
-*Egon Teiniker, 2016-2023, GPL v3.0*
+*Egon Teiniker, 2016-2024, GPL v3.0*

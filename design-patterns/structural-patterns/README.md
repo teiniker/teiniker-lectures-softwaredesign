@@ -41,4 +41,4 @@ The following examples combine the usage of **several creational and structural 
   * Chapter 4: Structural Patterns 
 * Joshua Kerievsky. **Refactoring to Patterns**. Addison-Wesley, 2005
 
-*Egon Teiniker, 2016-2022, GPL v3.0*
+*Egon Teiniker, 2016-2024, GPL v3.0*
