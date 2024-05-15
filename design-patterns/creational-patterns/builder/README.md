@@ -66,7 +66,7 @@
 ## References 
 
 * E. Gamma, R. Helm, R. Johnson, J. Vlissides. **Design Patterns, Elements of Reusable Object-Oriented Software**. Addison-Wesley, 1995
-    * Chapter: 
+    * Chapter 3: Creational Patterns
 
 *Egon Teiniker, 2016-2024, GPL v3.0*
 
