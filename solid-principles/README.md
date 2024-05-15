@@ -176,8 +176,6 @@ This principle is sometimes known as the **Hollywood principle**:
 
 ## References
 
-* [YouTube: SOLID Principles: Do You Really Understand Them?](https://youtu.be/kF7rQmSRlq0?si=anKhBsyZWBMhFs3a)
-
 * Robert C. Martin. **Agile Software Development – Principles, Patterns, and Practices**. Prentice Hall, 2003
 
 
