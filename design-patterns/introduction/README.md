@@ -31,5 +31,7 @@ A pattern has four essential elements:
 
 * Robert C. Martin. **Agile Software Development – Principles, Patterns, and Practices**. Prentice Hall, 2003
 
+* [Refactoring Guru: Design Patterns](https://refactoring.guru/design-patterns)
+* [Refactoring Guru: The Catalog of Java Examples](https://refactoring.guru/design-patterns/java)
 
 *Egon Teiniker, 2016-2024, GPL v3.0*
