@@ -22,9 +22,9 @@ design patterns:
         * [Introduction](design-patterns/structural-patterns/README.md)
         * [Proxy](design-patterns/structural-patterns/proxy/)
         * [Decorator](design-patterns/structural-patterns/decorator/)
-        * [Composite](design-patterns/structural-patterns/composite/)
-        * [Facade](design-patterns/structural-patterns/facade/)
         * [Adapter](design-patterns/structural-patterns/adapter/)
+        * [Facade](design-patterns/structural-patterns/facade/)
+        * [Composite](design-patterns/structural-patterns/composite/)
 
     * Behavioral Patterns
         * [Introduction](design-patterns/behavioral-patterns/)
