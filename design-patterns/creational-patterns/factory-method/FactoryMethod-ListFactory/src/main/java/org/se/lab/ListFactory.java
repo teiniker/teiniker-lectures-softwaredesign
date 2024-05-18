@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface ListFactory
 {
-	List<String> createList();
+	List<String> createList();		// Factory Method
 	
-	List<String> createList(Type t);
+	List<String> createList(Type t); // Factory Method
 }

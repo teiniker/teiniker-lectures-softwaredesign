@@ -31,6 +31,7 @@
     of the Singleton class. Moreover, we can use the same approach to control the number 
     of instances that the application uses.
 
+
 ## Implementation Issues
 
 * A common way to implement a Singleton is to hide the operation that creates the instance 
@@ -40,6 +41,13 @@
     must get initialized with an instance of the subclass.
     * Code it in the singleton’s getInstance() method.
     * Use a registry of singletons.
+
+
+## Examples
+
+* [Logger](Singleton-Logger)
+* [Implementation Variants](Singleton-ImplementationVariants)
+* _Exercise_: [Registry](Singleton-Registry-Exercise) - ([Model solution](Singleton-Registry))
 
 
 ## References 

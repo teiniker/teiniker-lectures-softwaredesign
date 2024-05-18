@@ -46,6 +46,13 @@
     factory method lets you easily and selectively extend or change the products that `Creator` produces.
 
 
+## Examples
+
+* [FactoryMethod-ListFactory](FactoryMethod-ListFactory)
+* [FactoryMethod-ImplementationVariants](FactoryMethod-ImplementationVariants)
+* _Exercise_: [TableFactory](FactoryMethod-TableFactory-Exercise) - ([Model solution](FactoryMethod-TableFactory)) 
+
+
 ## References 
 
 * E. Gamma, R. Helm, R. Johnson, J. Vlissides. **Design Patterns, Elements of Reusable Object-Oriented Software**. Addison-Wesley, 1995

@@ -62,6 +62,12 @@
     concrete builders differ so greatly in their representations that there is little to 
     gain from giving different products a common parent class.
 
+## Examples
+* [StringBuilder](Builder-StringBuilder)
+* [BookReference](Builder-BookReference)
+* _Exercise_: [ListBuilder](Builder-ListBuilder-Exercise) - ([Model solution](Builder-ListBuilder))
+* _Exercise_: [URLBuilder](Builder-URLBuilder-Exercise) - ([Model solution](Builder-URLBuilder))
+
 
 ## References 
 

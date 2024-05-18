@@ -50,10 +50,15 @@
     `ConcreteFactory` subclasses to actually create them. The most common way to do this 
     is to define a factory method for each product.
 
-* `AbstractFactory` usually defines a different operation for each kind of product it can 
-    produce. A more flexible but less safe design is to add a **parameter to operations that 
-    create objects**.
+* `AbstractFactory` usually defines a different operation for each kind of product 
+    it can produce. A more flexible but less safe design is to add a **parameter 
+    to operations that create objects**.
 
+
+## Examples
+
+* [TableFamily](AbstractFactory-TableFamily)
+* _Exercise_: [SerializerFamily](AbstractFactory-SerializerFamily-Exercise) - ([Model solution](AbstractFactory-SerializerFamily))
 
 
 ## References 
