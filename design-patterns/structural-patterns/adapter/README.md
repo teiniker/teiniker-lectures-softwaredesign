@@ -80,7 +80,7 @@ An **object adapter**:
  
 ## Examples 
 
-* _Demo_: [Object Adapter: CustomLogger]Adapter-CustomLogger)
+* _Demo_: [Object Adapter: CustomLogger](Adapter-CustomLogger)
 * _Demo_: [Class Adapter: ArticleDAO]()
 * _Exercise_: [ArticleDAO](Adapter-ArticleDAO-Exercise) - ([Model solution](Adapter-ArticleDAO))
 * _Exercise_: [DigestService](Adapter-DigestService-Exercise) - ([Model solution](Adapter-DigestService))
