@@ -1,46 +1,23 @@
 # Software Design by Example
-This project collects examples, exercises and model solutions needed as an introduction to software design.
-The repository contains examples of UML to Java mappings as well as examples about some of the most common
-design patterns:
+
+This project collects examples, exercises and model solutions needed 
+as an introduction to software design in Java.
 
 1. [**Introduction**](introduction/README.md) 
 
 2. [**Class Design Principles (SOLID)**](solid-principles/README.md)
 
 3. **Design Patterns**
-
     * [Introduction](design-patterns/introduction/README.md)
-
-    * Creational Patterns
-        * [Introduction](design-patterns/creational-patterns/README.md)
-        * [Singleton](design-patterns/creational-patterns/singleton/)
-        * [Builder](design-patterns/creational-patterns/builder/)
-        * [Factory Method](design-patterns/creational-patterns/factory-method/)
-        * [Abstract Factory](design-patterns/creational-patterns/abstract-factory/)
-
-    * Structural Patterns
-        * [Introduction](design-patterns/structural-patterns/README.md)
-        * [Proxy](design-patterns/structural-patterns/proxy/)
-        * [Decorator](design-patterns/structural-patterns/decorator/)
-        * [Adapter](design-patterns/structural-patterns/adapter/)
-        * [Facade](design-patterns/structural-patterns/facade/)
-        * [Composite](design-patterns/structural-patterns/composite/)
-
-    * Behavioral Patterns
-        * [Introduction](design-patterns/behavioral-patterns/)
-        * [Strategy](design-patterns/behavioral-patterns/strategy/)
-        * [Template Method](design-patterns/behavioral-patterns/template-method/)
-        * [Command](design-patterns/behavioral-patterns/command/)
-        * [Iterator](design-patterns/behavioral-patterns/iterator/)
-        * [Visitor](design-patterns/behavioral-patterns/visitor/)
-        * [Observer](design-patterns/behavioral-patterns/observer/)
-        * [State](design-patterns/behavioral-patterns/state/)
+    * [Creational Patterns](design-patterns/creational-patterns/README.md)
+    * [Structural Patterns](design-patterns/structural-patterns/README.md)
+    * [Behavioral Patterns](design-patterns/behavioral-patterns/README.md)
+    * Design Patterns in Practice
         
-
-    
 4. **Functional Programming**
     * [Introduction](functional-programming/) 
 
+5. **Software Testing**
 
 
 See also: 
