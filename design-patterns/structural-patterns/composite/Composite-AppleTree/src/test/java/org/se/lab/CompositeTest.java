@@ -41,5 +41,4 @@ public class CompositeTest
 		Assert.assertEquals(2, tree.numberOfGreenApples());
 		Assert.assertEquals(2, tree.numberOfRedApples());
 	}
-
 }
