@@ -27,9 +27,6 @@ public class FileSystemSizeVisitor
 		// operation
 		
 		// navigation
-		for(Node n : dir.getNodes())
-		{
-			visit(n);
-		}
+		dir.getNodes().forEach(n -> visit(n));
 	}
 }

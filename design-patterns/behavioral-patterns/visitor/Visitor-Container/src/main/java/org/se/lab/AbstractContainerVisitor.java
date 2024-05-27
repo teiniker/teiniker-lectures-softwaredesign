@@ -9,10 +9,7 @@ public abstract class AbstractContainerVisitor
 	    // calculate 
 	    
 	    // navigation
-		for(Component c : container.getComponents())
-		{
-			visit(c);
-		}
+		container.getComponents().forEach(c -> visit(c));
 	}
 
 	

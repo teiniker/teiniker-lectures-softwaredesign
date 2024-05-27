@@ -28,10 +28,7 @@ public class Branch
 	public void accept(VisitorAppleTree v)
 	{
 		v.visit(this);
-		
-		for(Node n : nodes)
-		{
-			n.accept(v);
-		}
+
+		nodes.forEach(n -> n.accept(v));
 	}
 }

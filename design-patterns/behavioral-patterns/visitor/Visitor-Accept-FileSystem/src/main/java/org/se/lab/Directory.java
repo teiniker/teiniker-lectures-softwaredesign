@@ -58,11 +58,8 @@ public class Directory
 	public void accept(FileSystemVisitor v)
 	{
 		v.visit(this);
-		
+
 		// navigation
-		for(Node n : getNodes())
-		{
-			n.accept(v);
-		}		
-	}	
+		getNodes().forEach(n -> n.accept(v));
+	}
 }

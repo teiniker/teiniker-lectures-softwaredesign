@@ -27,9 +27,6 @@ public class FileSystemNumberOfFilesVisitor
 		// Operation
 
 		// Navigation
-		for(Node n : dir.getNodes())
-		{
-			visit(n);
-		}
+		dir.getNodes().forEach(n -> visit(n));
 	}
 }
