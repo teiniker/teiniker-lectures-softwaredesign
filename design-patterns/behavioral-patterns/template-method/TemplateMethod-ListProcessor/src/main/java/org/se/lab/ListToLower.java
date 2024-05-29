@@ -15,6 +15,7 @@ public class ListToLower
     /* 
      * Primitive Operation 
      */
+    @Override
     protected String modifyElement(String element)
     {
         System.out.println("ListToLower.modifyElement()");
@@ -25,6 +26,7 @@ public class ListToLower
     /*
      * Hook Operation
      */
+    @Override
     protected void printElement(String element)
     {
         System.out.println("> " + element);

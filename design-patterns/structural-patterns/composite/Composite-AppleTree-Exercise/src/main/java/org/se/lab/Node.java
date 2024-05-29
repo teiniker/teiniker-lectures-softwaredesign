@@ -15,7 +15,7 @@ public abstract class Node
 	}
 	
 	/*
-	 * Composite operations
+	 * Composite API operations
 	 */
 	public abstract int numberOfLeaves();
 	public abstract int numberOfRedApples();

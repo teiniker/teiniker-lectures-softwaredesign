@@ -6,7 +6,7 @@ import java.security.NoSuchAlgorithmException;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.binary.Hex;
 
-public class DigestServiceAdapter
+class DigestServiceAdapter  // package private
     implements DigestService
 {
     private DigestHelper helper; // adaptee

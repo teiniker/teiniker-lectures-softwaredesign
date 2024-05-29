@@ -50,7 +50,7 @@ public class Directory
 	
 	
 	/*
-	 *  Operations
+	 *  API Operations
 	 */
 	
 	@Override

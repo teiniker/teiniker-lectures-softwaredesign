@@ -1,6 +1,7 @@
 package org.se.lab;
 
-public class Leaf extends Node
+public class Leaf
+		extends Node
 {
 	/*
 	 * Composite operations
