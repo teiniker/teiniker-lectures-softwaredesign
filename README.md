@@ -13,13 +13,13 @@ as an introduction to software design in Java.
     * [Structural Patterns](design-patterns/structural-patterns/README.md)
     * [Behavioral Patterns](design-patterns/behavioral-patterns/README.md)
     * Design Patterns in Practice
-        
-4. **Functional Programming**
+
+4. **Software Testing**
+
+5. **Functional Programming**
     * [Introduction](functional-programming/) 
 
-5. **Software Testing**
-
-
+   
 See also: 
 [Java Programming by Example](https://github.com/teiniker/teiniker-lectures-java), 
 [Software Architectures by Example](https://github.com/teiniker/teiniker-lectures-softwarearchitectures) 

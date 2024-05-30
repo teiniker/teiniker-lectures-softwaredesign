@@ -6,8 +6,8 @@ public class FileSystemSizeVisitor
 	/*
 	 * Property: size
 	 */
-	private int size=0;
-	public int getSize()
+	private long size=0;
+	public long getSize()
 	{
 		return size;
 	}

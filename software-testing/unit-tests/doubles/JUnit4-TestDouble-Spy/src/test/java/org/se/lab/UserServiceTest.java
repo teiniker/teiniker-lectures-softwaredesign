@@ -38,7 +38,8 @@ public class UserServiceTest
         Assert.assertEquals(expected, xml);
 
         spy.logs.forEach(System.out::println);
-        Assert.assertEquals(2, spy.logs.stream().filter((line)->line.startsWith("insert")).count());
-        Assert.assertEquals(1, spy.logs.stream().filter((line)->line.startsWith("findById")).count());
+        Assert.assertTrue(spy.logs.contains("insert:3,marge"));
+        Assert.assertTrue(spy.logs.contains("insert:7,homer"));
+        Assert.assertTrue(spy.logs.contains("findById:7=>7,homer"));
     }
 }

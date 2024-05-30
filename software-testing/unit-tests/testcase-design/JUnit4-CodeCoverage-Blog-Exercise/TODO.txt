@@ -1,9 +1,8 @@
 Exercise: Code Coverage
 ---------------------------------------------------------------------
 
-For the given classes "Blog", "Post" and "IntegerSequence", the 
-following test classes have to be implemented:
-
+For the given classes "Blog", "Post" and "IntegerSequence", implement
+the following test classes:
 	IntegerSequenceTest
 	PostTest
 	BlogTest
