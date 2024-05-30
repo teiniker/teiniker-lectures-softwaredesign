@@ -1,0 +1,23 @@
+Exercise: Fixture Builder - Book
+-------------------------------------------------------------------------------
+
+Given a working test class named "BookTest".
+
+A) Fixture Builder
+    Implement a "BookBuilder" class which uses a fluent interface to
+    build a "Book" instance.
+    Example:
+		Book book = new BookBuilder()
+				.isbn("9780132350884")
+				.author("Robert C. Martin")
+				.title("Clean Code")
+				.build();
+
+B) Refactor Test Class
+    Refactor the "BookTest" class to only use the "BookBuilder" to
+    create instances of "Book".
+
+    At the same time, try to reduce duplicated code in this test class
+    as well.
+
+Make sure that after your refactorings all tests are still working!
