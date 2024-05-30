@@ -1,0 +1,15 @@
+Exercise: Result Verification - Book
+-------------------------------------------------------------------------------
+
+Given a class named "Book" which should be tested by "BookTest".
+Implement the missing helper methods:
+
+A) boolean equals(Book expected, Book actual)
+    Compares every single attribute of the two "Book" objects.
+    Returns only "true" if all attributes are equal.
+
+B) void assertEquals(Book expected, Book actual)
+    Uses "Assert.assertEquals()" methods to compare every attribute
+    of the "expected" object with the "actual" object.
+    Because of using the "assertEquals()" methods, we know exactly
+    which attribute is not equal.
