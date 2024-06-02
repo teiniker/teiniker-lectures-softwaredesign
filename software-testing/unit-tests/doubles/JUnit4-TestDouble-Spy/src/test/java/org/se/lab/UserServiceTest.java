@@ -35,8 +35,10 @@ public class UserServiceTest
                     "<name>homer</name>" +
                     "<password>Kqq3lbODaQT4LvxsoihdknrtdSBiFOHaODQY65DJBS8=</password>" +
                 "</user>";
+        // State Verification
         Assert.assertEquals(expected, xml);
 
+        // Behavioral Verification
         spy.logs.forEach(System.out::println);
         Assert.assertTrue(spy.logs.contains("insert:3,marge"));
         Assert.assertTrue(spy.logs.contains("insert:7,homer"));

@@ -15,7 +15,10 @@ as an introduction to software design in Java.
     * Design Patterns in Practice
 
 4. **Software Testing**
+    * Introduction 
+    * [Unit Tests](software-testing/unit-tests/)
 
+    
 5. **Functional Programming**
     * [Introduction](functional-programming/) 
 
