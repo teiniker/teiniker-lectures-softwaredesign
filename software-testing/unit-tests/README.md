@@ -27,25 +27,41 @@ expected results.
   * [Roadmap to Test Automation](basics/RoadmapToTest.md)
   
 * Fixtures 
-  * [Introduction](fixtures/)
-  * [JUnit Fixture Setup](fixtures/JUnit4-Fixture-Setup)
-  
+  * [Introduction](fixtures/README.md)
+  * [Fixture Setup](fixtures/JUnit4-Fixture-Setup)
+  * Exercise: [Builder Book](fixtures/JUnit4-Fixture-Builder-Book-Exercise/) - 
+    ([Model Solution](fixtures/JUnit4-Fixture-Builder-Book/))
+
 * Verification
-  * [Introduction](verification/)
-  * [JUnit Result Verification](verification/JUnit4-ResultVerification)
+  * [Introduction](verification/README.md)
+  * [Result Verification](verification/JUnit4-ResultVerification)
+  * Exercise: [Result Verification Book](verification/JUnit4-ResultVerification-Book-Exercise/) - 
+    ([Model Solution](verification/JUnit4-ResultVerification-Book/))
 
 * Test Doubles 
   * [Introduction](doubles/)
+
   * [Test Stub](doubles/JUnit4-TestDouble-Stub/)
+  * Exercise: [Stub - Article Service](doubles/JUnit4-TestDouble-Stub-ArticleService-Exercise/) - 
+    ([Model Solution](doubles/JUnit4-TestDouble-Stub-ArticleService/))
+
   * [Test Spy](doubles/JUnit4-TestDouble-Spy/)
- 
+  * Exercise: [Spy - Article Service](doubles/JUnit4-TestDouble-Spy-ArticleService-Exercise/) - 
+    ([Model Solution](doubles/JUnit4-TestDouble-Spy-ArticleService/))
+
+  * [Mockito](doubles/JUnit4-TestDouble-Mockito/)
+  * [Easy Mock](doubles/JUnit4-TestDouble-EasyMock/)
+
 * Test Case Design
   * Introduction
-  * [Code Coverage Analysis](testcase-design/JUnit4-CodeCoverage-Blog)
+  * [Code Coverage Analysis](testcase-design/JUnit4-CodeCoverage/)
+  * Exercise: [Code Coverage - Blog](testcase-design/JUnit4-CodeCoverage-Blog-Exercise/) - 
+    ([Model Solution](testcase-design/JUnit4-CodeCoverage-Blog/)
 
 
 ## References
+* Lisa Crispin. **Agile Testing: A Practical Guide for Testers and Agile Teams**. Addison-Wesley, 2008
 * Gerard Meszaros. **xUnit Test Patterns**. Addison-Wesley, 2007
 * [xUnit Test Patterns Web Page](http://xunitpatterns.com/)
 
-*Egon Teiniker, 2016-2023, GPL v3.0*
+*Egon Teiniker, 2016-2024, GPL v3.0*
