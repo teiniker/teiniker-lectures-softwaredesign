@@ -17,19 +17,11 @@ public class BubbleSortComperatorLambdaTest
 		sorter = new BubbleSort();
 	}
 
-	
 	@Test
 	public void testAscendingSorting()
 	{
-		Comparator<Integer> comp = (a,b) -> {
-			if(a < b)
-				return 1;
-			else if(a > b)
-				return -1;
-			else
-				return 0;
-		};
-		
+		Comparator<Integer> comp = (a,b) -> b-a;
+
 		int[] result = sorter.sort(comp, 7, 3, 19, 123, 2, 13);
 
 		Assert.assertEquals("[2, 3, 7, 13, 19, 123]", Arrays.toString(result));

@@ -1,4 +1,7 @@
-# Programming Paradigms
+# Functional Programming
+
+
+## Programming Paradigms
 
 Programming paradigms refer to a **fundamental style or approach to programming** 
 that defines how the code is structured, how it runs, and how it interacts with data. 
@@ -19,7 +22,7 @@ There are several programming paradigms, including:
 In this context, **Modern Java (since 1.8) is a hybrid that combines 
 OOP and FP paradigms**.
 
-## Imperative Programming
+### Imperative Programming
 Imperative programming is a programming style where the programmer gives explicit
 instructions on how the program should run.
 
@@ -30,7 +33,7 @@ achieve a desired outcome.
 Imperative programming languages use statements and commands to change the state
 of the program and the underlying system.
 
-### Procedural Programming
+#### Procedural Programming
 Procedural programming is a programming style where the program is structured
 around procedures or functions that perform specific tasks.
 
@@ -42,7 +45,7 @@ performs a specific task, and these functions can be called from other parts of 
 
 Some examples of procedural programming languages include **C**, **Pascal**, and **Fortran**.
 
-### Object-Oriented Programming
+#### Object-Oriented Programming
 Object-oriented programming is a programming style where the program is organized
 around objects that represent real-world entities or concepts.
 
@@ -54,7 +57,7 @@ are related to a specific entity or concept.
 
 Examples of object-oriented programming languages include **C++**, **Java**, and **Python**.
 
-## Declarative programming
+### Declarative programming
 Declarative programming is a programming style where the programmer specifies
 what the program should do, rather than how it should do it.
   
@@ -65,7 +68,7 @@ achieve that outcome.
 Declarative programming languages describe the desired outcome or properties of
 a program without specifying how to achieve them.
 
-### Functional programming
+#### Functional programming
 Functional programming is a programming style where the program is structured
 around functions that take input and produce output, without changing the state
 of the program or the underlying system.
@@ -78,7 +81,7 @@ can be combined to build complex operations.
 
 Some examples of functional programming languages include **Haskell**, **Lisp**, and **ML**.
 
-### Logic Programming
+#### Logic Programming
 Logic programming is a programming style where the program is structured around
 logical relations and rules that are used to infer new knowledge from existing facts.
 
@@ -92,7 +95,47 @@ new facts from the existing ones.
 Examples of logic programming languages include **Prolog** and **Mercury**.
 
 
+## Introduction to Functional Programming
+
+Functional programming a programming style that emphasizes the use of
+pure functions and immutable data structures to transform data.
+
+* **Pure Function**: Its return value is the same for the same argument
+  (no reading of shared mutable state).
+  Its evaluation has **no side effects** (no writing to shared mutable state)
+
+* **Higher-Order Functions**: They refer to **functions that operate on
+  other functions**, either by taking them as arguments, returning them as
+  results, or both.
+  In a higher-order function, **functions are treated as inputs or outputs**,
+  similar to how other data types like integers or strings can be inputs or
+  outputs to functions.
+
+* **Immutable Data Structures**: Data structures that **cannot be modified** once
+  they are created.
+  Any operation on an immutable data structure returns a new data structure,
+  leaving the original data structure intact.
+
+In functional programming, **functions are treated as first-class citizens**, which
+means that they can be treated **like any other object** in the program.
+This enables Java programmers to write code that is more concise, easier to read,
+and less error-prone.
+
+**Functional programming is supported in Java** by the introduction of features like
+lambda expressions, method references, and the Stream API in Java 8 and later versions:
+
+* **Lambda Expressions** and **Method References** allow developers to create and
+  use **functions as objects**, which can be passed as arguments to other functions, stored
+  in variables, and returned as values.
+
+* The **Stream API** allows developers to perform operations on collections of data using
+  functional-style operations like **map**, **filter**, and **reduce**, which can be
+  **chained together** to create complex transformations.
+
+
 ## References
 * [YouTube (Douglas Schmidt): Java Supported Programming Paradigms: Overview](https://youtu.be/mjWsvnzB2ss)
 
-*Egon Teiniker, 2016-2023, GPL v3.0*
+* Venkat Subramaniam. **Functional Programming in Java**. The Pragmatic Bookshelf, 2015
+
+*Egon Teiniker, 2016-2024, GPL v3.0*
