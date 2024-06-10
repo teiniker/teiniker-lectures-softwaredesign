@@ -17,10 +17,12 @@ as an introduction to software design in Java.
 4. **Software Testing**
     * Introduction 
     * [Unit Tests](software-testing/unit-tests/)
-
     
 5. **Functional Programming**
-    * [Introduction](functional-programming/) 
+    * [Introduction](functional-programming/introduction/README.md)
+    * [Lambda Expressions](functional-programming/lambda-expressions/)
+    * [Functional Interfaces](functional-programming/functional-interfaces/)
+    * [Streams](functional-programming/streams/) 
 
    
 See also: 

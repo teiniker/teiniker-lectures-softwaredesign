@@ -57,4 +57,9 @@ In conclusion, while OOP and FP have distinct advantages and ideal use cases, th
 be combined in a single project to leverage the strengths of each. The choice between them—or the decision to combine 
 them—depends on the specific requirements, complexity, and goals of the software being developed.
 
+
+## References
+
+* [YouTube (Dave Farley):GOTO 2021: Object Oriented Programming vs Functional Programming](https://youtu.be/-VADIcicpcg)
+
 *Egon Teiniker, 2016-2024, GPL v3.0*
