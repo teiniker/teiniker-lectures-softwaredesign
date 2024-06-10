@@ -14,16 +14,20 @@ as an introduction to software design in Java.
     * [Behavioral Patterns](design-patterns/behavioral-patterns/README.md)
     * Design Patterns in Practice
 
-4. **Software Testing**
-    * Introduction 
-    * [Unit Tests](software-testing/unit-tests/)
-    
+4. **Error Handling and Logging** 
+    * [Exception Handling](error-handling/exception-handling/)
+    * [Logging](error-handling/logging-log4j/)
+
 5. **Functional Programming**
     * [Introduction](functional-programming/introduction/README.md)
     * [Lambda Expressions](functional-programming/lambda-expressions/)
     * [Functional Interfaces](functional-programming/functional-interfaces/)
     * [Streams](functional-programming/streams/) 
 
+6. **Software Testing**
+    * Introduction 
+    * [Unit Tests](software-testing/unit-tests/)
+    
    
 See also: 
 [Java Programming by Example](https://github.com/teiniker/teiniker-lectures-java), 
