@@ -185,3 +185,4 @@ that can be optimized by the JVM.
 * Raoul-Gabriel Urma, Mario Fusco, Alan Mycroft. **Java 8 in Action: Lambdas, Streams, and Functional-Style Programming**. Manning Publishing, 2014
     * Chapter 3: Lambda Expressions
   
+*Egon Teiniker, 2016-2024, GPL v3.0*
