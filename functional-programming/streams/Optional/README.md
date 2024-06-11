@@ -26,11 +26,11 @@ gracefully**, reducing the likelihood of `NullPointerExceptions`.
 
 ## Accessing Values
 
-* **get()**: Returns the value if present, otherwise throws `NoSuchElementException`.
 * **orElse(T other)**: Returns the value if present, otherwise returns other.
+
 * **orElseGet(Supplier<? extends T> other)**: Returns the value if present, 
     otherwise returns the result produced by the supplying function.
-* **orElseThrow()**: Returns the value if present, otherwise throws 
+* **get()** and **orElseThrow()**: Returns the value if present, otherwise throws 
     `NoSuchElementException`.
 * **orElseThrow(Supplier<? extends X> exceptionSupplier)**: Returns the value 
     if present, otherwise throws an exception produced by the exception 
@@ -50,6 +50,7 @@ gracefully**, reducing the likelihood of `NullPointerExceptions`.
 
 ## References
 
+* [YouTube: Optionals In Java - Simple Tutorial](https://youtu.be/vKVzRbsMnTQ?si=4bh5JdOI5ygn2kBE&t=93)
 * [Guide To Java 8 Optional](https://www.baeldung.com/java-optional)
 
 *Egon Teiniker, 2016-2024, GPL v3.0*
