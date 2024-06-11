@@ -179,6 +179,7 @@ that can be optimized by the JVM.
 
 ## References
 * [YouTube: Lambda Expressions in Java](https://youtu.be/tj5sLSFjVj4?si=RFvUQJ57jLEFJwlX)
+* [YouTube: Java Anonymous Inner Classes](https://youtu.be/DwtPWZn6T1A?si=rRHno75wECXib-gy)
 * [YouTube (Venkat Subramaniam): Functional Programming with Java](https://youtu.be/15X0qFtBqiQ)
 
 * Raoul-Gabriel Urma, Mario Fusco, Alan Mycroft. **Java 8 in Action: Lambdas, Streams, and Functional-Style Programming**. Manning Publishing, 2014
