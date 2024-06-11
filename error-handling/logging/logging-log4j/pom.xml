@@ -8,7 +8,7 @@
 		<groupId>org.se.lab</groupId>
 		<artifactId>error-handling-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>../pom.xml</relativePath>
+		<relativePath>../../pom.xml</relativePath>
 	</parent>
 
 	<dependencies>
