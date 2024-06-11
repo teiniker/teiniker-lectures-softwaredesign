@@ -178,8 +178,7 @@ that can be optimized by the JVM.
 
 
 ## References
-
-* [YouTube (Venkat Subramaniam): Get a Taste of Lambdas and Get Addicted to Streams by Venkat Subramaniam](https://youtu.be/1OpAgZvYXLQ?si=Aa-l6rg1Mo-McuRK)
+* [YouTube: Lambda Expressions in Java](https://youtu.be/tj5sLSFjVj4?si=RFvUQJ57jLEFJwlX)
 * [YouTube (Venkat Subramaniam): Functional Programming with Java](https://youtu.be/15X0qFtBqiQ)
 
 * Raoul-Gabriel Urma, Mario Fusco, Alan Mycroft. **Java 8 in Action: Lambdas, Streams, and Functional-Style Programming**. Manning Publishing, 2014
