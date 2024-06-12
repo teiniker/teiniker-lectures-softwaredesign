@@ -15,7 +15,7 @@ public class ForEachTest
         // setup
         List<String> list = Arrays.asList("Eins", "Zwei", "Drei", "Vier");
 
-        list.forEach(s -> System.out.println(s));
+        list.forEach((s) -> System.out.println(s));
     }
 
     @Test
