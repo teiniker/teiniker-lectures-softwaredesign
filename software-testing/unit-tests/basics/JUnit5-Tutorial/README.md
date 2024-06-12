@@ -104,8 +104,9 @@ Asserts that an executable throws a specified exception.
 
 * [Baeldung: A Guide to JUnit 5](https://www.baeldung.com/junit-5)
 
+* Catalin Tudose. **JUnit in Action**. Manning, 3rd Edition, 2020.
+
 * [JUnit 5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
 * [JUnit5 JavaDoc](https://junit.org/junit5/docs/5.10.1/api/index.html)
-
 
 *Egon Teiniker, 2016-2024, GPL v3.0*

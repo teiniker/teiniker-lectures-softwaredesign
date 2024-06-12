@@ -63,5 +63,6 @@ expected results.
 * Lisa Crispin. **Agile Testing: A Practical Guide for Testers and Agile Teams**. Addison-Wesley, 2008
 * Gerard Meszaros. **xUnit Test Patterns**. Addison-Wesley, 2007
 * [xUnit Test Patterns Web Page](http://xunitpatterns.com/)
+* Catalin Tudose. **JUnit in Action**. Manning, 3rd Edition, 2020.
 
 *Egon Teiniker, 2016-2024, GPL v3.0*
