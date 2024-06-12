@@ -26,6 +26,9 @@ as an introduction to software design in Java.
 
 6. **Software Testing**
     * Introduction 
+        * [Roadmap to Testing](software-testing/introduction/RoadmapToTest.md)
+        * [Difficulties in Testing](software-testing/introduction/TestDifficulties.md)
+
     * [Unit Tests](software-testing/unit-tests/)
     
    
