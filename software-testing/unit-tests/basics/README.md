@@ -1,6 +1,11 @@
 # xUnit Basics
 
 All members of the xUnit family implement a basic set of features.
+
+![xUnit Framework](figures/xUnitFramework.png)
+
+_Figure: xUnit Framework (Meszaros, 2007)_
+
 The individual parts of the test setting are:
 
 * **System under Test (SUT)**: Whatever thing we are testing. The SUT is 
@@ -46,6 +51,10 @@ outcome has been obtained.
 
 * **Teardown**: We tear down the test fixture to put the world back into the 
 state in which we found it.
+
+_Example:_ Phases of a test using JUnit4
+
+![JUnit Test Phases](figures/JUnit-TestPhases.png)
 
 
 ## References

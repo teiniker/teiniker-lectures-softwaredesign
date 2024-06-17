@@ -23,8 +23,6 @@ expected results.
 * Unit Testing Basics
   * [Introduction](basics/README.md)
   * [JUnit Tutorial](basics/JUnit4-Tutorial)
-  * [Test Automation Difficulty](../introduction/TestDifficulties.md)
-  * [Roadmap to Test Automation](../introduction/RoadmapToTest.md)
   
 * Fixtures 
   * [Introduction](fixtures/README.md)

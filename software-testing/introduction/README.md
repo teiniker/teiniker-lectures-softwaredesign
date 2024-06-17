@@ -1,4 +1,4 @@
-# Agile Testing
+# Introduction to Software Testing
 
 Following the principles of Lisa Crispin and Janet Gregory, we can divide the 
 testing activities in a development iteration into four quadrants:
