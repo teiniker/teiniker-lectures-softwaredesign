@@ -42,15 +42,16 @@ expected results.
   * [Introduction](doubles/)
 
   * [Test Stub](doubles/JUnit4-TestDouble-Stub/)
-  * Exercise: [Stub - Article Service](doubles/JUnit4-TestDouble-Stub-ArticleService-Exercise/) - 
-    ([Model Solution](doubles/JUnit4-TestDouble-Stub-ArticleService/))
+    * Exercise: [Stub - Article Service](doubles/JUnit4-TestDouble-Stub-ArticleService-Exercise/) - 
+      ([Model Solution](doubles/JUnit4-TestDouble-Stub-ArticleService/))
 
   * [Test Spy](doubles/JUnit4-TestDouble-Spy/)
-  * Exercise: [Spy - Article Service](doubles/JUnit4-TestDouble-Spy-ArticleService-Exercise/) - 
-    ([Model Solution](doubles/JUnit4-TestDouble-Spy-ArticleService/))
+    * Exercise: [Spy - Article Service](doubles/JUnit4-TestDouble-Spy-ArticleService-Exercise/) - 
+      ([Model Solution](doubles/JUnit4-TestDouble-Spy-ArticleService/))
 
-  * [Mockito](doubles/JUnit4-TestDouble-Mockito/)
-  * [Easy Mock](doubles/JUnit4-TestDouble-EasyMock/)
+  * Mock Object
+    * [Mockito](doubles/JUnit4-TestDouble-Mockito/)
+    * [Easy Mock](doubles/JUnit4-TestDouble-EasyMock/)
 
 * Test Case Design
   * Introduction

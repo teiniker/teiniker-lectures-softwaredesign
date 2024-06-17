@@ -25,12 +25,12 @@ as an introduction to software design in Java.
     * [Streams](functional-programming/streams/) 
 
 6. **Software Testing**
-    * Introduction 
+    * [Introduction](software-testing/introduction/README.md) 
+    * [Unit Tests](software-testing/unit-tests/)
+    * Test Management
         * [Roadmap to Testing](software-testing/introduction/RoadmapToTest.md)
         * [Difficulties in Testing](software-testing/introduction/TestDifficulties.md)
 
-    * [Unit Tests](software-testing/unit-tests/)
-    
    
 See also: 
 [Java Programming by Example](https://github.com/teiniker/teiniker-lectures-java), 
