@@ -263,7 +263,7 @@ Rather than providing an alternative value for the absent instance, we can ask
 method.
 
 ## Reducing a Collection to a Single Value
-All techniques to manipulate collections so far have one thin in common: 
+All techniques to manipulate collections so far have one thing in common: 
 they all work independently on individual elements in the collection.
 
 Now we look at how to compare elements and carry over a computational state across 
