@@ -19,7 +19,7 @@ public class SupplierTest
 
 	private String getBigData()
 	{
-		// LOad data from database...
+		// Load data from database...
 		return "Lots of data!!";
 	}
 

@@ -45,8 +45,9 @@ public class FindFirstTest
                 .filter(s -> s.startsWith("Z"))
                 .findFirst();
 
-        String finalResult = result.orElse("");
         result.ifPresent(s -> System.out.println(s));
+
+        String finalResult = result.orElse("");
 
         Assert.assertEquals("Zwei", finalResult);
     }

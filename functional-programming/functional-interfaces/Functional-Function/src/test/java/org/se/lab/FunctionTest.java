@@ -11,7 +11,7 @@ public class FunctionTest
 	@Test
 	public void testApply()
 	{
-		Function<String, String> toUpperCase = s -> s.toUpperCase();
+		Function<String, String> toUpperCase = (s) -> s.toUpperCase();
 
 		Assert.assertEquals("SIMPSONS", toUpperCase.apply("simpsons"));
 	}
@@ -19,8 +19,8 @@ public class FunctionTest
 	@Test
 	public void testAndThen()
 	{
-		Function<String, String> toUpperCase = s -> s.toUpperCase();
-		Function<String, Integer> stringLength = s -> s.length();
+		Function<String, String> toUpperCase = (s) -> s.toUpperCase();
+		Function<String, Integer> stringLength = (s) -> s.length();
 
 		Assert.assertEquals(Integer.valueOf(8), toUpperCase.andThen(stringLength).apply("simpsons"));
 	}
@@ -28,8 +28,8 @@ public class FunctionTest
 	@Test
 	public void testCompose()
 	{
-		Function<String, String> toUpperCase = s -> s.toUpperCase();
-		Function<String, Integer> stringLength = s -> s.length();
+		Function<String, String> toUpperCase = (s) -> s.toUpperCase();
+		Function<String, Integer> stringLength = (s) -> s.length();
 
 		System.out.println(stringLength.compose(toUpperCase).apply("simpsons"));
 	}
