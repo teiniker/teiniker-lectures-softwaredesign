@@ -52,10 +52,10 @@ expected results.
     * [Easy Mock](doubles/JUnit4-TestDouble-EasyMock/)
 
 * Test Case Design
-  * Introduction
-  * [Code Coverage Analysis](testcase-design/JUnit4-CodeCoverage/)
-  * Exercise: [Code Coverage - Blog](testcase-design/JUnit4-CodeCoverage-Blog-Exercise/) - 
-    ([Model Solution](testcase-design/JUnit4-CodeCoverage-Blog/)
+  * [Introduction](testcase-design/introduction/README.md)
+  * [Code Coverage Analysis](testcase-design/code-coverage/JUnit4-CodeCoverage//)
+  * Exercise: [Code Coverage - Blog](testcase-design/code-coverage/JUnit4-CodeCoverage-Blog-Exercise/) - 
+    ([Model Solution](testcase-design/code-coverage/JUnit4-CodeCoverage-Blog/)
 
 
 ## References
