@@ -27,10 +27,9 @@ as an introduction to software design in Java.
 6. **Software Testing**
     * [Introduction](software-testing/introduction/README.md) 
     * [Unit Tests](software-testing/unit-tests/)
-    * Test Management
-        * [Roadmap to Test Automation](software-testing/test-management/RoadmapToTest.md)
-        * [Difficulties in Testing](software-testing/test-management/TestDifficulties.md)
-        * Test-Driven Development (TDD)
+    * Testing Practices
+        * [Introduction](software-testing/testing-practices/README.md)
+        * [Test-Driven Development (TDD)](software-testing/testing-practices/test-driven-development/README.md)
       
    
 See also: 
