@@ -1,4 +1,4 @@
-## Example: JUnit4-TestDouble-MockObject
+# Example: JUnit4-TestDouble-MockObject
 
 This example shows how a mocking framework can be used to implement a test 
 stub or a test spy.
@@ -7,7 +7,7 @@ need to be implemented for testing.
 
 ![Class Diagram](ClassDiagram.png)
 
-### Mockito
+## Mockito
 Mockito is an open source mocking framework for Java which allows the 
 creation and management of external dependencies and allow mock object 
 creation, verification, stubbing, and spying on real objects.
@@ -28,12 +28,12 @@ public class UserServiceStubTest
     
     //...        
 ```
-A mock object can be defined using the *@Mock* annotation. 
+A mock object can be defined using the **@Mock** annotation. 
 To use this kind of dependency injection we have to call 
-*MockitoAnnotations.initMocks(this)* in the setup method.
+`MockitoAnnotations.initMocks(this)` in the setup method.
 
 
-### Mockito as Test Stub 
+## Mockito as Test Stub 
 The following examples show the use of mockito as a test stub. 
 Note that no test stub needs to be implemented.
 
@@ -41,7 +41,7 @@ The stubbing process defines the behavior of a mock method, such as what
 value should be returned or whether any exception should be thrown when 
 the method is invoked.
 
-#### Stubbing Method Calls
+### Stubbing Method Calls
 The Mockito framework allows us to return a given value when a specific method is called.
 It can be done using **Mockito.when()** along with **thenReturn()**.
 
@@ -73,8 +73,8 @@ In the given test method we can find the line:
 ```java
 when(dao.findById(7)).thenReturn(u);    
 ```
-This means: If the method *findById()* will be invoked on the *dao* object 
-(from the SUT) with the value *7*, the *User* object *u* will be returned. 
+This means: If the method `findById()` will be invoked on the `dao` object 
+(from the SUT) with the value `7`, the `User` object `u` will be returned. 
 This behavior can be achieved without actually having to implement a test stub. 
 The implementation is declarative.
 
@@ -100,15 +100,16 @@ Here, we can see the following verification:
 ```java
 verify(dao).insert(isA(User.class));
 ```
-Which means: Verify if the method *insert()* has been invoked on the *dao* 
-object with a parameter of type *User*.
+Which means: Verify if the method `insert()` has been invoked on the `dao` 
+object with a parameter of type `User`.
 
 Mockito verifies argument values by using an object's equals() method.
 **Argument matchers** bring in more flexibility. 
-Mockito provides build-in matchers, such as *anyInt()*, *anyDouble()*, 
-*anyString()*, *anyList()*, and *anyCollection()*.
-The *isA()* matcher checks whether the passed object is an instance of 
-the expected class type. The *any(T)* matcher also works in the same way.
+Mockito provides build-in matchers, such as `anyInt()`, `anyDouble()`, 
+`anyString()`, `anyList()`, and `anyCollection()`.
+
+The `isA()` matcher checks whether the passed object is an instance of 
+the expected class type. The `any(T)` matcher also works in the same way.
 
 An **ArgumentCaptor** object can verify the arguments passed to a stubbed method.
 Sometimes, we pass an object to a method on a mocked dependency, but never return it.
@@ -142,13 +143,12 @@ To capture arguments, the following syntax is used:
 verify(mockObject).method(captor.capture());
 ```
 
-Using the *captor.getValue()* method, the captured object can be analyzed.
-If an ArgumentCaptor object captures arguments for multiple invocations, the captured values can be 
-retrieved by calling the *captor.getAllValues()* method. 
+Using the `captor.getValue()` method, the captured object can be analyzed.
+If an ArgumentCaptor object captures arguments for multiple invocations, the captured values can be retrieved by calling the `captor.getAllValues()` method. 
 
 
 
-#### Throwing Exceptions
+### Throwing Exceptions
 To test the behavior in the event of an error, the method **thenThrow()** can 
 be used.
 ```java
@@ -178,8 +178,8 @@ In the given test method we can find the line:
 ```java
 when(dao.findById(7)).thenThrow(new DAOException("Can't find user!"));    
 ```
-Which means: If the SUT invokes the method *findById(7)* on the *dao* object, 
-a *DAOException* will be thrown.
+Which means: If the SUT invokes the method `findById(7)` on the `dao` object, 
+a `DAOException` will be thrown.
 
 
 To throw an exception from a **void method** (which is a method with no return 
@@ -188,22 +188,22 @@ value) we need a different syntax:
 ```java
 doThrow(DAOException.class).when(dao).insert(isA(User.class));
 ```
-Which means: If the *insert()* method of the *dao* object is invoked, throw
+Which means: If the `insert()` method of the `dao` object is invoked, throw
 a DAOException. 
 Note that an exception can either be specified by an exception object or 
 an exception type. 
 
 
-### Mockito as Test Spy
+## Mockito as Test Spy
 
 A Mockito Spy allows us to use real objects instead of mocks by replacing 
 some of the methods with stubbed ones.
 We can also use a Spy without doing any stubbing and just use them to verify 
 interactions between two real objects.
 
-To create a Spy instance we use the @Spy annotation.
-Note that here both the real object UserDAOImpl is instantiated and a Spy 
-proxy is generated.
+To create a Spy instance we use the **@Spy** annotation.
+Note that here both the real object `UserDAOImpl` is instantiated and a Spy 
+decorator is generated.
 
 ```java
 public class UserServiceSpyTest
@@ -221,7 +221,7 @@ public class UserServiceSpyTest
     //...
 }    
 ```
-Don't forget to to call *MockitoAnnotations.initMocks(this)* to trigger the 
+Don't forget to to call `MockitoAnnotations.initMocks(this)` to trigger the 
 dependency injections.
 
 ```java
@@ -251,10 +251,10 @@ DOC is recorded and can then be evaluated.
     verify(dao, times(2)).insert(any(User.class));
     verify(dao).findById(7);    
 ```
-The first *verify()* statement checks if the *insert()* method was called 
+The first `verify()` statement checks if the `insert()` method was called 
 exactly twice.
-The second *verify()* statement checks if the *findById()* method was 
-subsequently called with parameter *7*.
+The second `verify()` statement checks if the `findById()` method was 
+subsequently called with parameter `7`.
 
 
 ## References
@@ -262,4 +262,4 @@ subsequently called with parameter *7*.
 * Sujoy Acharya. **Mockito Essentials**. Packt Publishing, 2014 
 * [Mockito Web Page](https://site.mockito.org/)
 
-*Egon Teiniker, 2018, GPL v3.0*
+*Egon Teiniker, 2016-2024, GPL v3.0*

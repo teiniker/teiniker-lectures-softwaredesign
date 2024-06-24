@@ -8,20 +8,17 @@ import static org.mockito.Mockito.verify;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.MockitoAnnotations;
-import org.mockito.Spy;
+import org.mockito.Mockito;
 
 public class UserServiceSpyTest
 {
-    @Spy
     private UserDAOImpl dao;
-
     private UserService service;
 
     @Before
     public void setup()
     {
-        MockitoAnnotations.initMocks(this);
+        dao =  Mockito.spy(UserDAOImpl.class);
         service = new UserService(dao);
         service.addUser(new User(3,"marge", "tLgR+kBQUymuhx5S8DUnw3IMmvf7hgeBllhTXFSExB4="));
         service.addUser(new User(7,"homer", "Kqq3lbODaQT4LvxsoihdknrtdSBiFOHaODQY65DJBS8="));
@@ -46,5 +43,4 @@ public class UserServiceSpyTest
         verify(dao, times(2)).insert(any(User.class));
         verify(dao).findById(7);
     }
-
 }
