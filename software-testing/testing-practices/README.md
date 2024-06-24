@@ -1,5 +1,26 @@
 # Testing Practices
 
+## Test Pyramid
+
+Mike Cohn came up with this concept of a Test Pyramid which tells us about
+the different layers of testing:
+
+![Test Pyramid](figures/TestPyramid.png)
+
+The Test Pyramid is a metaphor to group these tests into buckets of different
+granularity. We also get an idea of how many tests we should have of each type:
+
+* At the bottom, is **Unit Tests**.
+  These should count for the majority of tests we have for our codebase.
+
+* The next level consists of **Integration Tests** which are tests designed to
+  verify the integration of different parts of separate components of a
+  software system together.
+* At the top are the end-to-end tests which are tests that verifies the
+  end-to-end workflows of your codebase (**System Tests**, **Non-Functional Tests**).
+  These tests are often done in a manual way too.
+
+
 ## Roadmap to Test Automation
 
 Here is an practical order in which a team can learn about the techniques of 
@@ -93,28 +114,6 @@ test automation:
 	**Test Utility Methods** that contain any frequently used logic instead 
 	of doing everything on an in-line basis (**Creation Methods**, 
 	**Custom Assertions**, **Finder Methods**, **Parameterized Tests**).
-
-
-## Test Pyramid
-
-Mike Cohn came up with this concept of a Test Pyramid which tells us about 
-the different layers of testing:
-
-![Test Pyramid](figures/TestPyramid.png)
-
-The Test Pyramid is a metaphor to group these tests into buckets of different 
-granularity. We also get an idea of how many tests we should have of each type:
-
-* At the bottom, is **Unit Tests**. 
-    These should count for the majority of tests we have for our codebase. 
-
-* The next level consists of **Integration Tests** which are tests designed to 
-    verify the integration of different parts of separate components of a 
-    software system together. 
-* At the top are the end-to-end tests which are tests that verifies the 
-    end-to-end workflows of your codebase (**System Tests**, **Non-Functional Tests**).
-    These tests are often done in a manual way too.
-
 
 
 ## References
