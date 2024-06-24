@@ -22,7 +22,7 @@ public class ImplicitFixtureTest
 	@Before
 	public void setup()
 	{
-	    // setup
+		// setup
 		order = createNewOrder();
 	}
 	

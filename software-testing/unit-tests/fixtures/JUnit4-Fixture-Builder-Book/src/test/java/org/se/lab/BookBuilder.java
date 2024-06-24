@@ -2,7 +2,7 @@ package org.se.lab;
 
 public class BookBuilder
 {
-    private String isbn; ;
+    private String isbn ="";
     private String author;
     private String title;
 
