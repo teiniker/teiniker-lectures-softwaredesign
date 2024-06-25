@@ -34,10 +34,10 @@ public class UserServiceSpyTest
         // verify
         String expected =
                 "<user>" +
-                        "<id>7</id>" +
-                        "<name>homer</name>" +
-                        "<password>Kqq3lbODaQT4LvxsoihdknrtdSBiFOHaODQY65DJBS8=</password>" +
-                        "</user>";
+                "<id>7</id>" +
+                "<name>homer</name>" +
+                "<password>Kqq3lbODaQT4LvxsoihdknrtdSBiFOHaODQY65DJBS8=</password>" +
+                "</user>";
         Assert.assertEquals(expected, xml);
 
         verify(dao, times(2)).insert(any(User.class));

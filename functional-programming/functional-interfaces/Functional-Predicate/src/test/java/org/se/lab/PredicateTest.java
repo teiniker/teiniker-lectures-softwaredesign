@@ -37,7 +37,7 @@ public class PredicateTest
 	{
 		Predicate<Integer> isPositive = (num) -> num > 0;
 		Predicate<Integer> isEven = (num) -> num % 2 == 0;
-		// && ||
+
 		Assert.assertTrue(isPositive.or(isEven).test(7));
 	}
 }

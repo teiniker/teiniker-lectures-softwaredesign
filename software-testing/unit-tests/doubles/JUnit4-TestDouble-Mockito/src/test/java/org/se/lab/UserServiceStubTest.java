@@ -10,8 +10,8 @@ import static org.mockito.Mockito.*;
 
 public class UserServiceStubTest
 {
-    private UserDAO dao;
-    private UserService service;
+    private UserDAO dao;            // DOC => Stub
+    private UserService service;    // SUT
 
     @Before
     public void setup()
@@ -34,10 +34,10 @@ public class UserServiceStubTest
         // verify
         String expected =
                 "<user>" +
-                        "<id>7</id>" +
-                        "<name>homer</name>" +
-                        "<password>Kqq3lbODaQT4LvxsoihdknrtdSBiFOHaODQY65DJBS8=</password>" +
-                        "</user>";
+                "<id>7</id>" +
+                "<name>homer</name>" +
+                "<password>Kqq3lbODaQT4LvxsoihdknrtdSBiFOHaODQY65DJBS8=</password>" +
+                "</user>";
         Assert.assertEquals(expected, xml);
     }
 
