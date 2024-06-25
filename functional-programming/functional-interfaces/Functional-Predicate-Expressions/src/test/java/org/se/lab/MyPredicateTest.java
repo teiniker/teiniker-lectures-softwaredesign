@@ -56,8 +56,20 @@ public class MyPredicateTest
 		// 																 false && (something) is false
 
 		Assert.assertTrue(result);
+	}
 
-		// Note that we can not build expressions like (isPositive && isEven) || (isNagative && isEven)
-		// because we call methods and not operators like && and ||.
+	@Test
+	public void testAndOr2()
+	{
+		MyPredicate<Integer> isPositive = (num) -> {System.out.printf("test(): %d > 0 ", num); return num > 0;};
+		MyPredicate<Integer> isNegative = (num) -> {System.out.printf("test(): %d < 0 ", num); return num < 0;};
+		MyPredicate<Integer> isEven = (num) -> {System.out.printf("test(): %d %% 2 == 0 ", num); return num % 2 == 0;};
+
+		boolean result = isPositive.and(isEven).or(isNegative.and(isEven)).test(-4);
+		// or: and: test(): 4 > 0 test(): 4 % 2 == 0							=> true
+		// or: and: test(): 3 > 0 test(): 3 % 2 == 0 and: test(): 3 < 0			=> false
+		// or: and: test(): -4 > 0 and: test(): -4 < 0 test(): -4 % 2 == 0		=> true
+		// or: and: test(): -3 > 0 and: test(): -3 < 0 test(): -3 % 2 == 0 		=> false
+		Assert.assertTrue(result);
 	}
 }
