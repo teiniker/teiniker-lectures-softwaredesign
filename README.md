@@ -24,14 +24,17 @@ as an introduction to software design in Java.
     * [Functional Interfaces](functional-programming/functional-interfaces/)
     * [Streams](functional-programming/streams/) 
 
-6. **Software Testing**
-    * [Introduction](software-testing/introduction/README.md) 
-    * [Unit Tests](software-testing/unit-tests/)
+6. **Software Quality**
+    * [Introduction](software-quality/introduction/README.md) 
+    * [Unit Tests](software-quality/unit-tests/)
     * Testing Practices
-        * [Introduction](software-testing/testing-practices/README.md)
-        * [Test-Driven Development (TDD)](software-testing/testing-practices/test-driven-development/README.md)
-      
-   
+        * [Introduction](software-quality/testing-practices/README.md)
+        * [Test-Driven Development (TDD)](software-quality/testing-practices/test-driven-development/README.md)
+    * Refactoring
+        * [Introduction](software-quality/refactoring/README.md)  
+        * [Code Smells](software-quality/refactoring/code-smells/README.md)
+        * [Static Code Analysis](software-quality/refactoring/static-analysis/)
+
 See also: 
 [Java Programming by Example](https://github.com/teiniker/teiniker-lectures-java), 
 [Software Architectures by Example](https://github.com/teiniker/teiniker-lectures-softwarearchitectures) 
