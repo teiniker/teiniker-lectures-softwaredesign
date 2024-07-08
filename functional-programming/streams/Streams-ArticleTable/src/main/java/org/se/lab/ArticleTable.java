@@ -19,7 +19,9 @@ public class ArticleTable
 	
 	public void update(Article newArticle)
 	{
-		table = table.stream().map(a -> a.getId() == newArticle.getId() ? newArticle : a).collect(Collectors.toList());
+		table = table.stream()
+				.map(a -> a.getId() == newArticle.getId() ? newArticle : a)
+				.toList();
 	}
 
 	
