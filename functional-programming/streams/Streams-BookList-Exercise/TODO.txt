@@ -1,0 +1,23 @@
+Exercise: Stream API - List of Books
+-------------------------------------------------------------------------------
+
+Given an immutable List<Book> which contains Book objects:
+    List<Book> table = List.of(
+        new Book("9781680509793", "Venkat Subramaniam ", "Functional Programming in Java"),
+        new Book("9780132350884", "Robert C. Martin", "Clean Code"),
+        new Book("9780134685991", "Joshua Bloch", "Effective Java")
+    );
+
+Implement the following test cases using the Stream API:
+
+A) testFindAllTitles()
+    Collect all titles of the Book objects in a new List<String> and sort them.
+    => "Clean Code","Effective Java","Functional Programming in Java"
+
+B) testFindByIsbn()
+    Search the List<Book> for a "Book" with the ISBN of "9780132350884".
+    Return an Optional object.
+
+C) testRemoveBook()
+    Create a new List<Book> which does not contain the "Book" object with
+    ISBN "9780132350884".
