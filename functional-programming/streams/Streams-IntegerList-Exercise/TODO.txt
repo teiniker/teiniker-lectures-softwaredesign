@@ -1,0 +1,17 @@
+Exercise: Stream API - List of Integers
+-------------------------------------------------------------------------------
+
+Given a Set<String> which contains string representations of integer numbers:
+    Set.of("23", "12", "66", "7", "17")
+
+Build a Stream which performs the following operations:
+
+A) Turn the String into Integer values.
+
+B) Remove all Integer values which are > MAX and < MIN.
+
+C) Sort the remaining Integer values.
+
+D) Collect the Integer values into a List<Integer>
+
+Use "ListOfIntegersTest" to test your implementation.
