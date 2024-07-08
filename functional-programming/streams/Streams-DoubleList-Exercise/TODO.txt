@@ -1,30 +1,24 @@
-Exercise: Streams - DoubleList
+Exercise: Stream API - Double List
 ---------------------------------------------------------------------
 
 Ergänzen Sie die folgenden Testfälle um die gewünschte Funktionalität
 mit der Hilfe von Streams zu implementieren.
 
-1. void testMinMaxFilter()
+A) void testMinMaxFilter()
     Entfernen Sie jene Werte aus der Liste, die kleiner als "minValue"
     und größer als "maxValue" sind.
 
-2. void testMinMaxLimit()
-    Begrenzen Sie die Werte aus der Liste so, dass zu kleine und zu
-    große Werte durch die jeweiligen Limits ("minValue" und "maxValue")
-    ersetzt werden.
-    Tipp: Verwenden Sie "Math.min()" und "Math.max()"
-
-3. void testLowest3()
+B) void testLowest3()
     Ermitteln Sie die drei kleinsten Werte der Liste.
 
-4. void testTop3()
+C) void testTop3()
     Ermitteln Sie die drei größten Werte der Liste.
     Tipp: Verwenden Sie einen Comparator für die Methode "sorted()"
 
-5. void testAbsolutValue()
+D) void testAbsolutValue()
     Erstellen Sie eine Liste der Absolutwerte aus der gegebenen
     Liste.
     Tipp: Verwenden Sie Math.abs()
 
-6. void testCountNegativeValues()
+E) void testCountNegativeValues()
     Zählen Sie die Anzahl negativer Werte in der gegebenen Liste.

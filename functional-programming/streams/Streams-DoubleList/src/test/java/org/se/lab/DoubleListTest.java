@@ -23,26 +23,6 @@ public class DoubleListTest
     }
 
     @Test
-    public void testMinMaxLimit()
-    {
-        List<Double> numbers = List.of(1.5, 2.7, 3.2, 4.9, 5.1);
-        double minValue = 2.0;
-        double maxValue = 5.0;
-
-        // The Math.max(number, minValue) ensures that the number is not
-        // smaller than the minimum value, and Math.min(result, maxValue)
-        // ensures that the resulting number is not greater than the
-        // maximum value.
-
-        List<Double> result = numbers.stream()
-                .map(number -> Math.min(Math.max(number, minValue), maxValue))
-                .toList();
-
-        List<Double> expected = List.of(2.0, 2.7, 3.2, 4.9, 5.0);
-        Assert.assertEquals(expected, result);
-    }
-
-    @Test
     public void testLowest3()
     {
         List<Double> numbers = List.of(1.5, 2.7, 3.2, 4.9, 5.1);
