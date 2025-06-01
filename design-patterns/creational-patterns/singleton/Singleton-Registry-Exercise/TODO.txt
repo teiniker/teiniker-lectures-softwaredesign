@@ -4,15 +4,20 @@ Exercise: Singleton Pattern - Registry
 Schreiben Sie eine Klasse "Registry", welche das Singleton Pattern
 implementiert.
 
-Als zusätzliche Funktionalität soll diese Klasse (im Konstruktor)
-das "jdbc.properties" File lesen, und die gespeicherten Informationen
-durch die folgenden Methoden bereitstellen:
+A) Singleton Pattern
+	Die Klasse soll nur eine Instanz besitzen, die über die Methode
+	public static Registry "getInstance()" erreichbar ist. 
 
-	public String getJdbcDriver()
-	public String getJdbcUrl()
-	public String getJdbcUsername()
-	public String getJdbcPassword()
-	
+B) Funktionalität der Registry
+	Als zusätzliche Funktionalität soll diese Klasse (im Konstruktor)
+	das "jdbc.properties" File lesen, und die gespeicherten Informationen
+	durch die folgenden Methoden bereitstellen:
+
+		public String getJdbcDriver()
+		public String getJdbcUrl()
+		public String getJdbcUsername()
+		public String getJdbcPassword()
+		
 Verwenden Sie die Klasse "RegistryTest" um Ihre Implementierung zu
 überprüfen.
 	

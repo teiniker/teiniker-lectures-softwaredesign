@@ -1,27 +1,26 @@
-Exercise: Proxy + Factory Method
+Exercise: Proxy, Factory Method - Validation Proxy Service
 -------------------------------------------------------------------------------
 
 Gegeben das Interface "Service" und die Implementierung "ServiceImpl".
-Implementieren Sie einen Validierungs-Proxy.
+Erweitern Sie das Beispiel um einen Validierungs-Proxy.
 
-1. Proxy Pattern
-----------------
-Implementieren Sie eine Klasse "ValidationProxy", welche die folgenden Validierungen
-durchführt:
-    Book.id >= 0
-    Book.title != null
-    Book.author != null
+A) Proxy Pattern
+    Implementieren Sie eine Klasse "ValidationProxy", welche die folgenden 
+    Validierungen durchführt:
+        Book.id >= 0
+        Book.title != null
+        Book.author != null
 
-Überprüfen Sie Ihre Implementierung mit der Klasse "ServiceTest".
+    Überprüfen Sie Ihre Implementierung mit der Klasse "ServiceTest".
 
 
-2. Factory Method
------------------
-Definieren Sie ein Interface mit dem Namen "ServiceFactory" welches die folgende
-Factory Methode enthält:
-	Service createService();
+B) Factory Method
+    Definieren Sie ein Interface mit dem Namen "ServiceFactory" welches 
+    die folgende Factory Methode enthält: Service createService()
 	
-Implementieren Sie dieses Interface in der Klasse "ServiceFactoryImpl".
-Achten Sie darauf, dass die Factory Methode das Proxy Objekt mit erzeugt.
+    Implementieren Sie dieses Interface in der Klasse "ServiceFactoryImpl".
+    Stellen Sie sicher, dass die Factory Methode das Proxy Objekt mit erzeugt.
+    
+    Achten Sie auf die Sichtarkeiten der Implementierungsklassen.
 
-Überprüfen Sie Ihre Implementierung mit der Klasse "ServiceFactoryTest".	 
+    Überprüfen Sie Ihre Implementierung mit der Klasse "ServiceFactoryTest".	 
