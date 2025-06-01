@@ -1,73 +1,35 @@
-package org.se.lab.example3;
+package org.se.lab.example4;
 
 import static java.lang.System.out;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class Singleton
-{
+{    
     /*
-     * Singleton pattern
+     * The private constructor is called only once, to initialize the static final
+     * field INSTANCE.
      */
-    private static Map<String, Singleton> registry = new HashMap<String, Singleton>();
-    private static Singleton instance;
 
-    static 
-    { 
-        register("Default", new Singleton());
-    }
-    
-    
-    protected Singleton()
+    private static final Singleton INSTANCE = new Singleton();
+    private Singleton()
     {
         out.println("Singleton()");
     }
-         
-    public static void register(String name, Singleton s)
-    {
-        out.println("register(\"" + name + "\", " + s + ")");
-        registry.put(name, s);
-    }
-    
-    protected static Singleton lookup(String name)
-    {
-        out.println("lookup(\"" + name + "\")");
-        if(registry.containsKey(name))
-        {
-            return registry.get(name);
-        }
-        else
-        {
-            return registry.get("Default");
-        }
-    }
-    
-    public static void reset()
-    {
-        out.println("reset()");
-        instance = null;
-    }
-    
-    
     public static Singleton getInstance()
     {
-        out.println("getInstance()");        
-        if(instance == null)
-        {
-            instance = lookup(System.getProperty("Singleton")); 
-        }
-        return instance;
+        out.println("getInstance()");
+        return INSTANCE;
     }
-    
+     
     
     /*
      * Operations
      */
-    
+     
     public String getVersionNumber()
     {
-        out.println("getVersionNumber()");
-        return "1.0.0";
+        final String VERSION = "1.1.7";
+        out.println("getVersion()");
+        return VERSION;
     }
+    
 }

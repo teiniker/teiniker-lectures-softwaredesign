@@ -1,35 +1,15 @@
-package org.se.lab.example4;
+package org.se.lab.example5;
 
-import static java.lang.System.out;
-
-public class Singleton
-{    
-    /*
-     * The private constructor is called only once, to initialize the static final
-     * field INSTANCE.
-     */
-
-    private static final Singleton INSTANCE = new Singleton();
-    private Singleton()
-    {
-        out.println("Singleton()");
-    }
-    public static Singleton getInstance()
-    {
-        out.println("getInstance()");
-        return INSTANCE;
-    }
-     
+public enum Singleton
+{
+    INSTANCE;  // Ensure a unique instance
     
     /*
      * Operations
      */
-     
+    
     public String getVersionNumber()
     {
-        final String VERSION = "1.1.7";
-        out.println("getVersion()");
-        return VERSION;
+        return "1.0.0";
     }
-    
 }
