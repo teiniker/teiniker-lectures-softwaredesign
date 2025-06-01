@@ -1,15 +1,19 @@
-Exercise: Cammand - List Processor
+Exercise: Command - List Processor
 -------------------------------------------------------------------------------
 
-Refactor the given "ListProcessor" class:
+Überarbeiten Sie die gegebene Klasse "ListProcessor", damit sie ein Command 
+Pattern verwendet umd eine flexible Verarbeitung von Strings zu ermöglichen.
 
-A) Write a "Command" interface with the following operation:
-    
-    String process(String s): The given string will be modified and returned.
+A) Command Interface 
+    Schreiben Sie ein "Command" Interface mit der folgenden Operation:    
+    String process(String s)  
+    Der gegebene String s wird modifiziert und zurückgegeben.
 
-B) Add a "Command cmd" parameter to the "process()" method and replace 
-    "s.toUpperCase()" with an invocation to "cmd.process(s)".
+B) Invoker
+    Fügen Sie der Methode "process()" einen Parameter "Command cmd" hinzu 
+    und ersetzen Sie "s.toUpperCase()" durch einen Aufruf von "cmd.process(s)".
 
-C) Refactor the test case tu use a Lambda expressions which converts every
-    String in the list to lower case.
+C) Lambda Expression
+    Überarbeiten Sie den Testfall, um eine Lambda-Ausdruck zu verwenden, 
+    der jeden String in der Liste in Kleinbuchstaben umwandelt.
     
