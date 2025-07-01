@@ -14,17 +14,7 @@ as an introduction to software design in Java.
     * [Behavioral Patterns](design-patterns/behavioral-patterns/README.md)
     * Design Patterns in Practice
 
-4. **Error Handling and Logging** 
-    * [Exception Handling](error-handling/exception-handling/)
-    * [Logging](error-handling/logging-log4j/)
-
-5. **Functional Programming**
-    * [Introduction](functional-programming/introduction/README.md)
-    * [Lambda Expressions](functional-programming/lambda-expressions/)
-    * [Functional Interfaces](functional-programming/functional-interfaces/)
-    * [Streams](functional-programming/streams/) 
-
-6. **Software Quality**
+4. **Software Quality**
     * [Introduction](software-quality/introduction/README.md) 
     * [Unit Tests](software-quality/unit-tests/)
     * Testing Practices
@@ -34,6 +24,13 @@ as an introduction to software design in Java.
         * [Introduction](software-quality/refactoring/README.md)  
         * [Code Smells](software-quality/refactoring/code-smells/README.md)
         * [Static Code Analysis](software-quality/refactoring/static-analysis/)
+
+5. **Functional Programming**
+    * [Introduction](functional-programming/introduction/README.md)
+    * [Lambda Expressions](functional-programming/lambda-expressions/)
+    * [Functional Interfaces](functional-programming/functional-interfaces/)
+    * [Streams](functional-programming/streams/) 
+
 
 See also: 
 [Java Programming by Example](https://github.com/teiniker/teiniker-lectures-java), 
