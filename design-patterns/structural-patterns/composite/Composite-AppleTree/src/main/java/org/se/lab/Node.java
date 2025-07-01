@@ -8,7 +8,6 @@ public abstract class Node
 	{
 		throw new UnsupportedOperationException();
 	}
-	
 	public List<Node> getNodes()
 	{
 		throw new UnsupportedOperationException();

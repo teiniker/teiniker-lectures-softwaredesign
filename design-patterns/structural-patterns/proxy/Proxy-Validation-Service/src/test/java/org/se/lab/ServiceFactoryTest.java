@@ -14,7 +14,8 @@ public class ServiceFactoryTest
 	@Test
 	public void testCreateService()
 	{
-		ServiceFactory factory = new ServiceFactoryImpl();		
+		//ServiceFactory factory = new ServiceFactoryImpl();
+		ServiceFactory factory = ServiceFactory.INSTANCE;
 		Service service = factory.createService();
 		
 		Assert.assertNotNull(service);

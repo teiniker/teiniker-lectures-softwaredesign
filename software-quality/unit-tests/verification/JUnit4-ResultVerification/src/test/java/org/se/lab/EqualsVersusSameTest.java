@@ -12,7 +12,9 @@ public class EqualsVersusSameTest
 
 		// verify
         User expected = new User(7, "homer", "Kqq3lbODaQT4LvxsoihdknrtdSBiFOHaODQY65DJBS8=");
-        Assert.assertEquals(expected,u);
+        //Assert.assertEquals(expected,u);
+		Assert.assertFalse(expected == u);	// compare object references
+		Assert.assertTrue(expected.equals(u));
 	}
 
 

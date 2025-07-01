@@ -48,7 +48,7 @@ public class JUnit4Test
     }
 
 
-    @Ignore
+//    @Ignore
     @Test
     public void anotherMethod()
     {

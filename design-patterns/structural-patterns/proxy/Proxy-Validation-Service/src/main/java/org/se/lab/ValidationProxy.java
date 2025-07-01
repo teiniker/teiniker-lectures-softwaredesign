@@ -1,6 +1,5 @@
 package org.se.lab;
 
-import java.util.Collections;
 import java.util.Set;
 
 class ValidationProxy // package private

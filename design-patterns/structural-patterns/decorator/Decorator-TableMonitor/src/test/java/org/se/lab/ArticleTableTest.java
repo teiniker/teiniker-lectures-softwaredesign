@@ -17,11 +17,11 @@ public class ArticleTableTest
 	@Before
 	public void setup()
 	{
-		table = new ArticleTableInMemoryImpl();
+//		table = new ArticleTableInMemoryImpl();
 //		table = new ArticleTableLogger(new ArticleTableInMemoryImpl());
-//		table = new ArticleTableLogger(
-//					new ArticleTableMonitor(
-//						new ArticleTableInMemoryImpl()));
+		table = new ArticleTableLogger(
+					new ArticleTableMonitor(
+						new ArticleTableInMemoryImpl()));
 //		table = new ArticleTableMonitor(new ArticleTableInMemoryImpl());
 		
 		table.insert(new Article(1, "The C Programming Language", 2995));

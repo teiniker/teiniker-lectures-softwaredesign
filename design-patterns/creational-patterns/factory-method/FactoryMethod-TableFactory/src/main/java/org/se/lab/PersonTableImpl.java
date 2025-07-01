@@ -23,12 +23,12 @@ class PersonTableImpl  // package private
 
     public void update(Person p)
     {
-    	// TODO: implement that method
+    	// not implemented
     }
 
     public void delete(Person p)
     {
-    	// TODO: implement that method
+        // not implemented
     }
 
     public Person findById(int id)

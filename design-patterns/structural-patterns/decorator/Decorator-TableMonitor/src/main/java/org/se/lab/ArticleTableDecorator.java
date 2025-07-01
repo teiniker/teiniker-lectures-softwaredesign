@@ -16,7 +16,7 @@ abstract class ArticleTableDecorator // package private
 	}
 
 	/*
-	 * Association: ---[1]-> dao:ArticleTable
+	 * Association: ---[1]-> table:ArticleTable
 	 */
 	private final ArticleTable table;
 	

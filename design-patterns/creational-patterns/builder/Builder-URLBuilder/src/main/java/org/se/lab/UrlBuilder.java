@@ -5,8 +5,8 @@ import java.util.List;
 
 public class UrlBuilder
 {
-    private String protocol = "http"; // default
-    private Integer port;
+    private String protocol = "https"; // Variant: default value
+    private Integer port = 80;
     private String host;
     private String application;
     private List<String> parameters = new ArrayList<>();
@@ -15,8 +15,10 @@ public class UrlBuilder
     {
     }
 
+    // Variant: force protocol and host
     public UrlBuilder(String protocol, String host )
     {
+        // Variant: Input validation
         if(protocol == null)
             throw new IllegalArgumentException("Invalid protocol");
 
@@ -59,9 +61,10 @@ public class UrlBuilder
 
     public UrlBuilder host(String host)
     {
+        // Variant: Validation
         if(host == null)
             throw new IllegalArgumentException("Invalid host!");
-        
+
         this.host = host;
         return this;
     }
@@ -70,7 +73,7 @@ public class UrlBuilder
     {
         if(application == null)
             throw new IllegalArgumentException("Invalid application name!");
-        
+
         this.application = application;
         return this;
     }

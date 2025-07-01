@@ -32,8 +32,7 @@ public class VisitorAppleTreeNumberOf
 		// operation
 		
 		// navigation
-//		branch.getNodes().forEach(n -> visit(n));
-		branch.getNodes().forEach(this::visit);
+		branch.getNodes().forEach(n -> visit(n));
 	}
 	
 	public void visit(Leaf leaf)

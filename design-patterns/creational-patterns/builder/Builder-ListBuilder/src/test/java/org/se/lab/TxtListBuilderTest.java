@@ -10,14 +10,14 @@ public class TxtListBuilderTest
 	{		
 		TxtListBuilder builder = new TxtListBuilder();
 		// Director executes single steps to create a product
-		builder.item("Hello").item("world").item("!");
+		builder.item("line1").item("line2").item("end of line");
 		String s = builder.toText();
 		
 		String expected = 
 				"list:\n"	+
-				"	- Hello\n" +
-				"	- world\n" +
-				"	- !\n";
+				"	- line1\n" +
+				"	- line2\n" +
+				"	- end of line\n";
 		
 		Assert.assertEquals(expected, s);
 	}
