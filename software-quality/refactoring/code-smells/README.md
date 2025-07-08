@@ -1,125 +1,126 @@
 # Code Smells 
 
-Improving the design of existing code requires that we know what code 
-needs improvement. It is therefore necessary to learn common design 
-problems so we can recognize them in our code.
+> A code smell is a **surface indication** that usually **corresponds to a deeper problem** in the system. 
+> A smell is by definition something that's **quick to spot**.
 
-The most common design problems result from code that is:
-**duplicated**, **unclear**, **complicated**.
-
-> Code smells are examples which provide additional guidance 
-> for identifying design problems.
+A smells aren't inherently bad on their own - they are often an indicator of a problem rather than 
+the problem themselves.
 
 
-* **Duplicated Code**: If we see the same code structure in more than 
-    one place, we can be sure that your program will be better if we 
-    find a way to unify them.
-    * **Explicit duplication** exists in identical code.
-    * **Subtle duplication** exists in structures or processing steps 
-        that are outwardly different yet essentially the same.
-    
-    _Refactorings_: Extract Method, Extract Class, Pull Up Method, 
-        Substitute Algorithm
+## Bloaters
 
-* **Long Method**: The classes that live best and longest are 
-    those with short methods. The longer a method is, the more difficult 
-    it is to understand.
-    
-    A key point in handling small methods is **good naming**. If we 
-    have a good name for a method we don’t need to look at the 
-    implementation body.
+Bloaters are code, methods and classes that have increased to such gargantuan 
+proportions that they are hard to work with. Usually these smells do not crop 
+up right away, rather they accumulate over time as the program evolves 
+(and especially when nobody makes an effort to eradicate them).
 
-    _Refactorings_: Extract Method, Replace Temp with Query, 
-        Introduce Parameter Object, Preserve Whole Object, 
-        Replace Method with Method Object, Decompose Conditional
+* **Long Method**: A method that is too long becomes hard to understand, maintain, 
+and reuse due to doing too much.
 
-* **Large Class**: When a class is trying to do too much, it often shows 
-    up as too many instance variables. When a class has **too many instance 
-    variables**, duplicated code can’t be far behind.
-    
-    A class with **too much code** is prime breeding ground for duplicated code 
-    and chaos.
+* **Large Class**: A class that has too many responsibilities becomes difficult 
+to manage and violates the Single Responsibility Principle.
 
-    _Refactorings_: Extract Class, Extract Subclass, Extract Interface,
-    Duplicate Observed Data
+* **Primitive Obsession**: Overuse of primitive types (like strings, integers, or 
+arrays) instead of small objects for domain concepts leads to less expressive, 
+less flexible code.
+
+* **Long Parameter List**: A method that takes too many parameters is harder to 
+understand and use, often signaling that some parameters should be grouped 
+or encapsulated.
+
+* **Data Clumps**: Groups of variables that tend to appear together suggest that 
+they should be encapsulated in their own class or object.
 
 
-* **Long Parameter List**: Long parameter lists are **hard to understand**, because 
-    they become inconsistent and difficult to use. In object-oriented programs 
-    we don’t pass in everything the method needs, instead we **pass enough** so 
-    that the method can get to everything it needs.
 
-    _Refactorings_: Replace Parameter with Method, Preserve Whole Object,
-        Introduce Parameter Object  
+## Object-Orientation Abusers
 
+All these smells are incomplete or incorrect application of object-oriented 
+programming principles.
 
-* **Divergent Change**: We structure software to make change easier (software 
-    is meant to be soft). 
-    
-    When we make a change, we want to be able to jump to a **single clear point** 
-    in the system and make the change.
-    
-    Divergent change occurs when one class is commonly changed in different 
-    ways for different reasons.
+* **Alternative Classes with Different Interfaces**: Two classes perform similar 
+	functions but have different method names, making it hard to use them 
+	interchangeably or understand their commonality.
 
-    _Refactorings_: Extract Class
+* **Refused Bequest**: A subclass inherits methods or fields from its superclass 
+	that it does not use or want, indicating that inheritance may be inappropriate.
 
+* **Switch Statements**: Frequent use of switch (or if-else) statements based 
+	on type or state suggests that polymorphism could better organize the 
+	behavior.
 
-* **Feature Envy**: A classic smell is a method that seems more interested in a 
-    class other than the one it actually is in. This is a method  that invokes 
-    half-a-dozen getting methods on another object to calculate some value. 
-    Often a method uses features of several classes.
-    
-    A heuristic we can use is to **determine which class has most of the data** 
-    and put the method with that data.
-
-    _Refactorings_: Move Method, Extract Method
- 
-
-* **Data Clumps**: Often, we can see **the same three or four data items together** 
-    in lots of places: fields in a couple of classes, parameters in many method signatures.
-    
-    Bunches of data that hang around together really should be **put into their own object**.
-
-    Reducing field lists and parameter lists will certainly remove a few bad smells.
-
-    _Refactorings_: Extract Class, Introduce Parameter Object, Preserve Whole Object
+* **Temporary Field**: A field that is only set or used in certain situations 
+	adds confusion and clutter to the object’s structure.
 
 
-* **Primitive Obsession**: People new to objects usually are conservative to use 
-    small objects for small tasks (e.g. money classes, ranges with an upper and a 
-    lower bound, special strings like telephone numbers).
+## Change Preventers
 
-    _Refactorings_: Replace Data Value with Object, Replace Type Code with Class / Subclasses,
-    Extract Class, Introduce Parameter Object, Replace Array with Object
+These smells mean that if you need to change something in one place in 
+your code, you have to make many changes in other places too. Program 
+development becomes much more complicated and expensive as a result.
 
-* **Switch Statements**: The problem with switch statements is essentially that of 
-    duplication. Often we can find **the same switch statement scattered about a program** 
-    in different places. 
-    
-    The object-oriented notation of **polymorphism** gives us an elegant way to deal 
-    with this problem. 
+* **Divergent Change**: A class suffers from frequent changes for different 
+	reasons, indicating it has too many responsibilities and should be split.
 
-    _Refactorings_: Extract Method, Move Method, Replace Type Code with Subclasses,
-    Replace Conditional with Polymorphism, Replace Parameter with Explicit Methods,
-    Introduce Null Object
- 
+* **Parallel Inheritance Hierarchies**: Every time you create a subclass 
+	in one hierarchy, you must create a corresponding subclass in another, 
+	suggesting tight and unnecessary coupling between class structures.
 
-* **Lazy Class**: A class that isn’t doing enough to pay for itself should be eliminated.
+* **Shotgun Surgery**: A small change requires many small edits scattered 
+	across multiple classes or methods, making the system harder to 
+	maintain and more error-prone.
 
-    Often this might be a class that has been downsized with refactoring, or it might be 
-    a class that was added because of changes that were planned but not made. 
 
-    _Refactorings_: Collapse Hierarchy, Inline Class
+## Dispensables
 
-* **Speculative Generality** We get this smell when people say, "Oh, I think we need 
-    the ability to this kind of thing someday". Such Code often is harder to understand 
-    and maintain.
-    
-    Speculative generality can be spotted when **the only users of a method or class 
-    are test cases**. If we find such a method or class, we can **delete it**.
+A dispensable is something pointless and unneeded whose absence would 
+make the code cleaner, more efficient and easier to understand.
 
-    _Refactorings_: Collapse Hierarchy, Inline Class, Remove Parameter, Rename Method
+* **Comments**: Excessive or outdated comments may indicate that the 
+	code isn't clear enough on its own and would benefit more from 
+	refactoring than annotation.
+
+* **Duplicate Code**: Identical or very similar code appearing in multiple 
+	places increases maintenance effort and risk of inconsistencies.
+
+* **Data Class**: A class that contains only fields and no meaningful 
+	behavior tends to be overly passive and overly dependent on other 
+	classes.
+
+* **Dead Code**: Code that is never used or no longer serves a purpose 
+	clutters the codebase and should be removed.
+
+* **Lazy Class**: A class that does too little to justify its existence 
+	adds unnecessary complexity and can often be eliminated or merged.
+
+* **Speculative Generality**: Code designed for anticipated future needs 
+	that never materialize adds unnecessary complexity and should be 
+	removed.
+
+
+## Couplers
+
+All the smells in this group contribute to excessive coupling between 
+classes or show what happens if coupling is replaced by excessive delegation.
+
+* **Feature Envy**: A method that uses data or methods from another class 
+	more than from its own suggests it belongs in the other class.
+
+* **Inappropriate Intimacy**: Two classes are too tightly coupled, often 
+	accessing each other’s internals, making changes risky and violating 
+	encapsulation.
+
+* **Incomplete Library Class**: A library or external class lacks needed 
+	functionality, leading to awkward workarounds or subclassing when a 
+	better abstraction is needed.
+
+* **Message Chains**: A sequence of method calls like 
+	a.getB().getC().doSomething() creates tight coupling to navigation 
+	paths and makes code brittle.
+
+* **Middle Man**: A class that delegates most of its work to another class 
+	adds little value and can often be removed to simplify the design.
+
 
 
 ## References
@@ -128,4 +129,6 @@ The most common design problems result from code that is:
 
 * Martin Fowler. **Refactoring: Improving the Design of Existing Code**. Addison Wesley, 2. Edition, 2019
 
-*Egon Teiniker, 2016-2024, GPL v3.0*
+* [Refactoring GURU: Code Smells](https://refactoring.guru/refactoring/smells)
+
+*Egon Teiniker, 2016-2025, GPL v3.0*
