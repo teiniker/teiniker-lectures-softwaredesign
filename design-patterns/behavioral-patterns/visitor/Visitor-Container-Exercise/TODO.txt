@@ -1,21 +1,26 @@
-Exercise: Visitor Pattern
+Exercise: Visitor Pattern - Container
 ---------------------------------------------------------------------
 
-1. Visitor Pattern  
----------------------------------------------------------------------
-1.1 Definieren Sie ein Interface "ContainerVisitor", das eine visit()
+Sie haben eine heterogene Baumstruktur, die aus Instanzen der Klassen 
+Product und Container besteht. Diese Klassen repräsentieren Container,
+die Produkte enthalten können. Container können wiederum andere Container
+enthalten, was zu einer rekursiven Struktur führt.
+
+A) Visitor Interface  
+	Definieren Sie ein Interface "ContainerVisitor", das eine visit()
 	Methode für alle Typen (Product, Container, Component) der Baumstruktur 
 	enthält.
 	
-1.2 Implementieren Sie jeweils eine konkrete Visitor Klasse:
-	a) "ContainerVisitorPrice" welcher den Gesamtpreis aller Produkte des
+B) Concrete Visitor	Classes
+	Implementieren Sie jeweils eine konkrete Visitor Klasse:
+	i) "ContainerVisitorPrice" welcher den Gesamtpreis aller Produkte des
 		Containers ermittelt - siehe "ContainerVisitorPriceTest".
-	b) "ContainerVisitorWeight" welcher das Gesamtgewicht aller Produkte
+	ii) "ContainerVisitorWeight" welcher das Gesamtgewicht aller Produkte
 		des Containers berechnet - siehe "ComponentVisitorWeightTest".
-
+	Die Navigation erfolgt über die Methoden visit(Product product) und
+	visit(Container container) in der Visitor Klasse.
 					
-2. Refactoring
----------------------------------------------------------------------
-Reduzieren Sie die Redundanzen in Ihren Klassen ohne die Funktionalität
-zu verändern.
-
+C) Refactoring
+	Reduzieren Sie die Redundanzen in den Visitor Klassen ohne die 
+	Funktionalität zu verändern.
+	

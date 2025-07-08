@@ -5,8 +5,9 @@ public abstract class FileSystemVisitor
 	public void visit(Node node)
 	{
 		if(node instanceof File)
-		{	
-			visit((File)node);
+		{
+			File f = (File)node;
+			visit(f);
 		}
 		else if(node instanceof Directory)
 		{

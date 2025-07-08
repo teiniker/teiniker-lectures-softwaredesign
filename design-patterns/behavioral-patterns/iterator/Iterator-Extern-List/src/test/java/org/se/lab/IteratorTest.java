@@ -30,6 +30,7 @@ public class IteratorTest
     @Test
     public void testIterator()
     {
+        // Iterator<String> it = list.iterator()
         for(Iterator<String> it = list.iterator(); it.hasNext(); )
         {
             String s = it.next();

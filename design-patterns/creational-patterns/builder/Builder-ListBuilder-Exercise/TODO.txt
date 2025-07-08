@@ -1,29 +1,29 @@
-Exercise: Builder Pattern
+Exercise: Builder Pattern - List Builder
 ---------------------------------------------------------------------
 
-1. List Builder
----------------------------------------------------------------------
-Implementieren Sie ein Interface "ListBuilder", mit dessen Hilfe eine
-Liste schrittweise aufgebaut werden kann.
+Implementieren Sie einen Builder, der es ermöglicht, eine Liste von
+Elementen schrittweise aufzubauen. Der Builder soll verschiedene
+Ausgabeformate unterstützen, wie z.B. XML und Text.
 
-Beispiel: builder.item("Hello").item("world").item("!");
+A) List Builder
+    Implementieren Sie ein Interface "ListBuilder", mit dessen 
+    Hilfe eine Liste schrittweise aufgebaut werden kann.
+
+    Beispiel: builder.item("Hello").item("world").item("!");
 
 
-2. XML List Builder
----------------------------------------------------------------------
-Implementieren Sie einen konkreten Builder "XmlListBuilder" der die
-Liste als XML String ausgibt.
-Dazu implementiert der XmlList Builder die Methode: String toXml();
+B) XML List Builder
+    Implementieren Sie einen konkreten Builder "XmlListBuilder" 
+    der die Liste als XML String ausgibt.
+    Dazu implementiert der XmlList Builder die Methode: String toXml();
 
-Testen Sie Ihre Implementierung mit der Klasse "ListBuilderTest".
+    Testen Sie Ihre Implementierung mit der Klasse "ListBuilderTest".
 
 		
-3. Text List Builder
----------------------------------------------------------------------
-Implementieren Sie einen konkreten Builder "TxtListBuilder" der die
-Liste als Text String ausgibt.
-Dazu implementiert der TxtList Builder die Methode: String toText();
+C) Text List Builder
+    Implementieren Sie einen konkreten Builder "TxtListBuilder" 
+    der die Liste als Text String ausgibt.
+    Dazu implementiert der TxtList Builder die Methode: String toText();
 
-Testen Sie Ihre Implementierung mit der Klasse "ListBuilderTest".
-		
+    Testen Sie Ihre Implementierung mit der Klasse "ListBuilderTest".
 		

@@ -14,6 +14,7 @@ public class UserBuilderTest
                 .password("Kqq3lbODaQT4LvxsoihdknrtdSBiFOHaODQY65DJBS8=")
                 .build();
 
+        // Verification
         Assert.assertEquals(7, user.getId());
         Assert.assertEquals("homer", user.getUsername());
         Assert.assertEquals("Kqq3lbODaQT4LvxsoihdknrtdSBiFOHaODQY65DJBS8=", user.getPassword());
@@ -26,6 +27,7 @@ public class UserBuilderTest
         // Builder with default values can reduce the setup code for objects significantly.
         User user = new UserBuilder().build();
 
+        // Verification
         Assert.assertEquals(1, user.getId());
         Assert.assertEquals("user", user.getUsername());
         Assert.assertEquals("BPiZbadjt6lpsQKO4wB1aerzpjVIbdqyEdUSyFud+Ps=", user.getPassword());

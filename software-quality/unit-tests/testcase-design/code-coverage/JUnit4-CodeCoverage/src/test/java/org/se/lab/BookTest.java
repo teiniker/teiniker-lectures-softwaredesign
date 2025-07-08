@@ -52,7 +52,6 @@ public class BookTest
 		// Teardown
 	}
 
-/*
 	@Test
 	public void testInvalidIsbn_Blank()
 	{
@@ -97,5 +96,5 @@ public class BookTest
 	{
 		new Book("9780132350884", "Robert C. Martin", null);
 	}
-*/
+
 }

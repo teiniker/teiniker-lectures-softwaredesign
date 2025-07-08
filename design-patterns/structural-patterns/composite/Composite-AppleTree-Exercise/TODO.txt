@@ -1,18 +1,21 @@
 Exercise: Composite - AppleTree
 ---------------------------------------------------------------------
 
-Implementieren Sie die fehlenden Sub-Klassen "Leaf", "GreenApple",
-"RedApple" und "Branch" die zusammen mit der Klasse "Node" ein 
-Composite Pattern bilden.
+Sie haben eine abstrakte Klasse "Node" gegeben. Erweitern Sie dieses 
+Beispiel zu einem funtionierenden Composite Pattern.
 
-Als Operation für die Baumstruktur sollen die Methoden:
+A) Composite Pattern
+	Implementieren Sie die fehlenden Sub-Klassen "Leaf", "GreenApple",
+	"RedApple" und "Branch" die zusammen mit der Klasse "Node" ein 
+	Composite Pattern bilden.
 
-	int numberOfLeaves();
-	int numberOfRedApples();
-	int numberOfGreenApples();
-	
-implementiert werden, welche die Anzahl der gleichen Knoten (Leaf, 
-RedApple oder GreenApple) im Baum ermitteln. 
-
+B) Operationen 
+	Als Operation für die Baumstruktur sollen die Methoden:
+	int numberOfLeaves()
+	int numberOfRedApples()
+	int numberOfGreenApples()
+	implementiert werden, welche die Anzahl der gleichen Knoten (Leaf, 
+	RedApple oder GreenApple) im Baum ermitteln. 
 
 Überprüfen Sie Ihre Implementierung mit der Test-Klasse "CompositeTest".
+

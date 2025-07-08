@@ -1,25 +1,25 @@
 Exercise: Command Pattern - Merger
 ---------------------------------------------------------------------
 
-1. Concrete Commands
----------------------------------------------------------------------
-Implementieren Sie drei konkrete Command Klassen:
+Sie haben ein "MergerCommand" Interface gegeben, das eine Methode
+"int merge(int a, int b)" definiert. 
 
-a) MergerCommandAND => c = a & b
-b) MergerCommandXOR => c = a ^ b
-c) MergerCommandMAX => c = MAX(a,b)
+A) Concrete Commands
+	Implementieren Sie drei konkrete Command Klassen:
+	i) "MergerCommandAND" => c = a & b
+	ii) "MergerCommandXOR" => c = a ^ b
+	iii) "MergerCommandMAX" => c = MAX(a,b)
 
-Überprüfen Sie Ihre Implementierung mit der Klasse "MergerCommandTest".
+	Überprüfen Sie Ihre Implementierung mit der Klasse "MergerCommandTest".
 
 
-2. ListMerger
----------------------------------------------------------------------
-In der gegebenen Klasse "ListMerger", implementieren Sie eine Methode 
-mit dem Namen:
+B) ListMerger
+	In der gegebenen Klasse "ListMerger" finden Sie eine Methode 
+	mit dem Namen:
+	List<Integer> merge(List<Integer> listA, List<Integer> listB, 
+		MergerCommand merger)						
 
-	List<Integer> merge(List<Integer> listA, List<Integer> listB, MergerCommand merger)						
+	Mit Hilfe des Command Patterns soll dabei die konkrete Merge-Operation
+	als Parameter mit gegeben werden.
 
-Mit Hilfe des Command Patterns wird hier die konkrete Merge-Operation
-als Parameter mit gegeben.
-
-Testen Sie Ihre Implementierung mit der Klasse "ListMergerTest".
+	Testen Sie Ihre Implementierung mit der Klasse "ListMergerTest".

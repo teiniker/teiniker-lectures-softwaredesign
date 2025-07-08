@@ -1,34 +1,25 @@
-Exercise: Facade Pattern
+Exercise: Facade Pattern - DigestService
 --------------------------------------------------------------------------
 
-1. DigestService
-----------------
-Implementieren Sie die Klasse "DigestServiceImpl" für das gegebene Interface
-"DigestService".
+Erweitern Sie das gegebene Beispiel um eine Facade für einen DigestService.
 
-- Übergeben Sie die beiden Referenzen (vom Typ "DigestAlgorithm" und
-    "HexEncoder") dem Konstruktor:
+A) DigestService
+    Implementieren Sie die Klasse "DigestServiceImpl" für das gegebene 
+    Interface "DigestService".
+    - Übergeben Sie die beiden Referenzen (vom Typ "DigestAlgorithm" und
+        "HexEncoder") dem Konstruktor:
+        DigestServiceImpl(DigestAlgorithm digest, HexEncoder encoder)
+    - Realisieren Sie die beiden Interface-Methoden durch Delegation auf 
+        diese beiden Objekte.
+    - Implementieren Sie eine zusätzliche Input-Validierung für die 
+    Parameter der beiden Operationen.
 
-    DigestServiceImpl(DigestAlgorithm digest, HexEncoder encoder)
-
-- Realisieren Sie die beiden Interface-Methoden durch Delegation auf diese
-    beiden Objekte.
-
-- Implementieren Sie eine zusätzliche Input-Validierung für die Parameter
-    der beiden Operationen.
-
-2. Factory Method
------------------
-Implementieren Sie die Klasse "ServiceFactoryImpl" für das gegebene Interface
-"ServiceFactory".
-
-- Instanziieren Sie die Klassen "DigestAlgorithm" und "HexEncoder", sowie
-    die Klasse "DigestServiceImpl" und geben Sie eine Reference vom Typ
-    "DigestService" zurück.
-
-- Machen Sie alle Implementierungsklassen package-private.
+B) Factory Method
+    Implementieren Sie die Klasse "ServiceFactoryImpl" für das gegebene 
+    Interface "ServiceFactory".
+    - Instanziieren Sie die Klassen "DigestAlgorithm" und "HexEncoder", 
+    sowie die Klasse "DigestServiceImpl" und geben Sie eine Reference 
+    vom Typ "DigestService" zurück.
+    - Achten Sie auf die Sichtbarkeiten der Implementierungsklassen.
 
 Überprüfen Sie Ihre Implementierungen mit der Klasse "DigestServiceTest".
-
-Tipp: Sie können auch zusätzliche Tests implementieren (zB: für die
-Instanziierung ohne Factory Methode).

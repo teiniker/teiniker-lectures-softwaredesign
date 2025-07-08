@@ -1,35 +1,35 @@
 Exercise: Template Method - Order Service
 ---------------------------------------------------------------------
 
-Implementieren Sie das Interface "OrderService", indem Sie eine
-abstrakte Klasse "AbstractOrderService" erstellen. Diese Klasse
-soll eine Template Method enthalten.
 
-Implementieren Sie eine Template Method mit dem Namen:
+A) Template Method
+	Implementieren Sie das Interface "OrderService", indem Sie eine
+	abstrakte Klasse "AbstractOrderService" erstellen. Diese Klasse
+	soll eine Template Method enthalten.
 
-long caluclateTotalCosts(Order order)
+	Implementieren Sie eine Template Method mit dem Namen:
+	long caluclateTotalCosts(Order order)
 
-Die Berechnung erfolgt nach dem folgenden Algorithmus:
+	Die Berechnung erfolgt nach dem folgenden Algorithmus:
+		Rabatt = Listenpreis * RabattSatzIn% / 100
+		Netto-Preis = Listenpreis - Rabatt
+		MwSt = Netto-Preis * MwSt-%Satz / 100
+		Brutto = Netto + MwSt
 
-	Rabatt = Listenpreis * RabattSatzIn% / 100
-	Netto-Preis = Listenpreis - Rabatt
-	MwSt = Netto-Preis * MwSt-%Satz / 100
-	Brutto = Netto + MwSt
-
-
-Die Template Method soll die folgenden abstrakten Methoden verwenden:
-
+	Die Template Method soll die folgenden abstrakten Methoden verwenden:
     int getTaxRate(Product product)
-
     int getDiscount(OrderLine line)
 
-In einer abgeleiteten Klasse "OrderServiceImpl" sollen folgende
-Regeln implementiert werden:
+B) Concrete Subclasses
+	In einer abgeleiteten Klasse "OrderServiceImpl" sollen folgende
+	Regeln implementiert werden:
 
-a) Der MwSt Satz beträgt 20%, außer es handelt sich um ein Buch, dann
-	werden nur 10% berechnet.
-	
-b) Ab einer Bestellmenge (quantity) von 5 werden 5% Rabatt gegeben.
+	i) Der MwSt Satz beträgt 20%, außer es handelt sich um ein Buch
+		(die description enthält den String "Buch"), dann werden nur 
+		10% berechnet.
+		
+	ii) Ab einer Bestellmenge (quantity) von 5 werden 5% Rabatt gegeben.
 
-Testen Sie Ihre Implementierung mit der Klasse "OrderServiceImplTest".
+	Testen Sie Ihre Implementierung mit der Klasse "OrderServiceImplTest".
 
+Beachten Sie die Verwendung des Builder Patterns um eine Order zu erstellen.

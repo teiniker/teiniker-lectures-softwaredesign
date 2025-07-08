@@ -5,7 +5,6 @@ import java.util.List;
 
 public class ListProcessor
 {
-    
     public static List<String> process(List<String> list)
     {
         List<String> result = new ArrayList<>();

@@ -20,7 +20,7 @@ public class FileSystemNumberOfFilesVisitor
 	@Override
 	public void visit(File file)
 	{
-		numberOfFiles += 1;
+		numberOfFiles++;
 	}
 
 	@Override

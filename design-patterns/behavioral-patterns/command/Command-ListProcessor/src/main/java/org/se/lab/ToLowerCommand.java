@@ -8,5 +8,4 @@ public class ToLowerCommand
     {
         return s.toLowerCase();
     }
-
 }
