@@ -264,6 +264,7 @@ and replacing inheritance with delegation and vice versa.
 
 * [Martin Fowler: Catalog of refactorings](https://refactoring.com/catalog/)
 * Martin Fowler. **Refactoring: Improving the Design of Existing Code**. Addison Wesley, 2. Edition, 2019
+
 * [Refactoring Guru: Refactoring](https://refactoring.guru/refactoring)
 
 *Egon Teiniker, 2016-2025, GPL v3.0*
