@@ -29,6 +29,7 @@ as an introduction to software design in Java.
     * [Introduction](functional-programming/introduction/README.md)
     * [Lambda Expressions](functional-programming/lambda-expressions/)
     * [Functional Interfaces](functional-programming/functional-interfaces/)
+    * [Immutable Objects](functional-programming/immutable-objects/)
     * [Streams](functional-programming/streams/) 
 
 
@@ -40,4 +41,4 @@ As a development environment, you can use a pre-configured Linux VM image:
 [Virtual Lab](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l)
 
 
-*Egon Teiniker, 2016-2024, GPL v3.0*
+*Egon Teiniker, 2016-2025 GPL v3.0*
