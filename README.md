@@ -24,6 +24,7 @@ as an introduction to software design in Java.
         * [Introduction](software-quality/refactoring/README.md)  
         * [Code Smells](software-quality/refactoring/code-smells/README.md)
         * [Static Code Analysis](software-quality/refactoring/static-analysis/)
+    * [Integration Tests](software-quality/integration-tests/)
 
 5. **Functional Programming**
     * [Introduction](functional-programming/introduction/README.md)
