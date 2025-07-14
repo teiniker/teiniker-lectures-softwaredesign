@@ -1,7 +1,6 @@
 package org.se.lab;
 
 import java.util.function.Function;
-import java.util.function.Predicate;
 
 import org.junit.Assert;
 import org.junit.Test;
