@@ -1,0 +1,5 @@
+jdbc.driver=org.sqlite.JDBC
+jdbc.url=jdbc:sqlite:target/test.db
+jdbc.username=
+jdbc.password=
+
