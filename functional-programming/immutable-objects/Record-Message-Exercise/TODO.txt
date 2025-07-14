@@ -1,0 +1,15 @@
+Exercise: record - Message
+-------------------------------------------------------------------------------
+
+Implement an immutable class called `Message` as a record 
+with the following additional features:
+
+A) Input Validation 
+In the constructor, ensure that `id` is positive and
+`data` is not `null`.
+
+B) Deep Copy 
+In the getter method data(), return a deep copy so that 
+only a copy of the private list is provided.
+
+Test you implementation with the given `MessageTest` class.
