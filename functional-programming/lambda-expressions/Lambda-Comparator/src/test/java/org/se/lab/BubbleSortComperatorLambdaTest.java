@@ -20,6 +20,7 @@ public class BubbleSortComperatorLambdaTest
 	@Test
 	public void testAscendingSorting()
 	{
+		             // int compare(T o1, T o2);
 		Comparator<Integer> comp = (a,b) -> b-a;
 
 		int[] result = sorter.sort(comp, 7, 3, 19, 123, 2, 13);

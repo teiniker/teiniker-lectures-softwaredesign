@@ -13,6 +13,8 @@ public class PredicateTest
 		Predicate<Integer> isPositive = (num) -> num > 0;
 
 		Assert.assertTrue(isPositive.test(7));
+		Assert.assertFalse(isPositive.test(0));
+		Assert.assertFalse(isPositive.test(-1));
 	}
 
 	@Test

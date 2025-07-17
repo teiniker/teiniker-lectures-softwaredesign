@@ -9,7 +9,7 @@ In the constructor, ensure that `id` is positive and
 `data` is not `null`.
 
 B) Deep Copy 
-In the getter method data(), return a deep copy so that 
-only a copy of the private list is provided.
+In the getter method data() and the constructor, implement a deep copy
+so that only a copy of the private list is provided.
 
 Test you implementation with the given `MessageTest` class.

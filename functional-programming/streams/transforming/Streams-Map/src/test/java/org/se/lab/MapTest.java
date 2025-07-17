@@ -15,7 +15,7 @@ public class MapTest
     @Before
     public void setup()
     {
-        list = Arrays.asList("Eins", "Zwei", "Drei", "Vier");
+        list = List.of("Eins", "Zwei", "Drei", "Vier");
     }
 
 

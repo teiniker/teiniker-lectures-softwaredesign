@@ -14,14 +14,13 @@ public class ForEachTest
     @Before
     public void setup()
     {
-        list = Arrays.asList("Eins", "Zwei", "Drei", "Vier");
+        list = List.of("Eins", "Zwei", "Drei", "Vier");
     }
 
 
     @Test
     public void testForEachLoop()   // external iterator
     {
-        List<String> result = new ArrayList<>();
         for(String s : list)
         {
             System.out.println(s);
