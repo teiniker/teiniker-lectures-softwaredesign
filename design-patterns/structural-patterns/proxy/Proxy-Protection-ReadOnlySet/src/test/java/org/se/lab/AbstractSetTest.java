@@ -58,7 +58,7 @@ public abstract class AbstractSetTest
     @Test(expected=UnsupportedOperationException.class)
     public void testRemove()
     {
-        set.remove(0);
+        set.remove((Object)0);
     }
     
     @Test
