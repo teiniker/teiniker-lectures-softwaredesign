@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 import static java.lang.System.out;
 
 import org.junit.Test;
-import org.se.lab.example4.Singleton;
+import org.se.lab.example1.Singleton;
 
 
 public class SingletonTest

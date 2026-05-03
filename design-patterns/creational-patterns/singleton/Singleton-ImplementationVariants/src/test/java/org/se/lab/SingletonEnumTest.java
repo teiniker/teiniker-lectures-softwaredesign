@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-import org.se.lab.example5.Singleton;
+import org.se.lab.example4.Singleton;
 
 
 public class SingletonEnumTest

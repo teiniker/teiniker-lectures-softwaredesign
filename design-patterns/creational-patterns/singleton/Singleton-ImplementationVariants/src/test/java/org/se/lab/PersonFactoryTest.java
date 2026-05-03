@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.se.lab.example0.Person;
 import org.se.lab.example0.PersonFactory;
 
-public class InterfaceFinalFieldTest
+public class PersonFactoryTest
 {
     @Test
     public void testDefaultFactoryMethod()
