@@ -4,7 +4,7 @@ This project collects examples, exercises and model solutions needed
 as an introduction to software design in Java.
 
 1. **Introduction**
-    * [Software Design](introduction/README.md) 
+    * [Software Design](introduction/software-design/README.md) 
     * [Generative AI in Software Engineering](introduction/generative-ai/README.md)
 
 2. [**Class Design Principles (SOLID)**](solid-principles/README.md)
