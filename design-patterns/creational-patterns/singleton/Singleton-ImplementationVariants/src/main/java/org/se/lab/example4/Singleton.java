@@ -1,4 +1,4 @@
-package org.se.lab.example5;
+package org.se.lab.example4;
 
 public enum Singleton
 {
