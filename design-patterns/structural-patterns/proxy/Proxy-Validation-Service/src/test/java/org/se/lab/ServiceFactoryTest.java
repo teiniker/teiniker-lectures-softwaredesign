@@ -4,10 +4,6 @@ import java.util.Set;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.se.lab.Book;
-import org.se.lab.Service;
-import org.se.lab.ServiceFactory;
-import org.se.lab.ServiceFactoryImpl;
 
 public class ServiceFactoryTest
 {	
