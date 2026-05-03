@@ -1,7 +1,7 @@
 # Software Design 
 
-Software design is a process in which software developers create a plan for
-a software solution. This plan outlines the overall structure and behavior 
+Software design is a process in which software developers **create a plan for
+a software solution**. This plan outlines the overall structure and behavior 
 of the software, focusing on how the system will meet the requirements 
 specified in the software requirements phase. 
 
