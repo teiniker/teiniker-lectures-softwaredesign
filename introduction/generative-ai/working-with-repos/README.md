@@ -61,7 +61,7 @@ are recommended for each content type:
         possible implementation variants.
 
     - Use *Copilot Chat* to analyze the differences between your solution and 
-        the Model Solution. Discuss the different approaches.
+        the Model Solution and discuss the different approaches.
 
 This approach works particularly well for working through many small examples and exercises. For larger tasks affecting many source files simultaneously, we will use **Coding Agents**.
 
