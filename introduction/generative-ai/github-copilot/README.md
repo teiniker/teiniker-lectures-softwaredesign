@@ -7,17 +7,28 @@ our Integrated Development Environment (IDE).
 
 Core capabilities of GitHub Copilot:
 
-* **Inline Suggestions**: As we type, Copilot predicts the next 
+* **Code Suggestions**: As we type, Copilot predicts the next 
     lines of code based on our current file, open tabs, and even 
     comments.  
 
-* **Natural Language to Code**: We can write a comment like 
+	We can write a comment like 
     `// function to calculate distance between two GPS coordinates` 
     and Copilot will generate the implementation.
+
 
 * **Copilot Chat**: A conversational sidebar that allows us to ask 
     questions like `"How does this function work?"` or 
     `"Refactor this to use async/await."`.  
+
+* **Inline Chat**: A real-time conversational interface within our 
+	code editor that allows us to ask GitHub Copilot questions and 
+	receive contextual suggestions without leaving your editor window. 
+	We can use it to explain code, generate snippets, refactor 
+	existing code, or ask for help debugging. 
+	
+	Simply we highlight code or position our cursor and start a 
+	chat session to get immediate assistance tailored to our 
+	current work.
 
 * **Agentic Workflows**: In its latest 2026 updates, Copilot can 
     act as an "AI Agent," autonomously planning multi-step tasks, 
@@ -39,7 +50,7 @@ Core capabilities of GitHub Copilot:
 	- Accepting partial suggestions: ´[Ctrl] + [→]´
 
 
-## Chat With Copilot 
+## Copilot Chat  
 
 * [Getting started with prompts for GitHub Copilot Chat](https://docs.github.com/en/copilot/how-tos/chat-with-copilot/get-started-with-chat)
 
