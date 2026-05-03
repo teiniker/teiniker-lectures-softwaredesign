@@ -1,10 +1,10 @@
 # Generative AI in Software Engineering
         
-- [Introduction](introduction/generative-ai/introduction/README.md)
+- [Introduction](introduction/README.md)
 
-- [GitHub Copilot](introduction/generative-ai/github-copilot/README.md)
+- [GitHub Copilot](github-copilot/README.md)
 
-- [Working with Lecture Repositories](introduction/generative-ai/working-with-repos/README.md)
+- [Working with Lecture Repositories](working-with-repos/README.md)
 
 
 *Egon Teiniker, 2016-2026 GPL v3.0*
