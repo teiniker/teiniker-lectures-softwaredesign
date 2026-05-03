@@ -5,10 +5,6 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.se.lab.Article;
-import org.se.lab.ArticleTable;
-import org.se.lab.ArticleTableInMemoryImpl;
-import org.se.lab.ArticleTableMonitor;
 
 public class ArticleTableTest
 {
