@@ -3,7 +3,9 @@
 This project collects examples, exercises and model solutions needed 
 as an introduction to software design in Java.
 
-1. [**Introduction**](introduction/README.md) 
+1. **Introduction**
+    * [Software Design](introduction/README.md) 
+    * [Generative AI in Software Engineering](introduction/generative-ai/README.md)
 
 2. [**Class Design Principles (SOLID)**](solid-principles/README.md)
 
@@ -42,4 +44,4 @@ As a development environment, you can use a pre-configured Linux VM image:
 [Virtual Lab](https://drive.google.com/drive/folders/1AzsF4Mvh1HJ8k6OW5W5hQ5CF0HdqA51l)
 
 
-*Egon Teiniker, 2016-2025 GPL v3.0*
+*Egon Teiniker, 2016-2026 GPL v3.0*
