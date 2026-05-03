@@ -9,7 +9,6 @@ import org.se.lab.FileService;
 import org.se.lab.ServiceFactory;
 
 
-
 public class FileNameDecoratorTest
 {
     private FileService service;
