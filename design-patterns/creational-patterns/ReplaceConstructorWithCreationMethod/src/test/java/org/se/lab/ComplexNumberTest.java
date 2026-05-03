@@ -3,7 +3,6 @@ package org.se.lab;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-import org.se.lab.ComplexNumber;
 
 public class ComplexNumberTest
 {
