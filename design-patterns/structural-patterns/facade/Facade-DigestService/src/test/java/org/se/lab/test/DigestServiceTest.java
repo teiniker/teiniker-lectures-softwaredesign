@@ -1,9 +1,5 @@
 package org.se.lab.test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Hex;
 import org.junit.Assert;
@@ -66,5 +62,4 @@ public class DigestServiceTest
     {
         service.toHashString(new byte[0]);
     }
-
 }

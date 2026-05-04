@@ -5,9 +5,6 @@ import org.apache.commons.codec.binary.Hex;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.se.lab.DigestService;
-import org.se.lab.ServiceFactory;
-
 
 public class DigestServiceTest
 {
