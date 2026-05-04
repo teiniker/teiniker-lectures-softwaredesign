@@ -6,7 +6,7 @@ import java.util.List;
 public class UrlBuilder
 {
     private String protocol = "https"; // Variant: default value
-    private Integer port = 80;
+    private Integer port;
     private String host;
     private String application;
     private List<String> parameters = new ArrayList<>();
