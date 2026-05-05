@@ -13,10 +13,9 @@ Andrej Karpathy coined this term. He describes this approach in a tweet:
 
 ![Vibe Coding](figures/VibeCoding.png)
 
-Note his classification in this tweet: 
-**It is not too bad for throwaway weekend projects**.
+Note that **Vibe Coding is good for prototyping but not for production ready code**.
 
-The concept of specifying functionality and outsourcing the implementation 
+Also, the concept of specifying functionality and outsourcing the implementation 
 is not new...
 
 
