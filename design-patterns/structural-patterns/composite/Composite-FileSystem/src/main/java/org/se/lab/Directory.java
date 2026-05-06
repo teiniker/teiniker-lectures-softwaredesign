@@ -54,12 +54,12 @@ public class Directory
 	 */
 	
 	@Override
-	public long getSize()
+	public long numberOfBytes()
 	{
 		long size = 0;
 		for(Node n : getNodes())
 		{
-			size += n.getSize();
+			size += n.numberOfBytes();
 		}
 		return size;
 	}

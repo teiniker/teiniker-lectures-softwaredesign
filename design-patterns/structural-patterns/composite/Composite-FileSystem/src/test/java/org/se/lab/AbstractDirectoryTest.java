@@ -23,19 +23,19 @@ public abstract class AbstractDirectoryTest
 		Assert.assertEquals("home", root.getNodes().get(0).getName());
 		Assert.assertEquals("teini", root.getNodes().get(0).getNodes().get(0).getName());
 		Assert.assertEquals(".bashrc", root.getNodes().get(0).getNodes().get(0).getNodes().get(0).getName());
-		Assert.assertEquals(1024, root.getNodes().get(0).getNodes().get(0).getNodes().get(0).getSize());
+		Assert.assertEquals(1024, root.getNodes().get(0).getNodes().get(0).getNodes().get(0).numberOfBytes());
 		Assert.assertEquals("todo.txt", root.getNodes().get(0).getNodes().get(0).getNodes().get(1).getName());
-		Assert.assertEquals(2048, root.getNodes().get(0).getNodes().get(0).getNodes().get(1).getSize());
+		Assert.assertEquals(2048, root.getNodes().get(0).getNodes().get(0).getNodes().get(1).numberOfBytes());
 		
 		Assert.assertEquals("tomcat", root.getNodes().get(0).getNodes().get(1).getName());
 		Assert.assertEquals(".bashrc", root.getNodes().get(0).getNodes().get(1).getNodes().get(0).getName());
-		Assert.assertEquals(512, root.getNodes().get(0).getNodes().get(1).getNodes().get(0).getSize());		
+		Assert.assertEquals(512, root.getNodes().get(0).getNodes().get(1).getNodes().get(0).numberOfBytes());		
 	}
 	
 	@Test
 	public void testGetSize()
 	{
-		Assert.assertEquals(1024+2048+512, root.getSize());
+		Assert.assertEquals(1024+2048+512, root.numberOfBytes());
 	}
 	
 	@Test

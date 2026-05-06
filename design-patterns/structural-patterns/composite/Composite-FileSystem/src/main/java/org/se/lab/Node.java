@@ -15,6 +15,7 @@ public interface Node
 	}
 
 	public abstract String getName(); 
+	
 	public abstract int numberOfFiles();
-	public abstract long getSize(); 
+	public abstract long numberOfBytes(); 
 }

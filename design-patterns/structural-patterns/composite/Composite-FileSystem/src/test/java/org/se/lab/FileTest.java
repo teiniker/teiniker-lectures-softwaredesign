@@ -14,7 +14,7 @@ public class FileTest
 		File f = new File("File.java", 520);
 		
 		Assert.assertEquals("File.java", f.getName());
-		Assert.assertEquals(520, f.getSize());		
+		Assert.assertEquals(520, f.numberOfBytes());		
 	}
 	
 	@Test
@@ -30,7 +30,7 @@ public class FileTest
 	{
 		File f = new File("Node.java", 1024);
 		
-		Assert.assertEquals(1024, f.getSize());
+		Assert.assertEquals(1024, f.numberOfBytes());
 	}
 	
 	@Test(expected = NullPointerException.class)

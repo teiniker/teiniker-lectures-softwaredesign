@@ -53,7 +53,6 @@ public class ListIteratorTest
     public void testForEachAndLambda()
     {
         list.forEach((s) -> System.out.println(s));
-//        list.forEach(System.out::println);
     }
 
 }

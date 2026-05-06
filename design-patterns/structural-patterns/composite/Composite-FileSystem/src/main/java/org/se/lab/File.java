@@ -45,7 +45,7 @@ public class File
 	 */
 
 	@Override
-	public long getSize()
+	public long numberOfBytes()
 	{
 		return size;
 	}
