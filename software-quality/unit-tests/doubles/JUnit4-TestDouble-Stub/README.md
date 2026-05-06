@@ -91,4 +91,4 @@ This example also shows the importance of software design for the
 testability of code. A SUT should only have dependencies on interface 
 types, not on implementation classes.
 
-*Egon Teiniker, 2016-2023, GPL v3.0*
+*Egon Teiniker, 2016-2026, GPL v3.0*

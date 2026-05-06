@@ -45,13 +45,15 @@ interaction between the SUT and the *UserDAO* interface:
                 "</user>";
         Assert.assertEquals(expected, xml);
 
+        // Behavioral Verification
         spy.logs.forEach(System.out::println);
-        Assert.assertEquals(2, spy.logs.stream().filter((line)->line.startsWith("insert")).count());
-        Assert.assertEquals(1, spy.logs.stream().filter((line)->line.startsWith("findById")).count());
+        Assert.assertTrue(spy.logs.contains("insert:3,marge"));
+        Assert.assertTrue(spy.logs.contains("insert:7,homer"));
+        Assert.assertTrue(spy.logs.contains("findById:7=>7,homer"));
     }
 ```
 For verification, the entries in the spy log list can be evaluated. 
 It can be checked which method was called, how often and with which parameters.
 
 
-*Egon Teiniker, 2016-2023, GPL v3.0*
+*Egon Teiniker, 2016-2026, GPL v3.0*
