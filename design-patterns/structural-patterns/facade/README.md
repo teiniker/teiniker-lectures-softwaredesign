@@ -82,6 +82,38 @@
         objects.
 
 
+## Other Design Patterns
+
+When we compare the Adapter Pattern with other Design Patterns, the following 
+differences in functionality and application emerge.
+
+### Adapter vs. Facade 
+
+#### Purpose:
+
+* **Adapter**: Make an existing class or API work with a **different 
+    and incompatible interface**. It **translates** one interface into another.
+
+    **Adapter changes the interface to match what the client expects**.
+
+* **Facade**: Provide a **simple, unified** interface over a complex subsystem.
+
+    **Facade does NOT change interfaces. It just hides complexity.**
+
+
+#### Use Cases:
+
+* **Adapter**:
+    - We have old code or a third-party library that doesn’t match 
+    the interface you need.
+    - We want to reuse a class but can’t modify it.
+
+* **Facade**:
+    - A system has many complicated classes, APIs, or operations.
+    - You want one clean entry point for common tasks.
+    - Improves usability—not compatibility.
+
+
 ## References 
 
 * E. Gamma, R. Helm, R. Johnson, J. Vlissides. **Design Patterns, Elements of Reusable Object-Oriented Software**. Addison-Wesley, 1995

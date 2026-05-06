@@ -67,6 +67,37 @@
     into the `ConcreteDecorator`.
     
 
+## Other Patterns 
+
+### Decorator vs. Proxy
+
+Decorator and Proxy **look very similar structurally**, but they 
+**differ in intent**, behavioral guarantees, and how clients reason 
+about them. 
+The structure (same interface + wrapped object) is almost identical; 
+the semantics are not.
+
+> **Decorator adds responsibilities**, while **Proxy controls access** to an object.
+
+Asqk this question: "If I remove this wrapper, does the program still behave the same?"
+* **Yes**: It's a  Proxy
+* **No**: It's a Decorator
+
+Typical **Decorator use cases** are:
+* Logging
+* Metrics
+* Authorization checks
+* Retry logic
+* Compression / encryption
+
+Typical **Proxy use cases** are:
+
+* Protection Proxy: Access control
+* Virtual Proxy: Lazy initialization
+* Remote Proxy: RPC / IPC
+* Smart Proxy: Reference counting, copy-on-write
+
+
 ## Examples
 
 * _Demo_: [TableMonitor](Decorator-TableMonitor)
