@@ -7,14 +7,14 @@ as an introduction to software design in Java.
     * [Software Design](introduction/software-design/README.md) 
     * [Generative AI in Software Engineering](introduction/generative-ai/README.md)
 
-2. [**Class Design Principles (SOLID)**](solid-principles/README.md)
-
-3. **Design Patterns**
+2. **Design Patterns**
     * [Introduction](design-patterns/introduction/README.md)
     * [Creational Patterns](design-patterns/creational-patterns/README.md)
     * [Structural Patterns](design-patterns/structural-patterns/README.md)
     * [Behavioral Patterns](design-patterns/behavioral-patterns/README.md)
     * Design Patterns in Practice
+
+3. [**Class Design Principles (SOLID)**](solid-principles/README.md)
 
 4. **Software Quality**
     * [Introduction](software-quality/introduction/) 
