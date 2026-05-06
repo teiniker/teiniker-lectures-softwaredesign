@@ -6,6 +6,12 @@ abstract class ArticleTableDecorator // package private
 	implements ArticleTable
 {
 	/*
+	 * Association: ---[1]-> table:ArticleTable
+	 */
+	private final ArticleTable table;
+	
+	
+	/*
 	 * Constructor
 	 */
 	public ArticleTableDecorator(ArticleTable table)
@@ -15,12 +21,9 @@ abstract class ArticleTableDecorator // package private
 		this.table = table;
 	}
 
-	/*
-	 * Association: ---[1]-> table:ArticleTable
-	 */
-	private final ArticleTable table;
-	
-	
+
+	// Interafce Operations
+
 	@Override
 	public void insert(Article a)
 	{

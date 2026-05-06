@@ -18,7 +18,7 @@ public class ArticleTableLogger
 	
 	public void insert(Article article)
     {
-    	// logging
+    	// pre-processing
     	logger.info("insert() article=" + article);
 
     	// delegation
@@ -27,7 +27,7 @@ public class ArticleTableLogger
 
     public Article findById(int id)
     {
-    	// logging
+    	// pre-processing
     	logger.info("findById() id=" + id);
     	
     	// delegation
@@ -37,7 +37,7 @@ public class ArticleTableLogger
     
     public List<Article> findAll()
     {
-    	// logging
+    	// pre-processing
     	logger.info("findAll()");
     	
     	// delegation

@@ -20,10 +20,13 @@ class ArticleTableMonitor // package private
 	@Override
     public List<Article> findAll()
     {
+		// pre-processing
     	long start = System.currentTimeMillis();
     	
-    	List<Article> list = super.findAll();	// delegation
+		// delegation
+    	List<Article> list = super.findAll();
     	
+		// post-processing
         long stop = System.currentTimeMillis();
         logger.info("findAll() duration = " + (stop-start) + "ms");
 

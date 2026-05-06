@@ -18,6 +18,8 @@ class DigestServiceAdapter  // package private
         this.helper = helper;
     }
 
+    // Interface methods
+    
     public byte[] toBytes(String message)
     {
         try
