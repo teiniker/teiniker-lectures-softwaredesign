@@ -262,4 +262,4 @@ subsequently called with parameter `7`.
 * Sujoy Acharya. **Mockito Essentials**. Packt Publishing, 2014 
 * [Mockito Web Page](https://site.mockito.org/)
 
-*Egon Teiniker, 2016-2024, GPL v3.0*
+*Egon Teiniker, 2016-2026, GPL v3.0*
