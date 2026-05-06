@@ -60,6 +60,11 @@ _Example:_ Violation of the SRP
 
 ![Violation of the SRP](figures/SRP.png)
 
+_Examples:_ GoF Patterns 
+
+* **Command Pattern**: 
+    The Command pattern encapsulates each operation into its own object. 
+    
 
 ## Open-Closed Principle (OCP)
 
@@ -79,6 +84,17 @@ _Example_: A design that conforms to the OCP
 ![A design that conforms to the OCP](figures/OCP.png)
 
 The `Client` class is open for extension and closed for modification.
+
+
+_Examples:_ GoF Patterns 
+
+* **Strategy Pattern**: If we need to add a new sorting algorithm, we don't 
+    change the existing client class. We create a new implementation of 
+    the `Sorting` interface. The system is extended without touching 
+    tested code.
+
+* **Decorator Pattern**: We can add new behaviors to an object at runtime 
+    without modifying the original implementation class.
 
 
 ## Liskov Substitution Principle (LSP)
@@ -118,6 +134,10 @@ In the context of **inheritance**, subcontracting must be handled in a proper wa
     parents apply to the subclass itself in a logical **AND** combination.
 
 
+_Examples:_ GoF Patterns 
+
+
+
 ## Interface-Segregation Principle (ISP)
 
 > Clients should not be forced to depend on methods that they do not use.
@@ -135,6 +155,9 @@ _Example:_ Immutable Interface
 
 The immutable interface hides methods of a class that could allow it to be modified 
 in situations where you know it shouldn't be modified.
+
+
+_Examples:_ GoF Patterns 
 
 
 ## Dependency-Inversion Principle (DIP)
@@ -174,9 +197,13 @@ This principle is sometimes known as the **Hollywood principle**:
 „Don‘t call us, we‘ll call you“
 
 
+_Examples:_ GoF Patterns 
+
+
 ## References
+
+* E. Gamma, R. Helm, R. Johnson, J. Vlissides. **Design Patterns, Elements of Reusable Object-Oriented Software**. Addison-Wesley, 1995
 
 * Robert C. Martin. **Agile Software Development – Principles, Patterns, and Practices**. Prentice Hall, 2003
 
-
-*Egon Teiniker, 2016-2024, GPL v3.0*
+*Egon Teiniker, 2016-2026, GPL v3.0*
