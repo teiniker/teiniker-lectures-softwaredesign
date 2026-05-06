@@ -34,4 +34,4 @@ Note that this deserialization works for very complex object structures too.
 
 * [Jackson Project Home](https://github.com/FasterXML/jackson)
 
-*Egon Teiniker, 2016-2024, GPL v3.0*
+*Egon Teiniker, 2016-2026, GPL v3.0*

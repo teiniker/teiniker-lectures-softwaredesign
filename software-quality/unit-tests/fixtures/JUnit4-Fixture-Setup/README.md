@@ -79,4 +79,4 @@ public class ImplicitFixtureTest
     }
 ```
 
-*Egon Teiniker, 2018, GPL v3.0*
+*Egon Teiniker, 2016-2026, GPL v3.0*
