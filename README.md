@@ -12,15 +12,13 @@ as an introduction to software design in Java.
     * [Creational Patterns](design-patterns/creational-patterns/README.md)
     * [Structural Patterns](design-patterns/structural-patterns/README.md)
     * [Behavioral Patterns](design-patterns/behavioral-patterns/README.md)
-    * Design Patterns in Practice
+    * [Class Design Principles (SOLID)](solid-principles/README.md)
 
-3. [**Class Design Principles (SOLID)**](solid-principles/README.md)
-
-4. **Software Quality**
+3. **Software Quality**
     * [Unit Tests](software-quality/unit-tests/)
     * [Refactoring](software-quality/refactoring/)
 
-5. **Functional Programming**
+4. **Functional Programming**
     * [Introduction](functional-programming/introduction/README.md)
     * [Lambda Expressions](functional-programming/lambda-expressions/)
     * [Functional Interfaces](functional-programming/functional-interfaces/)
