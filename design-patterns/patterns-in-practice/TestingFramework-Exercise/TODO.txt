@@ -19,7 +19,6 @@ ii) KBTestSuite (Composite Pattern)
 	In diesem Fall soll "run()"	die selbe Methode seiner Kinder aufrufen.
 
 
-
 Beispiel:
 
 KBTestSuite: MainTestSuite
@@ -47,4 +46,3 @@ tearDown()
  test StringLengthTest failed: Expected 5 but was 12!
  test StringToUpperTest passed.
 ---------------------------------------------
-
