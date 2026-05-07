@@ -17,7 +17,6 @@ as an introduction to software design in Java.
 3. [**Class Design Principles (SOLID)**](solid-principles/README.md)
 
 4. **Software Quality**
-    * [Introduction](software-quality/introduction/) 
     * [Unit Tests](software-quality/unit-tests/)
     * Testing Practices
         * [Introduction](software-quality/testing-practices/README.md)
