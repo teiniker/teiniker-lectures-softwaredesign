@@ -9,9 +9,10 @@ as an **introduction to software design based on Java examples**.
 
 2. **Design Patterns**
     * [Introduction](design-patterns/introduction/README.md)
-    * [Creational Patterns](design-patterns/creational-patterns/README.md)
-    * [Structural Patterns](design-patterns/structural-patterns/README.md)
-    * [Behavioral Patterns](design-patterns/behavioral-patterns/README.md)
+    * [Creational Patterns](design-patterns/creational-patterns/)
+    * [Structural Patterns](design-patterns/structural-patterns/)
+    * [Behavioral Patterns](design-patterns/behavioral-patterns/)
+    * [Patterns in Practice](design-patterns/patterns-in-practice/)
     * [Class Design Principles (SOLID)](solid-principles/README.md)
 
 3. **Software Quality**
@@ -24,7 +25,6 @@ as an **introduction to software design based on Java examples**.
     * [Functional Interfaces](functional-programming/functional-interfaces/)
     * [Immutable Objects](functional-programming/immutable-objects/)
     * [Streams](functional-programming/streams/) 
-
 
 ---
 See also: 

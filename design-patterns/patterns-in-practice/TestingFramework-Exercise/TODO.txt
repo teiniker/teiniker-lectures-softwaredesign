@@ -1,4 +1,4 @@
-Exercise: KB Testing Framework
+Exercise: Template Method + Composite (KB Testing Framework)
 ---------------------------------------------------------------------
 
 Analysieren Sie das vorliegende Class Diagram - es zeigt die Struktur
