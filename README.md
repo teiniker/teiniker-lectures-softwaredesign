@@ -19,12 +19,12 @@ as an introduction to software design in Java.
 4. **Software Quality**
     * [Unit Tests](software-quality/unit-tests/)
     * Refactoring
-        * [Introduction](software-quality/refactoring/README.md)  
-        * [Code Smells](software-quality/refactoring/code-smells/README.md)
-    * [Static Code Analysis](software-quality/refactoring/static-analysis/)
+        - [Introduction](software-quality/refactoring/README.md)  
+        - [Code Smells](software-quality/refactoring/code-smells/README.md)
+        - [Static Code Analysis](software-quality/refactoring/static-analysis/)
     * Testing Practices
-        * [Introduction](software-quality/testing-practices/README.md)
-        * [Test-Driven Development (TDD)](software-quality/testing-practices/test-driven-development/README.md)
+        - [Introduction](software-quality/testing-practices/README.md)
+        - [Test-Driven Development (TDD)](software-quality/testing-practices/test-driven-development/README.md)
 
 5. **Functional Programming**
     * [Introduction](functional-programming/introduction/README.md)
