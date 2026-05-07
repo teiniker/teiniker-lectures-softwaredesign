@@ -18,30 +18,34 @@
     ([Model Solution](verification/JUnit4-ResultVerification-Book/))
 
 * Test Doubles 
-  * [Introduction](doubles/)
+    - [Introduction](doubles/)
 
-  * [Test Stub](doubles/JUnit4-TestDouble-Stub/)
-    * Exercise: [Stub - Article Service](doubles/JUnit4-TestDouble-Stub-ArticleService-Exercise/) - 
+    - [Test Stub](JUnit4-TestDouble-Stub/)
+      - Exercise: [Stub - Article Service](doubles/JUnit4-TestDouble-Stub-ArticleService-Exercise/) - 
       ([Model Solution](doubles/JUnit4-TestDouble-Stub-ArticleService/))
 
-  * [Test Spy](doubles/JUnit4-TestDouble-Spy/)
-    * Exercise: [Spy - Article Service](doubles/JUnit4-TestDouble-Spy-ArticleService-Exercise/) - 
+    - [Test Spy](doubles/JUnit4-TestDouble-Spy/)
+      - Exercise: [Spy - Article Service](doubles/JUnit4-TestDouble-Spy-ArticleService-Exercise/) - 
       ([Model Solution](doubles/JUnit4-TestDouble-Spy-ArticleService/))
 
-  * Mock Object
-    - Mockito
-      - [JUnit4-TestDouble-Mockito](doubles/JUnit4-TestDouble-Mockito/)
-      - [JUnit4-TestDouble-Mockito-Stub-ArticleService](doubles/JUnit4-TestDouble-Mockito-Stub-ArticleService/)
-      - [doubles/JUnit4-TestDouble-Mockito-Spy-ArticleService](doubles/JUnit4-TestDouble-Mockito-Spy-ArticleService/)
+    - Mock Object
+      - Mockito
+        - [JUnit4-TestDouble-Mockito](doubles/JUnit4-TestDouble-Mockito/)
+        - [JUnit4-TestDouble-Mockito-Stub-ArticleService](doubles/JUnit4-TestDouble-Mockito-Stub-ArticleService/)
+        - [doubles/JUnit4-TestDouble-Mockito-Spy-ArticleService](doubles/JUnit4-TestDouble-Mockito-Spy-ArticleService/)
 
-    * Easy Mock
-      - [JUnit4-TestDouble-EasyMock](doubles/JUnit4-TestDouble-EasyMock/)
+      - Easy Mock
+        - [JUnit4-TestDouble-EasyMock](doubles/JUnit4-TestDouble-EasyMock/)
 
 * Test Case Design
-  * [Introduction](testcase-design/introduction/README.md)
-  * [Code Coverage Analysis](testcase-design/code-coverage/JUnit4-CodeCoverage//)
-  * Exercise: [Code Coverage - Blog](testcase-design/code-coverage/JUnit4-CodeCoverage-Blog-Exercise/) - 
+    - [Introduction](testcase-design/introduction/README.md)
+    - [Code Coverage Analysis](testcase-design/code-coverage/JUnit4-CodeCoverage//)
+    - Exercise: [Code Coverage - Blog](testcase-design/code-coverage/JUnit4-CodeCoverage-Blog-Exercise/) - 
     ([Model Solution](testcase-design/code-coverage/JUnit4-CodeCoverage-Blog/)
+
+* Testing Practices
+    - [Roadmap to Test Automation](testing-practices/roadmap/README.md)
+    - [Test-Driven Development (TDD)](testing-practices/test-driven-development/README.md)
 
 
 ## References
