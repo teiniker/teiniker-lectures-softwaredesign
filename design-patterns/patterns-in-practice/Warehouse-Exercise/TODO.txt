@@ -1,0 +1,37 @@
+Exercise: Visitor Pattern - Warehouse
+---------------------------------------------------------------------
+
+Sie sollen das Visitor Pattern auf eine heterogene Objektstruktur 
+anwenden. Die Objektstruktur modelliert ein einfaches Lager:
+
+	Warehouse --[*]-> Area --[*]-> Location --[*]-> ProductBundle
+
+Das Lager besteht aus vielen Bereichen (Area) die jeweils viele
+Stellplätze (Location) besitzen. Auf jedem Stellplatz können mehrere
+Bündel von Produkten (ProducuctBundle) stehen. Ein solches Bündel
+besteht aus einer bestimmten Anzahl (quantity) gleicher Produkte.
+
+1. Accept-Methods
+---------------------------------------------------------------------
+Erweitern Sie die Klassen der Objekt-Struktur:
+
+    Warehouse --[*]-> Area --[*]-> Location --[*]-> ProductBundle
+
+um "accept()" Methoden, welche die Navigation des Visitors durch die
+Datenstruktur definieren.
+
+
+2. Inventory Visitor
+---------------------------------------------------------------------
+Schreiben Sie eine Klasse "InventoryVisitor", welche das gegebene
+Interface "Visitor" implementiert.
+Der "InventoryVisitor" besucht alle Objekte, in der gegebenen 
+Objektstruktur, und ermittelt die Gesamtanzahl der unterschiedlichen
+Produkte.
+
+Das Ergebnis ist eine Map<String, Integer> welche zu jeder Produkt ID
+die Anzahl der im Lager verfügbaren Produkte speichert.  
+
+Verwenden Sie die Klasse "WarehouseVisitorTest" um Ihre Implementierung 
+zu überprüfen. 
+
