@@ -23,7 +23,7 @@ as an introduction to software design in Java.
         - [Code Smells](software-quality/refactoring/code-smells/README.md)
         - [Static Code Analysis](software-quality/refactoring/static-analysis/)
     * Testing Practices
-        - [Introduction](software-quality/testing-practices/README.md)
+        - [Roadmap to Test Automation](software-quality/testing-practices/roadmap/README.md)
         - [Test-Driven Development (TDD)](software-quality/testing-practices/test-driven-development/README.md)
 
 5. **Functional Programming**
