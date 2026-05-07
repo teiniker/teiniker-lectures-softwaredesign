@@ -5,22 +5,20 @@ import java.util.List;
 public class ArticleService
 {
 	/*
+	 * Association: ---[1]-> table:ArticleTable
+	 */
+	private ArticleTable table;
+	
+	/*
 	 * Constructor
 	 */
-	public ArticleService(ArticleTable table)
+	public ArticleService(ArticleTable table)	// Dependency Injection
 	{
 		if(table == null)
 			throw new IllegalArgumentException();
 	
 		this.table = table;
 	}
-	
-	/*
-	 * Association: ---[1]-> table:ArticleTable
-	 */
-	private ArticleTable table;
-	
-	
 	
 	public void addArticle(Article article)
 	{

@@ -3,10 +3,10 @@ package org.se.lab;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArticleTableStub implements ArticleTable
+public class ArticleTableStub 
+	implements ArticleTable
 {
-	protected List<Article> articles = new ArrayList<Article>();
-	
+	protected List<Article> articles = new ArrayList<Article>();	
 	protected RuntimeException exception;
 	
 	
