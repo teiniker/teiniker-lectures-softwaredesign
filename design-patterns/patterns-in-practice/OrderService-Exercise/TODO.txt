@@ -1,4 +1,4 @@
-Exercise: Combination of Patterns - OrderService
+Exercise: Adaper + Decorator + Factory Method (OrderService)
 ---------------------------------------------------------------------
 
 Sie sollen eine gegebene (legacy) Klasse durch die Verwendung von
