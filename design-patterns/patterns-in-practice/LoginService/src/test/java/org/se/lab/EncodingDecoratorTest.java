@@ -15,7 +15,6 @@ public class EncodingDecoratorTest
 	public void setup()
 	{
 		impl = new LoginServiceImpl();
-		
 		service = new EncodingDecorator(new LoggingDecorator(impl));
 		
 		service.addUser(1, "lisa", "superlisa", "lisa.simpson@springfield.com");

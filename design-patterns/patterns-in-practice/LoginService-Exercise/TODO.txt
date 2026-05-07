@@ -1,4 +1,4 @@
-Exercise: Login Service (Decorator + Builder)
+Exercise: Decorator + Builder (Login Service)
 ---------------------------------------------------------------------
 
 1. Decorator Pattern
@@ -48,8 +48,8 @@ Siehe "LoginServiceBuilderTest".
 
 Beachten Sie, dass hier eine vereinfachte Variante des Builder Pattens
 zu implementieren ist:
-o) Builder Interface und Concrete Builder werden zu einer Klasse 
+- Builder Interface und Concrete Builder werden zu einer Klasse 
 	"LoginServiceBuilder" zusammengelegt.
-o) Es gibt somit auch nur einen ConcreteBuilder, d.h. nur eine
+- Es gibt somit auch nur einen ConcreteBuilder, d.h. nur eine
 	Repräsentation des gebildeten Produkts.
 									
