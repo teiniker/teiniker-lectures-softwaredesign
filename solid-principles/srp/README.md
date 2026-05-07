@@ -12,7 +12,7 @@ If a class has more than one responsibility, then the responsibilities become co
 
 _Example:_ Violation of the SRP
 
-![Violation of the SRP](figures/SRP.png)
+![Violation of the SRP](../figures/SRP.png)
 
 _Examples:_ GoF Patterns 
 
