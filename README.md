@@ -1,7 +1,7 @@
 # Software Design by Example
 
 This project collects examples, exercises and model solutions needed 
-as an introduction to software design in Java.
+as an **introduction to software design based on Java examples**.
 
 1. **Introduction**
     * [Software Design](introduction/software-design/README.md) 
