@@ -32,14 +32,14 @@
       - Mockito
         - [JUnit4-TestDouble-Mockito](doubles/JUnit4-TestDouble-Mockito/)
         - [JUnit4-TestDouble-Mockito-Stub-ArticleService](doubles/JUnit4-TestDouble-Mockito-Stub-ArticleService/)
-        - [doubles/JUnit4-TestDouble-Mockito-Spy-ArticleService](doubles/JUnit4-TestDouble-Mockito-Spy-ArticleService/)
+        - [JUnit4-TestDouble-Mockito-Spy-ArticleService](doubles/JUnit4-TestDouble-Mockito-Spy-ArticleService/)
 
       - Easy Mock
         - [JUnit4-TestDouble-EasyMock](doubles/JUnit4-TestDouble-EasyMock/)
 
 * Test Case Design
     - [Introduction](testcase-design/introduction/README.md)
-    - [Code Coverage Analysis](testcase-design/code-coverage/JUnit4-CodeCoverage//)
+    - [Code Coverage Analysis](testcase-design/code-coverage/JUnit4-CodeCoverage/)
     - Exercise: [Code Coverage - Blog](testcase-design/code-coverage/JUnit4-CodeCoverage-Blog-Exercise/) - 
     ([Model Solution](testcase-design/code-coverage/JUnit4-CodeCoverage-Blog/)
 
