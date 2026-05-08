@@ -40,6 +40,7 @@ public class BlogTest
 	@Test(expected=BlogException.class)
 	public void testPost_SQLException()
 	{
+		stub.excpetion = new SQLException();
 		blog.post("blah");
 	}
 	
