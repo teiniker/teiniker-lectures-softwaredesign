@@ -8,6 +8,11 @@ public class ArticleTableSpy
 	implements ArticleTable
 {
 	/*
+	 * Association: ---[1]-> ArticleTable
+	 */
+	private ArticleTable table;
+	
+	/*
 	 * Constructor
 	 */
 	public ArticleTableSpy(ArticleTable table)
@@ -18,20 +23,16 @@ public class ArticleTableSpy
 	}
 	
 	/*
-	 * Association: ---[1]-> ArticleTable
-	 */
-	private ArticleTable table;
-	
-	/*
 	 * Log-List
 	 */
-	protected List<String> logs = new ArrayList<String>();
+	protected List<String> logs = new ArrayList<>();
 	protected void log(String s)
 	{
 		Date now = new Date();
 		logs.add(now.getTime() + ": " + s);
 	}
 	
+	// Interface methods
 	
 	@Override
 	public void insert(Article article)
