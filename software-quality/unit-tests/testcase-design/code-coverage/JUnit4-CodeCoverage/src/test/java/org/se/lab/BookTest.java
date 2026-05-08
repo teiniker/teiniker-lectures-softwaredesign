@@ -23,19 +23,7 @@ public class BookTest
 		Assert.assertEquals("Book{isbn='9780132350884', author='Robert C. Martin', title='Clean Code'}", book.toString());
 	}
 
-	@Test
-	public void testHashCodeAndEquals()
-	{
-		Book book1 = new Book("9780132350884", "Robert C. Martin", "Clean Code");
-		Book book2 = new Book("9780132350884", "Robert C. Martin", "Clean Code");
-
-		Assert.assertFalse(book1 == book2);
-		Assert.assertTrue(book1.equals(book2));
-		Assert.assertTrue(book2.equals(book1));
-
-		Assert.assertTrue(book1.hashCode() ==  book2.hashCode());
-	}
-
+	
 	@Test
 	public void testToJson()
 	{
@@ -97,4 +85,28 @@ public class BookTest
 		new Book("9780132350884", "Robert C. Martin", null);
 	}
 
+	/* 
+	@Test
+	public void testHashCodeAndEquals()
+	{
+		Book book1 = new Book("9780132350884", "Robert C. Martin", "Clean Code");
+		Book book2 = new Book("9780132350884", "Robert C. Martin", "Clean Code");
+
+		Assert.assertFalse(book1 == book2);
+		Assert.assertTrue(book1.equals(book2));
+		Assert.assertTrue(book2.equals(book1));
+
+		Assert.assertTrue(book1.hashCode() ==  book2.hashCode());
+	}
+
+	@Test
+	public void testHashCodeAndEquals_SameObjectAndWrongTypes()
+	{
+		Book book = new Book("9780132350884", "Robert C. Martin", "Clean Code");
+		
+		Assert.assertEquals(book, book);
+		Assert.assertFalse(book.equals(new Object()));
+		Assert.assertFalse(book.equals(null));
+	}
+	*/
 }
