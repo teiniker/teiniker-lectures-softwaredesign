@@ -1,10 +1,10 @@
 # Refactoring
 
-* [Introduction](software-quality/refactoring/README.md)  
+* [Introduction](introduction/README.md)  
 
-* [Code Smells](software-quality/refactoring/code-smells/README.md)
+* [Code Smells](code-smells/README.md)
 
-* [Static Code Analysis](software-quality/refactoring/static-analysis/)
+* [Static Code Analysis](static-analysis/)
 
 
 *Egon Teiniker, 2016-2026, GPL v3.0*
