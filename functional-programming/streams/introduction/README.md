@@ -1,4 +1,4 @@
-# Introduction to Java Streams API
+# Introduction to Java Stream API
 
 
 ## Pipes & Filters Pattern
@@ -76,10 +76,10 @@ _Example_: UNIX Pipes
 $ cat names.txt | grep "Smith" | sort
 ```
 
-Another example is the Java Streams API.
+Another example is the Java Stream API.
 
 
-## Java Streams API 
+## Java Stream API 
 
 Java Streams, introduced in Java 8, provide a modern, functional approach to 
 processing sequences of elements. They offer a high-level, declarative way to 
@@ -123,8 +123,14 @@ collections of data.
     function.
 
 ## References
-* [YouTube (Venkat Subramaniam): Functional Programming with Java 8](https://youtu.be/15X0qFtBqiQ)
-* [The Java 8 Stream API Tutorial](https://www.baeldung.com/java-8-streams)
-* [Guide To Java 8 Optional](https://www.baeldung.com/java-optional)
+
+* Pipes & Filters
+    - Frank Buschmann, Regine Meunier, Hans Rohnert, Peter Sommerlad. 
+        **Pattern-Oriented Software Architecture, Vol. 1: A System of Patterns**. Wiley, 1996.
+
+* Java Stream API
+    - [YouTube (Venkat Subramaniam): Functional Programming with Java 8](https://youtu.be/15X0qFtBqiQ)
+    - [The Java 8 Stream API Tutorial](https://www.baeldung.com/java-8-streams)
+    - [Guide To Java 8 Optional](https://www.baeldung.com/java-optional)
 
 *Egon Teiniker, 2016-2026, GPL v3.0*
