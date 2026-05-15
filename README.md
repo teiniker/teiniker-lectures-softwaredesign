@@ -15,7 +15,7 @@ as an **introduction to software design based on Java examples**.
     * [Patterns in Practice](design-patterns/patterns-in-practice/)
     * [Class Design Principles (SOLID)](solid-principles/README.md)
 
-3. **Software Quality**
+3. **Software Quality (in Design and Implementation)**
     * [Unit Tests](software-quality/unit-tests/)
     * [Refactoring](software-quality/refactoring/)
 
