@@ -5,7 +5,7 @@ instances of single-method interfaces (known as **functional interfaces**) more
 compactly. 
 
 They allow for more concise and readable code, especially when used in conjunction 
-with **functional programming concepts such as the Stream API**.
+with **functional programming concepts** such as the **Stream API**.
 
 
 Lambdas technically don't let us do anything that we couldn't do prior Java 8.
