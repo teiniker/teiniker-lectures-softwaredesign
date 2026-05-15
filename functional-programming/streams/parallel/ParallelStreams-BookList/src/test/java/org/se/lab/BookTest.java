@@ -25,10 +25,27 @@ class BookTest
     @Test
     void testFindAllTitles()
     {
-        List<String> result = table.parallelStream()
+        List<String> result = table.parallelStream()    // Create a parallel stream
                 .map(Book::getTitle)
                 .sorted()
                 .toList();
+
+        assertAll("sorted titles",
+            () -> assertEquals(3, result.size()),
+            () -> assertEquals("Clean Code", result.get(0)),
+            () -> assertEquals("Effective Java", result.get(1)),
+            () -> assertEquals("Functional Programming in Java", result.get(2))
+        );
+    }
+
+    @Test
+    void testFindAllTitles2()
+    {
+        List<String> result = table.stream()
+            .parallel() // Alternative way to create a parallel stream
+            .map(Book::getTitle)
+            .sorted()
+            .toList();
 
         assertAll("sorted titles",
             () -> assertEquals(3, result.size()),
