@@ -1,5 +1,10 @@
 # Introduction to Java Stream API
 
+Java Streams, introduced in Java 8, provide a modern, functional approach to 
+processing sequences of elements. They offer a high-level, declarative way to 
+handle data transformations and computations, allowing for more readable and 
+concise code. 
+
 
 ## Pipes & Filters Pattern
 
@@ -12,7 +17,7 @@ Pipes and Filters is a pattern that decomposes a complex processing task
 into a sequence of separate, independent reusable steps (**Filters**) that 
 communicate exclusively through standard interfaces (**Pipes**).
 
-* **Filters (The Processors)**: 
+* **Filters**: 
     A filter is an independent, encapsulated data processing unit. 
     It transforms, enriches, refines, or validates data.
 
@@ -24,7 +29,7 @@ communicate exclusively through standard interfaces (**Pipes**).
     running asynchronously as separate threads, processes, or microservices, 
     processing data as soon as it arrives.
 
-* **Pipes (The Conduits)**:
+* **Pipes**:
     A pipe is the directional communication channel that transports data 
     from one filter's output to the next filter's input.
 
@@ -42,6 +47,7 @@ the data stream:
 
 * **Consumer (Sink)**: An endpoint that collects the final processed data 
     and writes it to a file, database, or UI, without forwarding it further.
+
 
 ### Advantages
 
@@ -65,6 +71,28 @@ the data stream:
     modifications to existing filters.
 
 
+### Disadvantages
+
+The Pipes and Filters pattern introduces specific complexities:
+
+* **Data Transformation Overhead**: If Filters A, B, and C all require different 
+    data formats, they must constantly serialize and deserialize data 
+    (e.g., converting JSON to XML, or string to binary). 
+    This parsing overhead can severely degrade performance.
+
+    Mitigation: Define a Common Data Format across the entire pipeline.
+
+* **State Management Difficulties**: This pattern is fundamentally designed 
+    for stateless processing. If Filter C needs data that Filter A threw away 
+    three steps ago, or if it needs context about a completely different data 
+    stream, implementing this pattern becomes incredibly clunky.
+
+* **Error Handling Complexity**: What happens if Filter 3 out of 10 crashes 
+    mid-stream? Because the components are decoupled, handling transactions 
+    and rollback states across a pipeline is notoriously difficult. 
+    We often need to implement a compensational transaction pattern.
+
+
 ### Real-World Implementation
 
 A classic examples of using the Pipes & Filters pattern is  the 
@@ -80,11 +108,6 @@ Another example is the Java Stream API.
 
 
 ## Java Stream API 
-
-Java Streams, introduced in Java 8, provide a modern, functional approach to 
-processing sequences of elements. They offer a high-level, declarative way to 
-handle data transformations and computations, allowing for more readable and 
-concise code. 
 
 Streams can be used to perform operations such as filtering, mapping, and reducing 
 collections of data.
