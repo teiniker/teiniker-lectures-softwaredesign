@@ -1,7 +1,7 @@
 # Lambda Expressions
 
 Lambda expressions in Java were introduced in Java 8 and provide a way to express 
-**instances of single-method interfaces** (known as functional interfaces) more 
+instances of single-method interfaces (known as **functional interfaces**) more 
 compactly. 
 
 They allow for more concise and readable code, especially when used in conjunction 
