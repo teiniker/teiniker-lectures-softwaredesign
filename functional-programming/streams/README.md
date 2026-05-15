@@ -1,4 +1,4 @@
-# Streams API
+# Java Stream API
 
 * [Introduction](introduction/README.md)
 
