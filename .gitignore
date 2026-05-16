@@ -7,4 +7,4 @@
 **/*.ucls
 **/.idea/
 misc/
-teiniker-lectures-softwaredesign.code-workspace
+*.code-workspace
