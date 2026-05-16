@@ -3,7 +3,7 @@
 ## Overview
 
 A **parallel stream** splits its source data into multiple chunks, processes
-each chunk in a separate thread using the **Fork/Join framework**, and then
+each chunk in a separate thread using the **Fork/Join Framework**, and then
 combines the results. The only code change required is replacing `.stream()`
 with `.parallelStream()` (or calling `.parallel()` on an existing stream).
 
@@ -11,9 +11,6 @@ with `.parallelStream()` (or calling `.parallel()` on an existing stream).
 * Leverages all available CPU cores transparently: no manual thread management.
 * The same pipeline code works for both sequential and parallel execution.
 * Significant speedup for CPU-bound operations on large data sets.
-
-The number of threads used equals `Runtime.getRuntime().availableProcessors()` 
-by default, managed by the common `ForkJoinPool`.
 
 
 ## Example: Book List
@@ -84,6 +81,56 @@ assertAll("found book",
 **Rule of thumb:** profile first. Use `parallelStream()` only after confirming that
 a bottleneck exists and that parallelism actually improves throughput on the target
 hardware.
+
+
+## Fork/Join Framework 
+
+The thread pool operates on two fundamental operations:
+
+* **Fork**: If a task is too large, it is split (forked) into smaller, 
+        independent sub-tasks. This happens recursively until the sub-task 
+        is small enough to be executed sequentially without further splitting.
+
+* **Join**: Once the sub-tasks finish executing, their results are combined 
+        (joined) back together to form the final result.
+
+
+### Number of Threads Used
+
+From the JVM runtime we get the number of CPU cores:
+
+```Java
+// Print the number of available processors
+int cpus = Runtime.getRuntime().availableProcessors();
+```
+
+We can also check the parallelism level of the common pool using the 
+**ForkJoinPool API**:
+
+```Java
+// Get the target parallelism level
+int parallelism = ForkJoinPool.getCommonPoolParallelism();
+        
+// Get the actual number of worker threads currently running
+int poolSize = ForkJoinPool.commonPool().getPoolSize();
+```
+
+By default, `ForkJoinPool.getCommonPoolParallelism()` returns one less than 
+the number of logical CPU cores (CPUs - 1). This is because the main thread 
+calling the stream also participates in the execution, bringing the total 
+thread count up to equal your total CPU cores.
+
+We can set a JVM-wide flag to configure the common pool's parallelism. 
+This must be done before any parallel stream is invoked, ideally as 
+a JVM argument.
+
+```Java 
+System.setProperty("java.util.concurrent.ForkJoinPool.common.parallelism", "4");
+```
+
+```bash
+$ java -Djava.util.concurrent.ForkJoinPool.common.parallelism=4 -jar your-app.jar        
+```
 
 
 ## References
