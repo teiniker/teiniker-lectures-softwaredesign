@@ -1,7 +1,6 @@
 package org.se.lab;
 
 import java.util.List;
-import java.util.function.Consumer;
 
 import org.junit.Assert;
 import org.junit.Test;

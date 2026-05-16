@@ -1,10 +1,12 @@
 package org.se.lab;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.ForkJoinPool;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -15,11 +17,26 @@ class BookTest
     @BeforeEach
     void setup()
     {
+        // Print the number of available processors
+        int cpus = Runtime.getRuntime().availableProcessors();
+        System.out.println("Available CPUs: " + cpus);
+
         table = List.of(
                 new Book("9781680509793", "Venkat Subramaniam", "Functional Programming in Java"),
                 new Book("9780132350884", "Robert C. Martin", "Clean Code"),
                 new Book("9780134685991", "Joshua Bloch", "Effective Java")
         );
+    }
+
+    @AfterEach
+    void teardown()
+    {
+        // Get the target parallelism level
+        int parallelism = ForkJoinPool.getCommonPoolParallelism();
+        // Get the actual number of worker threads currently running
+        int poolSize = ForkJoinPool.commonPool().getPoolSize();
+        System.out.println("Target Parallelism: " + parallelism);
+        System.out.println("Current Active Pool Size: " + poolSize);
     }
 
     @Test
